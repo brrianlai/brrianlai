@@ -195,7 +195,10 @@ header h2:hover, .icon:hover {
 nav {
 	background: var(--background-color);
 	display: flex;
-	height: 100vh;
+	flex-direction: row;
+	height: calc(100vh - 7.2rem);
+	gap: 1.6rem;
+	padding: 3.6rem 4rem;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -230,10 +233,6 @@ nav.open {
 
 	header .icon-social {
 		display: none;
-	}
-
-	nav {
-		display: block;
 	}
 }
 
