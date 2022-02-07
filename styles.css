@@ -57,7 +57,7 @@ html {
 }
 
 body {
-	color: var(--text-87);
+	color: var(--black-87);
     font-family: 'DM Sans', sans-serif;
 	font-size: 1.6rem;
 	line-height: 1;
@@ -68,7 +68,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: var(--text-100);
+	color: var(--black-100);
 }
 
 h1 {
@@ -95,8 +95,8 @@ h6 {
 	font-size: 1.6rem;
 }
 
-header h2, .icon {
-	transition: color 0.2s cubic-bezier(0, 0, 0.58, 1.0);
+a, header h2, .icon {
+	transition: var(--transition-color);
 }
 
 /* grid */
@@ -116,11 +116,11 @@ header {
 }
 
 header h2:hover, .icon:hover {
-	color: var(--text-38);
+	color: var(--black-38);
 }
 
 .icon {
-	color: var(--text-100);
+	color: var(--black-100);
 	display: block;
 	font-size: 2.4rem;
 	height: 2.4rem;
@@ -133,19 +133,37 @@ header h2:hover, .icon:hover {
 }
 
 .icon-vsco {
-	fill: var(--text-100);
-	transition: fill 0.2s cubic-bezier(0, 0, 0.58, 1.0);
+	fill: var(--black-100);
+	height: 2.2rem;
+	transition: var(--transition-fill);
+	width: 2.2rem;
 }
 
 .icon-vsco:hover {
-	fill: var(--text-38);
+	fill: var(--black-38);
 }
 
 .name {
 	margin-right: auto;
 }
 
-/* search box */
+/* buttons */
+
+.button {
+	background: var(--black-100);
+	border-radius: 0.4rem;
+	color: var(--white-100);
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 500;
+	height: 4rem;
+	line-height: 4rem;
+	padding: 0 2rem;
+}
+
+.button:hover {
+	color: var(--white-87);
+}
 
 /* hero */
 
@@ -154,10 +172,20 @@ header h2:hover, .icon:hover {
 	grid-template-columns: 1fr 2fr;
 }
 
+.hero h1 {
+	display: block;
+}
+
 .test {
+	align-items: flex-start;
+	justify-content: center;
 	background: #eee;
 	background-size: cover;
+	display: flex;
+	flex-direction: column;
 	height: calc(100vh - 12rem);
+	gap: 2rem;
+	padding: 0 4rem;
 }
 
 /* responsive */
@@ -171,6 +199,9 @@ header h2:hover, .icon:hover {
 }
 
 @media only screen and (max-width: 768px) {
+	.hero {
+		grid-template-columns: 0fr 1fr;
+	}
 	.icon-menu {
 		display: inherit;
 	}
@@ -184,10 +215,16 @@ header h2:hover, .icon:hover {
 
 :root {
 	--background-color: #fff;
-	--text-100: #000;
-	--text-87: rgba(0, 0, 0, 0.87);
-	--text-60: rgba(0, 0, 0, 0.6);
-	--text-38: rgba(0, 0, 0, 0.38);
+	--black-100: #000;
+	--black-87: rgba(0, 0, 0, 0.87);
+	--black-60: rgba(0, 0, 0, 0.6);
+	--black-38: rgba(0, 0, 0, 0.38);
+	--white-100: #fff;
+	--white-87: rgba(255, 255, 255, 0.87);
+	--white-60: rgba(255, 255, 255, 0.6);
+	--white-38: rgba(255, 255, 255, 0.38);
+	--transition-color: color 0.2s ease-out;
+	--transition-fill: fill 0.2s ease-out;
 }
 
 /* dark mode */
@@ -195,11 +232,12 @@ header h2:hover, .icon:hover {
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background-color: #000;
-		--text-100: #fff;
-		--text-87: rgba(255, 255, 255, 0.87);
-		--text-60: rgba(255, 255, 255, 0.6);
-		--text-38: rgba(255, 255, 255, 0.38);
+		--black-100: #fff;
+		--black-87: rgba(255, 255, 255, 0.87);
+		--black-60: rgba(255, 255, 255, 0.6);
+		--black-38: rgba(255, 255, 255, 0.38);
 	}
+
 	.test {
 		background: #292929;
 	}
