@@ -110,7 +110,7 @@ header {
 	padding: 0 4rem;
 }
 
-header h2:hover, .icon {
+header h2:hover, .icon:hover {
 	color: rgba(0, 0, 0, 0.38);
 }
 
