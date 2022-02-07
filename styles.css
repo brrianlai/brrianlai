@@ -144,6 +144,8 @@ header h2:hover, .icon:hover {
 	margin-right: auto;
 }
 
+/* search box */
+
 /* hero */
 
 .hero {
@@ -152,24 +154,12 @@ header h2:hover, .icon:hover {
 }
 
 .test {
-	background-color: #eee;
-	height: 100rem;
+	background: #eee;
+	background-size: cover;
+	height: calc(100vh - 12rem);
 }
 
-/* footer */
-
-footer {
-	align-items: center;
-	display: flex;
-	height: 16rem;
-}
-
-footer h6 {
-	color: rgba(0, 0, 0, 0.38);
-	font-size: 1.2rem;
-	letter-spacing: 0.12rem;
-	margin: 0 auto;
-}
+/* responsive */
 
 @media only screen and (max-width: 1200px) {
 
