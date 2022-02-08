@@ -280,10 +280,9 @@ section {
 	background-size: cover;
 	flex-direction: column;
 	gap: 4rem;
-	height: calc(100vh - 12rem);
+	height: 56rem;
 	justify-content: center;
 	margin-left: auto;
-	min-height: 56rem;
 	width: 60vw;
 }
 
@@ -367,13 +366,11 @@ nav {
 	flex-direction: row;
 	height: 10rem;
 	gap: 1.6rem;
-	padding: 0 4rem;
 	position: absolute;
 	right: 0;
 	top: 0;
 	transform: translate(100%, 0);
 	transition: var(--transition-transform);
-	width: calc(100vw - 8rem);
 	z-index: 1;
 }
 
@@ -477,6 +474,7 @@ nav.open {
 	.left-offset, .hero {
 		width: var(--wrap-width);
 	}
+
 }
 
 /* dark mode */
