@@ -26,6 +26,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+html, body {
+	overflow: hidden;
+	position: relative;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -63,8 +68,6 @@ body {
     font-family: 'Inter', sans-serif;
 	font-size: 1.6rem;
 	line-height: 2.4rem;
-	overflow-x: hidden;
-	width: 100vw;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
@@ -394,10 +397,6 @@ nav.open {
 		display: flex;
 	}
 
-	.hero {
-		width: calc(100vw - 8rem);
-	}
-
 	.icon-menu {
 		display: block;
 	}
@@ -409,6 +408,11 @@ nav.open {
 
 	.center {
 		padding: 16rem 4rem;
+	}
+
+	.profile {
+		height: 20rem;
+		width: 20rem;
 	}
 
 	header .icon-social {
