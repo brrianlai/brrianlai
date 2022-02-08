@@ -42,6 +42,7 @@ q:before, q:after {
 
 img {
     max-width: 100%;
+	object-fit: cover;
 }
 
 table {
@@ -61,7 +62,7 @@ body {
 	color: var(--dark-87);
     font-family: 'Inter', sans-serif;
 	font-size: 1.6rem;
-	line-height: 1;
+	line-height: 2.4rem;
 	overflow-x: hidden;
 	width: 100vw;
 	-moz-osx-font-smoothing: grayscale;
@@ -84,32 +85,32 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 6rem;
-	line-height: 7.2rem;
+	line-height: 8rem;
 }
 
 h2 {
 	font-size: 3.4rem;
-	line-height: 4.4rem;
+	line-height: 4.8rem;
 }
 
 h3 {
 	font-size: 2.8rem;
-	line-height: 3.8rem;
+	line-height: 4.2rem;
 }
 
 h4 {
 	font-size: 2.2rem;
-	line-height: 3.2rem;
+	line-height: 3.6rem;
 }
 
 h5 {
 	font-size: 1.6rem;
-	line-height: 2.4rem;
+	line-height: 2.8rem;
 }
 
 p {
 	font-size: 1.6rem;
-	line-height: 2.2rem;
+	line-height: 2.4rem;
 }
 
 a, header h2, .icon {
@@ -184,11 +185,11 @@ footer h5 {
 }
 
 footer h5, footer .icon {
-	color: var(--black-24);
+	color: var(--dark-24);
 }
 
 footer .icon-vsco {
-	fill: var(--black-24);
+	fill: var(--dark-24);
 }
 
 /* buttons */
@@ -308,6 +309,17 @@ section {
 	padding: 16rem 8rem;
 }
 
+/* profile */
+
+.profile {
+	background-image: url('resources/profile.png');
+	background-size: cover;
+	border-radius: 50%;
+	display: block;
+	height: 24rem;
+	width: 24rem;
+}
+
 /* dark */
 
 .dark {
@@ -326,6 +338,10 @@ section {
 	gap: 4rem;
 }
 
+.bops i {
+	font-size: 2.4rem;
+}
+
 /* gallery */
 
 .gallery {
@@ -337,7 +353,6 @@ section {
 }
 
 .gallery img {
-	object-fit: cover;
 	width: 100%;
 }
 
