@@ -280,7 +280,7 @@ section {
 	background-size: cover;
 	flex-direction: column;
 	gap: 4rem;
-	height: 56rem;
+	height: calc(100vh - 12rem);
 	justify-content: center;
 	margin-left: auto;
 	width: 60vw;
@@ -475,6 +475,9 @@ nav.open {
 		width: var(--wrap-width);
 	}
 
+	.hero {
+		height: 56rem;
+	}
 }
 
 /* dark mode */
