@@ -310,18 +310,19 @@ section {
 /* menu */
 
 nav {
+	align-items: center;
 	background: var(--background-color);
 	display: flex;
 	flex-direction: row;
-	height: calc(100vh - 7.2rem);
+	height: 12rem;
 	gap: 1.6rem;
-	padding: 3.6rem 4rem;
-	position: fixed;
+	padding: 0 4rem;
+	position: absolute;
 	right: 0;
 	top: 0;
 	transform: translate(100%, 0);
 	transition: var(--transition-transform);
-	width: 70vw;
+	width: calc(100vw - 8rem);
 	z-index: 1;
 }
 
@@ -341,11 +342,19 @@ nav.open {
 
 @media only screen and (max-width: 768px) {
 	.hero {
-		width: calc(100vw - 16rem);
+		width: calc(100vw - 8rem);
 	}
 
 	.icon-menu {
 		display: block;
+	}
+
+	.wrap-large {
+		padding: 0 4rem;
+	}
+
+	.center {
+		padding: 16rem 4rem;
 	}
 
 	header .icon-social {
