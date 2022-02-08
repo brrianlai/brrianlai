@@ -53,6 +53,7 @@ table {
 
 html {
 	background: var(--background-color);
+	cursor: default;
 	font-size: 62.5%;
 }
 
@@ -67,7 +68,12 @@ body {
 }
 
 a {
+	color: var(--dark-87);
 	text-decoration: none;
+}
+
+a:hover {
+	color: var(--dark-60);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,6 +99,11 @@ h3 {
 h4 {
 	font-size: 2.2rem;
 	line-height: 3.2rem;
+}
+
+h5 {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
 }
 
 p {
@@ -165,19 +176,18 @@ footer {
 	flex-direction: row;
 	gap: 1.6rem;
 	height: 12rem;
-	justify-content: flex-end;
 }
 
-footer .icon {
+footer h5 {
+	margin-right: auto;
+}
+
+footer h5, footer .icon {
 	color: var(--black-24);
 }
 
 footer .icon-vsco {
 	fill: var(--black-24);
-}
-
-footer .icon:last-child {
-	margin-right: 4rem;
 }
 
 /* buttons */
@@ -232,7 +242,6 @@ footer .icon:last-child {
 /* dynamic */
 
 
-
 .button-dark {
 	background: var(--dark-100);
 	color: var(--light-100);
@@ -245,7 +254,6 @@ footer .icon:last-child {
 /* sections */
 
 section {
-	align-items: flex-start;
 	display: flex;
 }
 
@@ -262,6 +270,7 @@ section {
 /* hero */
 
 .hero {
+	align-items: flex-start;
 	background-image: url('resources/background.jpg');
 	background-size: cover;
 	flex-direction: column;
@@ -279,6 +288,7 @@ section {
 /* left */
 
 .left {
+	align-items: flex-start;
 	flex-direction: column;
 	gap: 4rem;
 	padding: 16rem 4rem;
@@ -307,23 +317,33 @@ section {
 	color: var(--white-100);
 }
 
+/* bops */
+
+.bops {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4rem;
+}
+
 /* gallery */
 
 .gallery {
 	display: grid;
 	gap: 0;
 	grid-template-columns: 1fr 1fr;
+	margin: 0 auto;
+	max-width: 168rem;
 }
 
 .gallery img {
 	object-fit: cover;
+	transition: var(--transition-opacity);
 	width: 100%;
 }
 
-.gallery-column {
-	gap: 0;
+.gallery img:hover {
+	opacity: 0.8;
 }
-
 
 /* menu */
 
@@ -417,7 +437,7 @@ nav.open {
 
 	--transition-color: color 0.2s ease;
 	--transition-fill: fill 0.2s ease;
-	--transition-opacity: opacity 0.3s ease;
+	--transition-opacity: opacity 0.2s ease;
 	--transition-transform: transform 0.5s ease;
 }
 
