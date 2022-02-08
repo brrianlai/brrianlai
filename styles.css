@@ -67,7 +67,7 @@ body {
 	color: var(--dark-87);
     font-family: 'Inter', sans-serif;
 	font-size: 1.6rem;
-	line-height: 2.4rem;
+	line-height: 2.8rem;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
@@ -75,6 +75,10 @@ body {
 a {
 	color: var(--dark-87);
 	text-decoration: none;
+}
+
+a, .icon {
+	transition: var(--transition-color);
 }
 
 a:hover, .icon:hover {
@@ -106,13 +110,9 @@ h4 {
 	line-height: 3.6rem;
 }
 
-h5, p {
+h5 {
 	font-size: 1.6rem;
 	line-height: 2.8rem;
-}
-
-a, header h2, .icon {
-	transition: var(--transition-color);
 }
 
 /* icons */
@@ -148,7 +148,7 @@ header {
 	align-items: center;
 	display: flex;
 	gap: 1.6rem;
-	height: 12rem;
+	height: var(--header-height);
 }
 
 header h2 {
@@ -166,7 +166,7 @@ nav {
 	background: var(--background-color);
 	display: none;
 	flex-direction: row;
-	height: 10rem;
+	height: var(--header-height);
 	gap: 1.6rem;
 	position: absolute;
 	right: 0;
@@ -187,7 +187,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	gap: 1.6rem;
-	height: 12rem;
+	height: var(--header-height);
 	justify-content: center;
 }
 
@@ -197,6 +197,10 @@ footer .icon {
 
 footer .icon-vsco {
 	fill: var(--dark-24);
+}
+
+footer .name {
+	color: var(--dark-24);
 }
 
 /* buttons */
@@ -331,7 +335,7 @@ section {
 	color: var(--white-87);
 }
 
-.dark h1, .dark h4 {
+.dark h1 {
 	color: var(--white-100);
 }
 
@@ -398,8 +402,11 @@ section {
 	--transition-opacity: opacity 0.2s ease;
 	--transition-transform: transform 0.5s ease;
 
+	/* sizes */
+	--header-height: 12rem;
+
 	/* padding */
-	--section-padding: 16rem 8rem;
+	--section-padding: 16rem 4rem;
 	--wrap-padding: 0 4rem;
 	--wrap-padding-large: 0 8rem;
 	--wrap-width: calc(100% - 8rem);
@@ -438,6 +445,7 @@ section {
 
 @media only screen and (max-width: 768px) {
 	:root {
+		--header-height: 10rem;
 		--section-padding: 8rem 2.4rem;
 		--wrap-padding: 0 2.4rem;
 		--wrap-padding-large: 0 2.4rem;
