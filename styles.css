@@ -55,53 +55,6 @@ table {
 	border-spacing: 0;
 }
 
-/* root variables */
-
-:root {
-	--background-color: #fff;
-
-	/* static */
-	--black-100: #000;
-	--black-87: rgba(0, 0, 0, 0.87);
-	--black-60: rgba(0, 0, 0, 0.6);
-	--black-38: rgba(0, 0, 0, 0.38);
-	--black-24: rgba(0, 0, 0, 0.24);
-
-	--white-100: #fff;
-	--white-87: rgba(255, 255, 255, 0.87);
-	--white-60: rgba(255, 255, 255, 0.6);
-	--white-38: rgba(255, 255, 255, 0.38);
-	--white-24: rgba(255, 255, 255, 0.24);
-
-	/* dynamic */
-	--dark-100: #000;
-	--dark-87: rgba(0, 0, 0, 0.87);
-	--dark-60: rgba(0, 0, 0, 0.6);
-	--dark-38: rgba(0, 0, 0, 0.38);
-	--dark-24: rgba(0, 0, 0, 0.24);
-
-	--light-100: #fff;
-	--light-87: rgba(255, 255, 255, 0.87);
-	--light-60: rgba(255, 255, 255, 0.6);
-	--light-38: rgba(255, 255, 255, 0.38);
-	--light-24: rgba(255, 255, 255, 0.24);
-
-	/* transitions */
-	--transition-color: color 0.2s ease;
-	--transition-fill: fill 0.2s ease;
-	--transition-transform: transform 0.5s ease;
-
-	/* sizes */
-	--header-height: 12rem;
-
-	/* padding */
-	--section-padding: 12rem 4rem;
-	--wrap-padding: 0 4rem;
-	--wrap-padding-large: 0 8rem;
-	--wrap-width: calc(100% - 8rem);
-	--wrap-width-large: calc(100% - 16rem);
-}
-
 /* typography */
 
 html {
@@ -132,7 +85,7 @@ a:hover, .icon:hover {
 	color: var(--dark-38);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .heading {
 	color: var(--dark-100);
 	font-weight: 500;
 }
@@ -351,6 +304,15 @@ section {
 	background: #c9cbff;
 }
 
+[data-background='black'] {
+	background-color: var(--black-100);
+	color: var(--white-87);
+}
+
+[data-background='black'] .heading {
+	color: var(--white-100);
+}
+
 /* hero */
 
 .hero {
@@ -366,7 +328,7 @@ section {
 	width: 60vw;
 }
 
-.hero h1 {
+.hero .heading {
 	color: var(--white-100);
 }
 
@@ -401,17 +363,6 @@ section {
 	padding: var(--section-padding);
 }
 
-/* dark section */
-
-.dark {
-	background-color: var(--black-100);
-	color: var(--white-87);
-}
-
-.dark h1 {
-	color: var(--white-100);
-}
-
 /* bops */
 
 .bops {
@@ -427,13 +378,67 @@ section {
 /* gallery */
 
 .gallery {
-	gap: 0;
+	gap: var(--gap-width);
 	margin: 0 auto;
 	max-width: 168rem;
 }
 
 .gallery img {
 	width: 100%;
+}
+
+.gallery .column {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap-width);
+}
+
+/* root variables */
+
+:root {
+	--background-color: #fff;
+
+	/* static */
+	--black-100: #000;
+	--black-87: rgba(0, 0, 0, 0.87);
+	--black-60: rgba(0, 0, 0, 0.6);
+	--black-38: rgba(0, 0, 0, 0.38);
+	--black-24: rgba(0, 0, 0, 0.24);
+
+	--white-100: #fff;
+	--white-87: rgba(255, 255, 255, 0.87);
+	--white-60: rgba(255, 255, 255, 0.6);
+	--white-38: rgba(255, 255, 255, 0.38);
+	--white-24: rgba(255, 255, 255, 0.24);
+
+	/* dynamic */
+	--dark-100: #000;
+	--dark-87: rgba(0, 0, 0, 0.87);
+	--dark-60: rgba(0, 0, 0, 0.6);
+	--dark-38: rgba(0, 0, 0, 0.38);
+	--dark-24: rgba(0, 0, 0, 0.24);
+
+	--light-100: #fff;
+	--light-87: rgba(255, 255, 255, 0.87);
+	--light-60: rgba(255, 255, 255, 0.6);
+	--light-38: rgba(255, 255, 255, 0.38);
+	--light-24: rgba(255, 255, 255, 0.24);
+
+	/* transitions */
+	--transition-color: color 0.2s ease;
+	--transition-fill: fill 0.2s ease;
+	--transition-transform: transform 0.5s ease;
+
+	/* sizes */
+	--header-height: 12rem;
+
+	/* padding */
+	--gap-width: 4rem;
+	--section-padding: 12rem 4rem;
+	--wrap-padding: 0 4rem;
+	--wrap-padding-large: 0 8rem;
+	--wrap-width: calc(100% - 8rem);
+	--wrap-width-large: calc(100% - 16rem);
 }
 
 /* dark mode */
@@ -455,13 +460,26 @@ section {
 		--light-24: rgba(0, 0, 0, 0.24);
 	}
 
-	[data-background] h1, [data-background] h4, [data-background] h5, [data-background] a {
+	[data-background], [data-background] a {
 		color: var(--light-87);
 	}
 
 	[data-background] a:hover {
 		color: var(--light-38);
 	}
+
+	[data-background] .heading {
+		color: var(--light-100);
+	}
+
+	[data-background="black"] {
+		color: var(--white-87);
+	}
+
+	[data-background="black"] .heading {
+		color: var(--white-100);
+	}
+
 }
 
 /* responsive */
@@ -471,13 +489,16 @@ section {
 }
 
 @media only screen and (max-width: 1024px) {
-
+	.hero {
+		width: var(--wrap-width-large);
+	}
 }
 
 @media only screen and (max-width: 768px) {
 	:root {
 		--header-height: 10rem;
 		--section-padding: 8rem 2.4rem;
+		--gap-width: 2.4rem;
 		--wrap-padding: 0 2.4rem;
 		--wrap-padding-large: 0 2.4rem;
 		--wrap-width: calc(100% - 4.8rem);
@@ -509,7 +530,7 @@ section {
 		height: 56rem;
 	}
 
-	.hero, .left-offset {
+	.left-offset {
 		width: var(--wrap-width);
 	}
 
