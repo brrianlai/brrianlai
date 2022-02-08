@@ -63,6 +63,7 @@ body {
 	font-size: 1.6rem;
 	line-height: 1;
 	overflow-x: hidden;
+	width: 100vw;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
@@ -337,12 +338,7 @@ section {
 
 .gallery img {
 	object-fit: cover;
-	transition: var(--transition-opacity);
 	width: 100%;
-}
-
-.gallery img:hover {
-	opacity: 0.8;
 }
 
 /* menu */
@@ -393,6 +389,7 @@ nav.open {
 
 	.wrap-large {
 		padding: 0 4rem;
+		width: calc(100% - 8rem);
 	}
 
 	.center {
