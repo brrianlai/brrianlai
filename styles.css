@@ -77,8 +77,8 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: var(--dark-60);
+a:hover, .icon:hover {
+	color: var(--dark-38);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -106,42 +106,16 @@ h4 {
 	line-height: 3.6rem;
 }
 
-h5 {
+h5, p {
 	font-size: 1.6rem;
 	line-height: 2.8rem;
-}
-
-p {
-	font-size: 1.6rem;
-	line-height: 2.4rem;
 }
 
 a, header h2, .icon {
 	transition: var(--transition-color);
 }
 
-/* grid */
-
-.container {
-    display: grid;
-}
-
-/* header */
-
-header {
-	align-items: center;
-	display: flex;
-	gap: 1.6rem;
-	height: 12rem;
-}
-
-header h2 {
-	font-weight: 400;
-}
-
-header h2:hover, .icon:hover {
-	color: var(--dark-38);
-}
+/* icons */
 
 .icon {
 	color: var(--dark-100);
@@ -168,8 +142,42 @@ header h2:hover, .icon:hover {
 	fill: var(--dark-38);
 }
 
+/* header */
+
+header {
+	align-items: center;
+	display: flex;
+	gap: 1.6rem;
+	height: 12rem;
+}
+
+header h2 {
+	font-weight: 400;
+}
+
 .name {
 	margin-right: auto;
+}
+
+/* menu */
+
+nav {
+	align-items: center;
+	background: var(--background-color);
+	display: none;
+	flex-direction: row;
+	height: 10rem;
+	gap: 1.6rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(100%, 0);
+	transition: var(--transition-transform);
+	z-index: 1;
+}
+
+nav.open {
+	transform: translate(0);
 }
 
 /* footer */
@@ -183,11 +191,7 @@ footer {
 	justify-content: center;
 }
 
-footer h5 {
-	margin-right: auto;
-}
-
-footer h5, footer .icon {
+footer .icon {
 	color: var(--dark-24);
 }
 
@@ -232,7 +236,7 @@ footer .icon-vsco {
 }
 
 .button-white:hover {
-	color: var(--black-60);
+	color: var(--black-38);
 }
 
 .button-black {
@@ -241,11 +245,10 @@ footer .icon-vsco {
 }
 
 .button-black:hover {
-	color: var(--white-60);
+	color: var(--white-38);
 }
 
 /* dynamic */
-
 
 .button-dark {
 	background: var(--dark-100);
@@ -253,7 +256,7 @@ footer .icon-vsco {
 }
 
 .button-dark:hover {
-	color: var(--light-60);
+	color: var(--light-38);
 }
 
 /* sections */
@@ -321,10 +324,11 @@ section {
 	padding: var(--section-padding);
 }
 
-/* dark */
+/* dark section */
 
 .dark {
 	background-color: var(--black-100);
+	color: var(--white-87);
 }
 
 .dark h1, .dark h4 {
@@ -357,28 +361,8 @@ section {
 	width: 100%;
 }
 
-/* menu */
-
-nav {
-	align-items: center;
-	background: var(--background-color);
-	display: none;
-	flex-direction: row;
-	height: 10rem;
-	gap: 1.6rem;
-	position: absolute;
-	right: 0;
-	top: 0;
-	transform: translate(100%, 0);
-	transition: var(--transition-transform);
-	z-index: 1;
-}
-
-nav.open {
-	transform: translate(0);
-}
-
 /* root variables */
+
 :root {
 	--background-color: #fff;
 
@@ -422,64 +406,6 @@ nav.open {
 	--wrap-width-large: calc(100% - 16rem);
 }
 
-/* responsive */
-
-@media only screen and (max-width: 1200px) {
-
-}
-
-@media only screen and (max-width: 960px) {
-
-}
-
-@media only screen and (max-width: 768px) {
-	:root {
-		--section-padding: 8rem 2.4rem;
-		--wrap-padding: 0 2.4rem;
-		--wrap-padding-large: 0 2.4rem;
-		--wrap-width: calc(100% - 4.8rem);
-		--wrap-width-large: calc(100% - 4.8rem);
-	}
-
-	nav {
-		display: flex;
-	}
-
-	.icon-menu {
-		display: block;
-	}
-
-	.profile {
-		height: 16rem;
-		width: 16rem;
-	}
-
-	header {
-		height: 10rem;
-	}
-
-	header .icon-social {
-		display: none;
-	}
-
-	footer h5 {
-		display: none;
-	}
-
-	h1 {
-		font-size: 5.2rem;
-		line-height: 6.8rem;
-	}
-
-	.left-offset, .hero {
-		width: var(--wrap-width);
-	}
-
-	.hero {
-		height: 56rem;
-	}
-}
-
 /* dark mode */
 
 @media (prefers-color-scheme: dark) {
@@ -497,5 +423,63 @@ nav.open {
 		--light-60: rgba(0, 0, 0, 0.6);
 		--light-38: rgba(0, 0, 0, 0.38);
 		--light-24: rgba(0, 0, 0, 0.24);
+	}
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+	:root {
+		--section-padding: 8rem 2.4rem;
+		--wrap-padding: 0 2.4rem;
+		--wrap-padding-large: 0 2.4rem;
+		--wrap-width: calc(100% - 4.8rem);
+		--wrap-width-large: calc(100% - 4.8rem);
+	}
+
+	header {
+		height: 10rem;
+	}
+
+	header .icon-social {
+		display: none;
+	}
+
+	.icon-menu {
+		display: block;
+	}
+
+	footer h5 {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+	}
+
+	h1 {
+		font-size: 5.2rem;
+		line-height: 6.8rem;
+	}
+
+	.hero {
+		height: 56rem;
+	}
+
+	.hero, .left-offset {
+		width: var(--wrap-width);
+	}
+
+	.profile {
+		height: 16rem;
+		width: 16rem;
 	}
 }
