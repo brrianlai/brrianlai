@@ -27,7 +27,7 @@ time, mark, audio, video {
 }
 
 html, body {
-	overflow: hidden;
+	overflow-x: hidden;
 	position: relative;
 }
 
