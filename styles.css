@@ -55,6 +55,53 @@ table {
 	border-spacing: 0;
 }
 
+/* root variables */
+
+:root {
+	--background-color: #fff;
+
+	/* static */
+	--black-100: #000;
+	--black-87: rgba(0, 0, 0, 0.87);
+	--black-60: rgba(0, 0, 0, 0.6);
+	--black-38: rgba(0, 0, 0, 0.38);
+	--black-24: rgba(0, 0, 0, 0.24);
+
+	--white-100: #fff;
+	--white-87: rgba(255, 255, 255, 0.87);
+	--white-60: rgba(255, 255, 255, 0.6);
+	--white-38: rgba(255, 255, 255, 0.38);
+	--white-24: rgba(255, 255, 255, 0.24);
+
+	/* dynamic */
+	--dark-100: #000;
+	--dark-87: rgba(0, 0, 0, 0.87);
+	--dark-60: rgba(0, 0, 0, 0.6);
+	--dark-38: rgba(0, 0, 0, 0.38);
+	--dark-24: rgba(0, 0, 0, 0.24);
+
+	--light-100: #fff;
+	--light-87: rgba(255, 255, 255, 0.87);
+	--light-60: rgba(255, 255, 255, 0.6);
+	--light-38: rgba(255, 255, 255, 0.38);
+	--light-24: rgba(255, 255, 255, 0.24);
+
+	/* transitions */
+	--transition-color: color 0.2s ease;
+	--transition-fill: fill 0.2s ease;
+	--transition-transform: transform 0.5s ease;
+
+	/* sizes */
+	--header-height: 12rem;
+
+	/* padding */
+	--section-padding: 12rem 4rem;
+	--wrap-padding: 0 4rem;
+	--wrap-padding-large: 0 8rem;
+	--wrap-width: calc(100% - 8rem);
+	--wrap-width-large: calc(100% - 16rem);
+}
+
 /* typography */
 
 html {
@@ -389,57 +436,9 @@ section {
 	width: 100%;
 }
 
-/* root variables */
-
-:root {
-	--background-color: #fff;
-
-	/* static */
-	--black-100: #000;
-	--black-87: rgba(0, 0, 0, 0.87);
-	--black-60: rgba(0, 0, 0, 0.6);
-	--black-38: rgba(0, 0, 0, 0.38);
-	--black-24: rgba(0, 0, 0, 0.24);
-
-	--white-100: #fff;
-	--white-87: rgba(255, 255, 255, 0.87);
-	--white-60: rgba(255, 255, 255, 0.6);
-	--white-38: rgba(255, 255, 255, 0.38);
-	--white-24: rgba(255, 255, 255, 0.24);
-
-	/* dynamic */
-	--dark-100: #000;
-	--dark-87: rgba(0, 0, 0, 0.87);
-	--dark-60: rgba(0, 0, 0, 0.6);
-	--dark-38: rgba(0, 0, 0, 0.38);
-	--dark-24: rgba(0, 0, 0, 0.24);
-
-	--light-100: #fff;
-	--light-87: rgba(255, 255, 255, 0.87);
-	--light-60: rgba(255, 255, 255, 0.6);
-	--light-38: rgba(255, 255, 255, 0.38);
-	--light-24: rgba(255, 255, 255, 0.24);
-
-	/* transitions */
-	--transition-color: color 0.2s ease;
-	--transition-fill: fill 0.2s ease;
-	--transition-opacity: opacity 0.2s ease;
-	--transition-transform: transform 0.5s ease;
-
-	/* sizes */
-	--header-height: 12rem;
-
-	/* padding */
-	--section-padding: 12rem 4rem;
-	--wrap-padding: 0 4rem;
-	--wrap-padding-large: 0 8rem;
-	--wrap-width: calc(100% - 8rem);
-	--wrap-width-large: calc(100% - 16rem);
-}
-
 /* dark mode */
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--background-color: #000;
 
