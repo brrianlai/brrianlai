@@ -72,23 +72,32 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
 	color: var(--dark-100);
+	font-weight: 500;
 }
 
 h1 {
 	font-size: 6rem;
-	font-weight: 500;
+	line-height: 7.2rem;
 }
 
 h2 {
 	font-size: 3.4rem;
+	line-height: 4.4rem;
 }
 
 h3 {
 	font-size: 2.8rem;
+	line-height: 3.8rem;
 }
 
 h4 {
 	font-size: 2.2rem;
+	line-height: 3.2rem;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 2.2rem;
 }
 
 a, header h2, .icon {
@@ -109,6 +118,10 @@ header {
 	gap: 1.6rem;
 	height: 12rem;
 	padding: 0 4rem;
+}
+
+header h2 {
+	font-weight: 400;
 }
 
 header h2:hover, .icon:hover {
@@ -144,16 +157,45 @@ header h2:hover, .icon:hover {
 	margin-right: auto;
 }
 
+/* footer */
+
+footer {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 1.6rem;
+	height: 12rem;
+	justify-content: flex-end;
+}
+
+footer .icon {
+	color: var(--black-24);
+}
+
+footer .icon-vsco {
+	fill: var(--black-24);
+}
+
+footer .icon:last-child {
+	margin-right: 4rem;
+}
+
 /* buttons */
-/* fix dark mode color scheme */
 
 .button {
+	background: var(--light-100);
+	border-radius: 0.4rem;
+	color: var(--dark-100);
 	display: block;
 	font-size: 1.4rem;
 	font-weight: 500;
 	height: 4rem;
 	line-height: 4rem;
 	padding: 0 2rem;
+}
+
+.button:hover {
+	color: var(--dark-60);
 }
 
 .button-round {
@@ -189,14 +231,7 @@ header h2:hover, .icon:hover {
 
 /* dynamic */
 
-.button-light {
-	background: var(--light-100);
-	color: var(--dark-100);
-}
 
-.button-light:hover {
-	color: var(--dark-60);
-}
 
 .button-dark {
 	background: var(--dark-100);
@@ -210,6 +245,7 @@ header h2:hover, .icon:hover {
 /* sections */
 
 section {
+	align-items: flex-start;
 	display: flex;
 }
 
@@ -226,28 +262,35 @@ section {
 /* hero */
 
 .hero {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
+	background-image: url('resources/background.jpg');
+	background-size: cover;
+	flex-direction: column;
+	gap: 4rem;
+	height: calc(100vh - 12rem);
+	justify-content: center;
+	margin-left: auto;
+	width: 60vw;
 }
 
 .hero h1 {
 	color: var(--white-100);
 }
 
-.test {
-	align-items: flex-start;
-	background-image: url('resources/background.jpg');
-	background-size: cover;
-	display: flex;
+/* left */
+
+.left {
 	flex-direction: column;
 	gap: 4rem;
-	height: calc(100vh - 12rem);
-	justify-content: center;
+	padding: 16rem 4rem;
 }
 
-/* large */
+.left h1, .left h4 {
+	max-width: 60vw;
+}
 
-.large {
+/* center */
+
+.center {
 	align-items: center;
 	flex-direction: column;
 	gap: 4rem;
@@ -298,11 +341,11 @@ nav.open {
 
 @media only screen and (max-width: 768px) {
 	.hero {
-		grid-template-columns: 0fr 1fr;
+		width: calc(100vw - 16rem);
 	}
 
 	.icon-menu {
-		display: inherit;
+		display: block;
 	}
 
 	header .icon-social {
@@ -320,20 +363,26 @@ nav.open {
 	--black-87: rgba(0, 0, 0, 0.87);
 	--black-60: rgba(0, 0, 0, 0.6);
 	--black-38: rgba(0, 0, 0, 0.38);
+	--black-24: rgba(0, 0, 0, 0.24);
+
 	--white-100: #fff;
 	--white-87: rgba(255, 255, 255, 0.87);
 	--white-60: rgba(255, 255, 255, 0.6);
 	--white-38: rgba(255, 255, 255, 0.38);
+	--white-24: rgba(255, 255, 255, 0.24);
 
 	/* dynamic */
 	--dark-100: #000;
 	--dark-87: rgba(0, 0, 0, 0.87);
 	--dark-60: rgba(0, 0, 0, 0.6);
 	--dark-38: rgba(0, 0, 0, 0.38);
+	--dark-24: rgba(0, 0, 0, 0.24);
+
 	--light-100: #fff;
 	--light-87: rgba(255, 255, 255, 0.87);
 	--light-60: rgba(255, 255, 255, 0.6);
 	--light-38: rgba(255, 255, 255, 0.38);
+	--light-24: rgba(255, 255, 255, 0.24);
 
 	--transition-color: color 0.2s ease;
 	--transition-fill: fill 0.2s ease;
@@ -345,13 +394,17 @@ nav.open {
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background-color: #000;
+
 		--dark-100: #fff;
 		--dark-87: rgba(255, 255, 255, 0.87);
 		--dark-60: rgba(255, 255, 255, 0.6);
 		--dark-38: rgba(255, 255, 255, 0.38);
+		--dark-24: rgba(255, 255, 255, 0.24);
+
 		--light-100: #000;
 		--light-87: rgba(0, 0, 0, 0.87);
 		--light-60: rgba(0, 0, 0, 0.6);
 		--light-38: rgba(0, 0, 0, 0.38);
+		--light-24: rgba(0, 0, 0, 0.24);
 	}
 }
