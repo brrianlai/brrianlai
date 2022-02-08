@@ -1,6 +1,6 @@
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
 
 /* css reset */
@@ -57,11 +57,13 @@ html {
 }
 
 body {
-	color: var(--black-87);
-    font-family: 'DM Sans', sans-serif;
+	color: var(--dark-87);
+    font-family: 'Inter', sans-serif;
 	font-size: 1.6rem;
 	line-height: 1;
-	overflow: hidden;
+	overflow-x: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -69,31 +71,24 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: var(--black-100);
+	color: var(--dark-100);
 }
 
 h1 {
-	font-size: 3.4rem;
+	font-size: 6rem;
+	font-weight: 500;
 }
 
 h2 {
-	font-size: 2.8rem;
+	font-size: 3.4rem;
 }
 
 h3 {
-	font-size: 2.2rem;
+	font-size: 2.8rem;
 }
 
 h4 {
-	font-size: 2rem;
-}
-
-h5 {
-	font-size: 1.8rem;
-}
-
-h6 {
-	font-size: 1.6rem;
+	font-size: 2.2rem;
 }
 
 a, header h2, .icon {
@@ -117,11 +112,11 @@ header {
 }
 
 header h2:hover, .icon:hover {
-	color: var(--black-38);
+	color: var(--dark-38);
 }
 
 .icon {
-	color: var(--black-100);
+	color: var(--dark-100);
 	display: block;
 	font-size: 2.4rem;
 	height: 2.4rem;
@@ -135,14 +130,14 @@ header h2:hover, .icon:hover {
 }
 
 .icon-vsco {
-	fill: var(--black-100);
+	fill: var(--dark-100);
 	height: 2.2rem;
 	transition: var(--transition-fill);
 	width: 2.2rem;
 }
 
 .icon-vsco:hover {
-	fill: var(--black-38);
+	fill: var(--dark-38);
 }
 
 .name {
@@ -150,11 +145,9 @@ header h2:hover, .icon:hover {
 }
 
 /* buttons */
+/* fix dark mode color scheme */
 
 .button {
-	background: var(--black-100);
-	border-radius: 0.4rem;
-	color: var(--white-100);
 	display: block;
 	font-size: 1.4rem;
 	font-weight: 500;
@@ -163,8 +156,71 @@ header h2:hover, .icon:hover {
 	padding: 0 2rem;
 }
 
-.button:hover {
-	color: var(--white-87);
+.button-round {
+	border-radius: 3rem;
+}
+
+.button-large {
+	font-size: 1.6rem;
+	height: 6rem;
+	line-height: 6rem;
+	padding: 0 3rem;
+}
+
+/* static */
+
+.button-white {
+	background: var(--white-100);
+	color: var(--black-100);
+}
+
+.button-white:hover {
+	color: var(--black-60);
+}
+
+.button-black {
+	background: var(--black-100);
+	color: var(--white-100);
+}
+
+.button-black:hover {
+	color: var(--white-60);
+}
+
+/* dynamic */
+
+.button-light {
+	background: var(--light-100);
+	color: var(--dark-100);
+}
+
+.button-light:hover {
+	color: var(--dark-60);
+}
+
+.button-dark {
+	background: var(--dark-100);
+	color: var(--light-100);
+}
+
+.button-dark:hover {
+	color: var(--light-60);
+}
+
+/* sections */
+
+section {
+	display: flex;
+}
+
+.wrap {
+	padding: 0 4rem;
+	width: calc(100% - 4rem);
+}
+
+.wrap-large {
+	padding: 0 8rem;
+	width: calc(100% - 16rem);
 }
 
 /* hero */
@@ -175,19 +231,37 @@ header h2:hover, .icon:hover {
 }
 
 .hero h1 {
-	display: block;
+	color: var(--white-100);
 }
 
 .test {
 	align-items: flex-start;
-	justify-content: center;
-	background: #eee;
+	background-image: url('resources/background.jpg');
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
+	gap: 4rem;
 	height: calc(100vh - 12rem);
-	gap: 2rem;
-	padding: 0 4rem;
+	justify-content: center;
+}
+
+/* large */
+
+.large {
+	align-items: center;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 16rem 8rem;
+}
+
+/* dark */
+
+.dark {
+	background-color: #000;
+}
+
+.dark h1 {
+	color: #fff;
 }
 
 /* menu */
@@ -199,12 +273,12 @@ nav {
 	height: calc(100vh - 7.2rem);
 	gap: 1.6rem;
 	padding: 3.6rem 4rem;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 0;
 	transform: translate(100%, 0);
 	transition: var(--transition-transform);
-	width: 80vw;
+	width: 70vw;
 	z-index: 1;
 }
 
@@ -240,6 +314,8 @@ nav.open {
 
 :root {
 	--background-color: #fff;
+
+	/* static */
 	--black-100: #000;
 	--black-87: rgba(0, 0, 0, 0.87);
 	--black-60: rgba(0, 0, 0, 0.6);
@@ -248,6 +324,17 @@ nav.open {
 	--white-87: rgba(255, 255, 255, 0.87);
 	--white-60: rgba(255, 255, 255, 0.6);
 	--white-38: rgba(255, 255, 255, 0.38);
+
+	/* dynamic */
+	--dark-100: #000;
+	--dark-87: rgba(0, 0, 0, 0.87);
+	--dark-60: rgba(0, 0, 0, 0.6);
+	--dark-38: rgba(0, 0, 0, 0.38);
+	--light-100: #fff;
+	--light-87: rgba(255, 255, 255, 0.87);
+	--light-60: rgba(255, 255, 255, 0.6);
+	--light-38: rgba(255, 255, 255, 0.38);
+
 	--transition-color: color 0.2s ease;
 	--transition-fill: fill 0.2s ease;
 	--transition-transform: transform 0.5s ease;
@@ -258,13 +345,13 @@ nav.open {
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background-color: #000;
-		--black-100: #fff;
-		--black-87: rgba(255, 255, 255, 0.87);
-		--black-60: rgba(255, 255, 255, 0.6);
-		--black-38: rgba(255, 255, 255, 0.38);
-	}
-
-	.test {
-		background: #292929;
+		--dark-100: #fff;
+		--dark-87: rgba(255, 255, 255, 0.87);
+		--dark-60: rgba(255, 255, 255, 0.6);
+		--dark-38: rgba(255, 255, 255, 0.38);
+		--light-100: #000;
+		--light-87: rgba(0, 0, 0, 0.87);
+		--light-60: rgba(0, 0, 0, 0.6);
+		--light-38: rgba(0, 0, 0, 0.38);
 	}
 }
