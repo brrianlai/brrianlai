@@ -279,6 +279,20 @@ section {
 	width: var(--wrap-width-large);
 }
 
+/* section backgrounds */
+
+[data-background='clay'] {
+	background: #c1a3a3;
+}
+
+[data-background='mint'] {
+	background: #c9dfd6;
+}
+
+[data-background='blue'] {
+	background: #7289da;
+}
+
 /* hero */
 
 .hero {
@@ -453,15 +467,11 @@ section {
 		--wrap-width-large: calc(100% - 4.8rem);
 	}
 
-	header {
-		height: 10rem;
-	}
-
 	header .icon-social {
 		display: none;
 	}
 
-	.icon-menu {
+	header .icon-menu {
 		display: block;
 	}
 
@@ -474,8 +484,8 @@ section {
 	}
 
 	h1 {
-		font-size: 5.2rem;
-		line-height: 6.8rem;
+		font-size: 4.8rem;
+		line-height: 6.2rem;
 	}
 
 	.hero {
