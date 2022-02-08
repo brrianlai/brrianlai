@@ -315,6 +315,7 @@ section {
 	height: calc(100vh - 12rem);
 	justify-content: center;
 	margin-left: auto;
+	min-height: 56rem;
 	width: 60vw;
 }
 
@@ -438,7 +439,7 @@ section {
 
 /* dark mode */
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	:root {
 		--background-color: #000;
 
@@ -453,6 +454,14 @@ section {
 		--light-60: rgba(0, 0, 0, 0.6);
 		--light-38: rgba(0, 0, 0, 0.38);
 		--light-24: rgba(0, 0, 0, 0.24);
+	}
+
+	[data-background] h1, [data-background] h4, [data-background] h5, [data-background] a {
+		color: var(--light-87);
+	}
+
+	[data-background] a:hover {
+		color: var(--light-38);
 	}
 }
 
