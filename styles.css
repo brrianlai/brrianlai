@@ -326,7 +326,7 @@ section[data-size='large'] {
 
 section.hero {
 	align-items: flex-start;
-	background-image: url('resources/background.jpg');
+	background-image: url('resources/background.jpeg');
 	background-size: cover;
 	flex-direction: column;
 	gap: 4rem;
@@ -342,7 +342,7 @@ section.hero .heading {
 }
 
 .profile {
-	background-image: url('resources/profile.png');
+	background-image: url('resources/profile.jpg');
 	background-size: cover;
 	border-radius: 12rem;
 	display: block;
