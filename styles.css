@@ -482,12 +482,16 @@ section.hero .heading {
 		color: var(--light-100);
 	}
 
-	[data-background="black"] {
+	[data-background='black'], [data-background='gray'] {
 		color: var(--white-87);
 	}
 
-	[data-background="black"] .heading {
+	[data-background='black'] .heading, [data-background='gray'] .heading {
 		color: var(--white-100);
+	}
+
+	[data-background='gray'] {
+		background: #212121;
 	}
 
 }
