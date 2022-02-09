@@ -314,6 +314,10 @@ section[data-size='large'] {
 	background: #c9cbff;
 }
 
+[data-background='gray'] {
+	background: #eee;
+}
+
 [data-background='black'] {
 	background-color: var(--black-100);
 	color: var(--white-87);
@@ -534,7 +538,8 @@ section.hero .heading {
 	}
 
 	section.hero {
-		height: 56rem;
+		height: auto;
+		min-height: auto;
 	}
 
 	section[data-offset] {
