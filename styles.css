@@ -273,7 +273,17 @@ footer .name {
 /* sections */
 
 section {
+	align-items: flex-start;
 	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: var(--section-padding);
+	width: var(--wrap-width);
+}
+
+section[data-size='large'] {
+	padding: var(--section-padding-large);
+	width: var(--wrap-width-large);
 }
 
 .wrap {
@@ -315,20 +325,20 @@ section {
 
 /* hero */
 
-.hero {
+section.hero {
 	align-items: flex-start;
 	background-image: url('resources/background.jpg');
 	background-size: cover;
 	flex-direction: column;
 	gap: 4rem;
-	height: calc(100vh - 12rem);
+	height: calc(100vh - 34rem);
 	justify-content: center;
 	margin-left: auto;
 	min-height: 56rem;
 	width: 60vw;
 }
 
-.hero .heading {
+section.hero .heading {
 	color: var(--white-100);
 }
 
@@ -341,26 +351,21 @@ section {
 	width: 24rem;
 }
 
-/* left */
-
-.left {
-	align-items: flex-start;
-	flex-direction: column;
-	gap: 4rem;
-	padding: var(--section-padding);
-}
-
-.left-offset {
-	width: 60vw;
-}
-
-/* center */
+/* section position */
 
 .center {
 	align-items: center;
 	flex-direction: column;
 	gap: 4rem;
 	padding: var(--section-padding);
+}
+
+[data-offset] {
+	width: 60vw;
+}
+
+[data-offset="right"] {
+	margin-left: auto;
 }
 
 /* bops */
@@ -430,11 +435,12 @@ section {
 	--transition-transform: transform 0.5s ease;
 
 	/* sizes */
-	--header-height: 12rem;
 
 	/* padding */
 	--gap-width: 4rem;
+	--header-height: 12rem;
 	--section-padding: 12rem 4rem;
+	--section-padding-large: 12rem 8rem;
 	--wrap-padding: 0 4rem;
 	--wrap-padding-large: 0 8rem;
 	--wrap-width: calc(100% - 8rem);
@@ -489,7 +495,7 @@ section {
 }
 
 @media only screen and (max-width: 1024px) {
-	.hero {
+	section.hero {
 		width: var(--wrap-width-large);
 	}
 }
@@ -498,6 +504,7 @@ section {
 	:root {
 		--header-height: 10rem;
 		--section-padding: 8rem 2.4rem;
+		--section-padding-large: 8rem 2.4rem;
 		--gap-width: 2.4rem;
 		--wrap-padding: 0 2.4rem;
 		--wrap-padding-large: 0 2.4rem;
@@ -526,11 +533,11 @@ section {
 		line-height: 6.2rem;
 	}
 
-	.hero {
+	section.hero {
 		height: 56rem;
 	}
 
-	.left-offset {
+	section[data-offset] {
 		width: var(--wrap-width);
 	}
 
