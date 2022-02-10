@@ -314,7 +314,7 @@ section[data-size='large'] {
 	width: var(--wrap-width-large);
 }
 
-/* section backgrounds */
+/* button and section backgrounds */
 
 [data-background='clay'] {
 	background: #c1a3a3;
@@ -347,7 +347,7 @@ section[data-size='large'] {
 
 /* hero */
 
-.hero {
+section.hero {
 	align-items: flex-start;
 	background-image: url('resources/background.jpeg');
 	background-size: cover;
@@ -567,14 +567,14 @@ section[data-size='large'] {
 		width: var(--wrap-width);
 	}
 
+	section.hero {
+		height: auto;
+		min-height: auto;
+	}
+
 	.grid {
 		gap: calc(var(--gap-width) * 2);
 		grid-template-columns: 1fr;
-	}
-
-	.hero {
-		height: auto;
-		min-height: auto;
 	}
 
 	.profile {
