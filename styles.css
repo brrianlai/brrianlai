@@ -357,14 +357,6 @@ section[data-size='large'] {
 	color: var(--white-100);
 }
 
-[data-background='black'], [data-background='gray'] {
-	color: var(--white-87);
-}
-
-[data-background='black'] .heading, [data-background='gray'] .heading {
-	color: var(--white-100);
-}
-
 
 /* hero */
 
@@ -519,6 +511,11 @@ section.hero {
 
 	[data-background='gray'] {
 		background: #212121;
+		color: var(--white-87);
+	}
+
+	[data-background='gray'] .heading {
+		color: var(--white-100);
 	}
 
 }
