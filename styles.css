@@ -316,6 +316,18 @@ section[data-size='large'] {
 
 /* button and section backgrounds */
 
+[data-background], [data-background] a {
+	color: var(--black-87);
+}
+
+[data-background] a:hover {
+	color: var(--black-38);
+}
+
+[data-background] .heading {
+	color: var(--black-100);
+}
+
 [data-background='clay'] {
 	background: #c1a3a3;
 }
@@ -344,6 +356,15 @@ section[data-size='large'] {
 [data-background='black'] .heading {
 	color: var(--white-100);
 }
+
+[data-background='black'], [data-background='gray'] {
+	color: var(--white-87);
+}
+
+[data-background='black'] .heading, [data-background='gray'] .heading {
+	color: var(--white-100);
+}
+
 
 /* hero */
 
@@ -494,26 +515,6 @@ section.hero {
 		--light-60: rgba(0, 0, 0, 0.6);
 		--light-38: rgba(0, 0, 0, 0.38);
 		--light-24: rgba(0, 0, 0, 0.24);
-	}
-
-	[data-background], [data-background] a {
-		color: var(--light-87);
-	}
-
-	[data-background] a:hover {
-		color: var(--light-38);
-	}
-
-	[data-background] .heading {
-		color: var(--light-100);
-	}
-
-	[data-background='black'], [data-background='gray'] {
-		color: var(--white-87);
-	}
-
-	[data-background='black'] .heading, [data-background='gray'] .heading {
-		color: var(--white-100);
 	}
 
 	[data-background='gray'] {
