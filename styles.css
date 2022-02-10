@@ -365,6 +365,7 @@ section[data-size='large'] {
 }
 
 .profile {
+	aspect-ratio: 1;
 	background-image: url('resources/profile.jpg');
 	background-size: cover;
 	border-radius: 12rem;
@@ -378,6 +379,7 @@ section[data-size='large'] {
 .center {
 	align-items: center;
 	padding: var(--section-padding);
+	text-align: center;
 }
 
 .center .column {
@@ -410,6 +412,10 @@ section[data-size='large'] {
 /* gallery */
 
 .gallery {
+	align-items: center;
+	display: grid;
+	gap: var(--gap-width);
+	grid-template-columns: repeat(2, 1fr);
 	margin: 0 auto;
 	max-width: 168rem;
 }
@@ -420,8 +426,6 @@ section[data-size='large'] {
 
 .gallery .column {
 	flex-wrap: wrap;
-	gap: var(--gap-width);
-	justify-content: center;
 }
 
 /* root variables */
@@ -520,10 +524,6 @@ section[data-size='large'] {
 
 /* responsive */
 
-@media only screen and (max-width: 1280px) {
-
-}
-
 @media only screen and (max-width: 1024px) {
 	section.hero {
 		width: var(--wrap-width-large);
@@ -570,11 +570,6 @@ section[data-size='large'] {
 	.grid {
 		gap: calc(var(--gap-width) * 2);
 		grid-template-columns: 1fr;
-	}
-
-	.gallery .grid {
-		gap: var(--gap-width);
-		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.hero {
