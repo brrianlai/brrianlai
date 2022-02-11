@@ -2,6 +2,7 @@
 
 1. fix button link styling in dark mode
 2. merge button theming into section theming
+3. fix responsive data-gap conflict
 
 */
 
@@ -171,6 +172,10 @@ h5 {
 
 [data-columns='4'] {
 	grid-template-columns: repeat(4, 1fr);
+}
+
+[data-gap='no-gap'] {
+	gap: 0;
 }
 
 .column, .row {
