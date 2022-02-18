@@ -201,6 +201,11 @@ header {
 	height: var(--header-height);
 }
 
+header a {
+	font-weight: 500;
+	padding: 1.2rem;
+}
+
 header h2 {
 	font-weight: 400;
 }
@@ -388,7 +393,7 @@ section[data-size='large'] {
 
 /* hero */
 
-section.hero {
+.hero {
 	align-items: flex-start;
 	background-image: url('resources/background.jpeg');
 	background-size: cover;
@@ -397,7 +402,7 @@ section.hero {
 	height: calc(100vh - 12rem);
 	justify-content: center;
 	margin-left: auto;
-	min-height: 56rem;
+	min-height: 70rem;
 	width: 70vw;
 }
 
