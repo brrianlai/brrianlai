@@ -396,7 +396,7 @@ section[data-size='large'] {
 
 .hero {
 	align-items: flex-start;
-	background-image: url('resources/background.jpeg');
+	/* background-image: url('./assets/background.jpeg'); */
 	background-size: cover;
 	flex-direction: column;
 	gap: 4rem;
@@ -413,7 +413,7 @@ section[data-size='large'] {
 
 .profile {
 	aspect-ratio: 1;
-	background-image: url('resources/profile.jpg');
+	background-image: url('./assets/profile.jpg');
 	background-size: cover;
 	border-radius: 12rem;
 	display: block;
@@ -437,7 +437,7 @@ section[data-size='large'] {
 /* section offset */
 
 [data-offset] {
-	width: 60vw;
+	width: 70vw;
 }
 
 [data-offset="right"] {
