@@ -568,7 +568,7 @@ section[data-size='large'] {
 	}
 
 	header .icon-menu {
-		display: block;
+		display: flex;
 	}
 
 	footer h5 {
@@ -593,9 +593,9 @@ section[data-size='large'] {
 		min-height: auto;
 	}
 
-	.gallery {
+	/*.gallery {
 		grid-template-columns: 1fr;
-	}
+	}*/
 
 	.grid {
 		gap: calc(var(--gap-width) * 2);
