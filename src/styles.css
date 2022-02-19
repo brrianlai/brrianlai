@@ -223,6 +223,7 @@ nav {
 	flex-direction: row;
 	height: var(--header-height);
 	gap: 1.6rem;
+	overflow: hidden;
 	position: absolute;
 	right: 0;
 	top: 0;
