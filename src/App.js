@@ -3,10 +3,15 @@ import './styles.css';
 
 /* import components */
 import Header from './components/Header';
+import Introduction from './components/Introduction';
+
 
 function App() {
 	return (
-		<h1>Hellodsfsdfss Wrold</h1>
+		<div>
+			<Header />
+			<Introduction />
+		</div>
 	);
 }
 
