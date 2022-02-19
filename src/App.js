@@ -4,6 +4,8 @@ import './styles.css';
 /* import components */
 import Header from './components/Header';
 import Introduction from './components/Introduction';
+import Bops from './components/Bops';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
 		<div>
 			<Header />
 			<Introduction />
+			<Bops />
+			<Footer />
 		</div>
 	);
 }
