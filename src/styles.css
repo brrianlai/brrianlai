@@ -214,6 +214,13 @@ header h2 {
 	margin-right: auto;
 }
 
+/* social */
+
+.social-icons {
+	display: flex;
+	gap: 1.6rem;
+}
+
 /* menu */
 
 nav {
@@ -229,10 +236,11 @@ nav {
 	top: 0;
 	transform: translate(100%, 0);
 	transition: var(--transition-transform);
+	width: 100%;
 	z-index: 1;
 }
 
-nav.open {
+nav.active {
 	transform: translate(0);
 }
 
@@ -564,7 +572,7 @@ section[data-size='large'] {
 		--wrap-padding-large: 0 2.4rem;
 	}
 
-	header .icon-social {
+	header .social-icons {
 		display: none;
 	}
 

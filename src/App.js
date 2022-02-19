@@ -3,6 +3,7 @@ import './styles.css';
 
 /* import components */
 import Header from './components/Header';
+import Social from './components/Social';
 import Introduction from './components/Introduction';
 import Projects from './components/Projects';
 import Bops from './components/Bops';

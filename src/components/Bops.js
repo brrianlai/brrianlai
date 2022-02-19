@@ -86,7 +86,7 @@ class Bops extends React.Component {
 				<h4 className="heading">Current bops</h4>
 				<div className="bops">
 					{bops.map(bop => (
-						<a href='{bop.link}'>{bop.name}</a>
+						<a href={bop.link}>{bop.name}</a>
 					))}
 				</div>
 		</section>
