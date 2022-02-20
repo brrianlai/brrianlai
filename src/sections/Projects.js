@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Projects extends React.Component {
-	render () {
+	render() {
 		return (
 			<section data-offset="rileftght">
 				<h1 className="heading">Projects</h1>

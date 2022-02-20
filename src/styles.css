@@ -164,6 +164,7 @@ h5 {
 }
 
 .column, .row {
+	align-items: flex-start;
 	display: flex;
 	gap: var(--gap-width);
 }
@@ -259,66 +260,6 @@ footer .icon-vsco {
 	fill: var(--dark-24);
 }
 
-/* buttons */
-
-.button {
-	background: var(--light-100);
-	border-radius: 0.4rem;
-	color: var(--dark-100);
-	display: block;
-	font-size: 1.4rem;
-	font-weight: 500;
-	height: 4rem;
-	line-height: 4rem;
-	padding: 0 2rem;
-}
-
-.button:hover {
-	color: var(--dark-60);
-}
-
-.button[data-shape='round'] {
-	border-radius: 3rem;
-}
-
-.button[data-size='large'] {
-	font-size: 1.6rem;
-	height: 6rem;
-	line-height: 6rem;
-	padding: 0 3rem;
-}
-
-/* static */
-
-.button[data-color='white'] {
-	background: var(--white-100);
-	color: var(--black-100);
-}
-
-.button[data-color='white']:hover {
-	color: var(--black-38);
-}
-
-.button[data-color='black'] {
-	background: var(--black-100);
-	color: var(--white-100);
-}
-
-.button[data-color='black']:hover {
-	color: var(--white-38);
-}
-
-/* dynamic */
-
-.button[data-color='dark'] {
-	background: var(--dark-100);
-	color: var(--light-100);
-}
-
-.button[data-color='dark']:hover {
-	color: var(--light-38);
-}
-
 /* sections */
 
 section {
@@ -343,13 +284,45 @@ section[data-size='large'] {
 	padding: var(--wrap-padding-large);
 }
 
+/* buttons */
+
+.button {
+	background: var(--light-100);
+	color: var(--dark-100);
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 500;
+	height: 4rem;
+	line-height: 4rem;
+	padding: 0 2rem;
+}
+
+.button:hover {
+	color: var(--dark-60);
+}
+
+.button[data-shape='round'] {
+	border-radius: 3rem;
+}
+
+.button[data-shape='rounded'] {
+	border-radius: 0.4rem;
+}
+
+.button[data-size='large'] {
+	font-size: 1.6rem;
+	height: 6rem;
+	line-height: 6rem;
+	padding: 0 3rem;
+}
+
 /* button and section backgrounds */
 
-[data-background], [data-background] a {
+[data-background], a[data-background], [data-background] a {
 	color: var(--black-87);
 }
 
-[data-background] a:hover {
+a[data-background]:hover, [data-background] a:hover {
 	color: var(--black-38);
 }
 
@@ -373,24 +346,36 @@ section[data-size='large'] {
 	background: #c9cbff;
 }
 
-[data-background='gray'] {
-	background: #eee;
-	color: var(--dark-87);
+/* static */
+
+.button[data-background='white'] {
+	background: var(--white-100);
+	color: var(--black-100);
 }
 
-[data-background='gray'] .heading {
-	color: var(--dark-100);
+.button[data-background='white']:hover {
+	color: var(--black-38);
 }
 
-[data-background='black'] {
-	background-color: var(--black-100);
-	color: var(--white-87);
-}
-
-[data-background='black'] .heading {
+.button[data-background='black'] {
+	background: var(--black-100);
 	color: var(--white-100);
 }
 
+.button[data-background='black']:hover {
+	color: var(--white-38);
+}
+
+/* dynamic */
+
+.button[data-background='dark'] {
+	background: var(--dark-100);
+	color: var(--light-100);
+}
+
+.button[data-background='dark']:hover {
+	color: var(--light-38);
+}
 
 /* introduction */
 
@@ -499,13 +484,11 @@ section[data-size='large'] {
 	--transition-fill: fill 0.2s ease;
 	--transition-transform: transform 0.5s ease;
 
-	/* sizes */
-
 	/* padding */
 	--gap-width: 4rem;
 	--header-height: 12rem;
-	--section-padding: 12rem 4rem;
-	--section-padding-large: 12rem 8rem;
+	--section-padding: 8rem 4rem;
+	--section-padding-large: 8rem 8rem;
 	--wrap-padding: 0 4rem;
 	--wrap-padding-large: 0 8rem;
 }
@@ -528,10 +511,6 @@ section[data-size='large'] {
 		--light-38: rgba(0, 0, 0, 0.38);
 		--light-24: rgba(0, 0, 0, 0.24);
 	}
-
-	[data-background='gray'] {
-		background: #212121;
-	}
 }
 
 /* responsive */
@@ -539,8 +518,8 @@ section[data-size='large'] {
 @media only screen and (max-width: 768px) {
 	:root {
 		--header-height: 10rem;
-		--section-padding: 8rem 2.4rem;
-		--section-padding-large: 8rem 2.4rem;
+		--section-padding: 4.8rem 2.4rem;
+		--section-padding-large: 4.8rem 2.4rem;
 		--gap-width: 2.4rem;
 		--wrap-padding: 0 2.4rem;
 		--wrap-padding-large: 0 2.4rem;
@@ -562,18 +541,8 @@ section[data-size='large'] {
 		display: flex;
 	}
 
-	h1 {
-		font-size: 4.8rem;
-		line-height: 6.2rem;
-	}
-
 	section[data-offset] {
 		width: 100%;
-	}
-
-	section.introduction {
-		height: auto;
-		min-height: auto;
 	}
 
 	/*.gallery {

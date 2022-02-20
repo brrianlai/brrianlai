@@ -80,7 +80,7 @@ const bops = [
 ]
 
 class Bops extends React.Component {
-	render () {
+	render() {
 		return (
 			<section data-background="mint">
 				<h4 className="heading">Current bops</h4>

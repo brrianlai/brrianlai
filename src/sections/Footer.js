@@ -1,8 +1,8 @@
 import React from 'react';
-import Social from './Social';
+import Social from '../components/Social';
 
 class Footer extends React.Component {
-	render () {
+	render() {
 		return (
 			<footer className="wrap">
 				<h5 className="name">brrian</h5>
