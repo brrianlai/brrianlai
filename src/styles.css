@@ -159,6 +159,16 @@ h5 {
 	width: 100%;
 }
 
+.column {
+	flex-direction: column;
+}
+
+.column, .row {
+	display: flex;
+	gap: var(--gap-width);
+}
+
+
 [data-columns='2'] {
 	grid-template-columns: repeat(2, 1fr);
 }
@@ -183,15 +193,6 @@ h5 {
 	gap: 0;
 }
 
-.column, .row {
-	display: flex;
-	gap: var(--gap-width);
-}
-
-.column {
-	flex-direction: column;
-}
-
 /* header */
 
 header {
@@ -204,10 +205,6 @@ header {
 header a {
 	font-weight: 500;
 	padding: 1.2rem;
-}
-
-header h2 {
-	font-weight: 400;
 }
 
 .name {
@@ -229,7 +226,6 @@ nav {
 	display: none;
 	flex-direction: row;
 	height: var(--header-height);
-	gap: 1.6rem;
 	overflow: hidden;
 	position: absolute;
 	right: 0;
@@ -255,16 +251,12 @@ footer {
 	justify-content: center;
 }
 
-footer .icon {
+footer .icon, footer .name {
 	color: var(--dark-24);
 }
 
 footer .icon-vsco {
 	fill: var(--dark-24);
-}
-
-footer .name {
-	color: var(--dark-24);
 }
 
 /* buttons */
@@ -400,23 +392,14 @@ section[data-size='large'] {
 }
 
 
-/* hero */
+/* introduction */
 
-.hero {
-	align-items: flex-start;
-	/* background-image: url('./assets/background.jpeg'); */
-	background-size: cover;
+.introduction {
+	align-items: center;
+	display: grid;
 	flex-direction: column;
 	gap: 4rem;
-	height: calc(100vh - 12rem);
-	justify-content: center;
-	margin-left: auto;
-	min-height: 70rem;
-	width: 70vw;
-}
-
-.hero .heading {
-	color: var(--white-100);
+	grid-template-columns: 2fr 1fr;
 }
 
 .profile {
@@ -426,6 +409,7 @@ section[data-size='large'] {
 	border-radius: 12rem;
 	display: block;
 	height: 24rem;
+	margin-left: auto;
 	width: 24rem;
 }
 
@@ -445,7 +429,7 @@ section[data-size='large'] {
 /* section offset */
 
 [data-offset] {
-	width: 70vw;
+	width: 60vw;
 }
 
 [data-offset="right"] {
@@ -458,10 +442,6 @@ section[data-size='large'] {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 4rem;
-}
-
-.bops i {
-	font-size: 2.4rem;
 }
 
 /* gallery */
@@ -556,12 +536,6 @@ section[data-size='large'] {
 
 /* responsive */
 
-@media only screen and (max-width: 1024px) {
-	section.hero {
-		width: 100%;
-	}
-}
-
 @media only screen and (max-width: 768px) {
 	:root {
 		--header-height: 10rem;
@@ -597,7 +571,7 @@ section[data-size='large'] {
 		width: 100%;
 	}
 
-	section.hero {
+	section.introduction {
 		height: auto;
 		min-height: auto;
 	}

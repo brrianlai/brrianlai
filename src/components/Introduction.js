@@ -3,10 +3,14 @@ import React from 'react';
 class Introduction extends React.Component {
 	render () {
 		return (
-			<section>
-				<i className="profile"></i>
-				<h1 className="heading">Brian Lai</h1>
-				<p>learning react</p>
+			<section className="introduction">
+				<div className="column">
+					<h1 className="heading">hi i live in vancouver</h1>
+					<p>i'm learning react</p>
+				</div>
+				<div className="column">
+					<div className="profile"></div>
+				</div>
 			</section>
 		);
 	}
