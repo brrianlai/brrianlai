@@ -284,6 +284,14 @@ section[data-size='large'] {
 	padding: var(--wrap-padding-large);
 }
 
+/* background */
+
+.background {
+	background: url('./assets/background.jpg');
+	background-size: cover;
+	height: 100vh;
+}
+
 /* buttons */
 
 .button {

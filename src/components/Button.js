@@ -13,6 +13,7 @@ const Backgrounds = [
 
 const Shapes = [
 	'square',
+	'rounded',
 	'round'
 ]
 
