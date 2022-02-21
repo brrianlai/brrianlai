@@ -123,6 +123,10 @@ h5 {
 	line-height: 2.8rem;
 }
 
+.light-text {
+	color: var(--black-38);
+}
+
 /* icons */
 
 .icon {
@@ -454,7 +458,7 @@ a[data-background]:hover, [data-background] a:hover {
 	align-items: flex-start;
 	display: flex;
 	flex-direction: column;
-	gap: 2.4rem;
+	gap: 2rem;
 }
 
 /* gallery */
@@ -580,7 +584,6 @@ a[data-background]:hover, [data-background] a:hover {
 	}
 
 	.grid {
-		gap: calc(var(--gap-width) * 2);
 		grid-template-columns: 1fr;
 	}
 	
