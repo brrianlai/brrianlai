@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Backgrounds = [
+const backgrounds = [
 	'dark',
 	'light',
 	'black',
@@ -11,13 +11,13 @@ const Backgrounds = [
 	'purple'
 ]
 
-const Shapes = [
+const shapes = [
 	'square',
 	'rounded',
 	'round'
 ]
 
-const Sizes = [
+const sizes = [
 	'small',
 	'large'
 ]
@@ -29,9 +29,9 @@ const Button = ({
 	shape,
 	size
 }) => {
-	const checkBackground = Backgrounds.includes(background) ? background : Backgrounds[0];
-	const checkShape = Shapes.includes(shape) ? shape : Shapes[0];
-	const checkSize = Sizes.includes(size) ? size : Sizes[0];
+	const checkBackground = backgrounds.includes(background) ? background : backgrounds[0];
+	const checkShape = shapes.includes(shape) ? shape : shapes[0];
+	const checkSize = sizes.includes(size) ? size : sizes[0];
 
 	return (
 		<a href={link} className="button" data-background={checkBackground} data-shape={checkShape} data-size={checkSize}>{children}</a>

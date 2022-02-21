@@ -448,6 +448,15 @@ a[data-background]:hover, [data-background] a:hover {
 	gap: 4rem;
 }
 
+/* projects */
+
+.project {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+}
+
 /* gallery */
 
 .gallery {
@@ -574,7 +583,18 @@ a[data-background]:hover, [data-background] a:hover {
 		gap: calc(var(--gap-width) * 2);
 		grid-template-columns: 1fr;
 	}
+	
+	.profile {
+		height: 16rem;
+		width: 16rem;
+	}
 
+	[data-offset] {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 560px) {
 	.introduction {
 		align-items: flex-start;
 		display: flex;
@@ -586,15 +606,5 @@ a[data-background]:hover, [data-background] a:hover {
 	
 	.introduction .column:last-child {
 		order: 1;
-	}
-	
-
-	.profile {
-		height: 16rem;
-		width: 16rem;
-	}
-
-	[data-offset] {
-		width: 100%;
 	}
 }

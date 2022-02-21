@@ -6,6 +6,7 @@ import Header from './sections/Header';
 import Introduction from './sections/Introduction';
 import Background from './sections/Background';
 import Skills from './sections/Skills';
+import Projects from './sections/Projects'
 import Bops from './sections/Bops';
 import ButtonTest from './sections/ButtonTest'
 import Gallery from './sections/Gallery'
@@ -18,6 +19,7 @@ function App() {
 			<Introduction />
 			<Background />
 			<Skills />
+			<Projects />
 			<Bops />
 			<ButtonTest />
 			<Gallery />

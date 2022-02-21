@@ -1,6 +1,6 @@
 import React from 'react';
 
-const bops = [
+const bopList = [
 	{
 		name: 'NIKI - Every Summertime',
 		link: 'https://www.youtube.com/watch?v=a0OHkWX7B-E'
@@ -79,19 +79,17 @@ const bops = [
 	}
 ]
 
-class Bops extends React.Component {
-	render() {
-		return (
-			<section data-background="mint">
-				<h4 className="heading">Current bops</h4>
-				<div className="array">
-					{bops.map(bop => (
-						<a href={bop.link}>{bop.name}</a>
-					))}
-				</div>
-		</section>
-		);
-	}
+const Bops = () => {
+	return (
+		<section data-background="mint">
+			<h4 className="heading">Current bops</h4>
+			<div className="array">
+				{bopList.map(bop => (
+					<a href={bop.link}>{bop.name}</a>
+				))}
+			</div>
+	</section>
+	);
 }
 
 export default Bops

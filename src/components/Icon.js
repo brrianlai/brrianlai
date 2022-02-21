@@ -1,21 +1,10 @@
 import React from 'react';
 
-const button = ({
-	icon,
-	link
-}) => {
+const Icon = () => {
 	return (
-		<a href={link} className="icon" >{children}</a>
+		<div>
+		</div>
 	);
-};
-
-class Icon extends React.Component {
-	render () {
-		return (
-			<div>
-			</div>
-		);
-	}
 }
 
 export default Icon

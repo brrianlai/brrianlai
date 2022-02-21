@@ -3,30 +3,24 @@ import Social from '../components/Social';
 
 
 
-class Header extends React.Component {
+const Header = () => {
 
-	constructor() {
-		super();
-		this.state = {
-			active: false
-		};
-	}
+	const [active, setActive] = React.useState(false);
+	const toggleActive = () => setActive(value => !value);
 
-	render() {
-		return (
-			<div>
-				<header className="wrap">
-					<h3 className="name">brrian</h3>
-					<Social />
-					<a href="#" className="icon icon-menu" onClick={ () => this.setState({active: !this.state.active}) }><i className="ri-menu-line"></i></a>
-				</header>
+	return (
+		<div>
+			<header className="wrap">
+				<h3 className="name">brrian</h3>
+				<Social />
+				<a href="#" className="icon icon-menu" onClick={toggleActive}><i className="ri-menu-line"></i></a>
+			</header>
 
-				<nav className={'wrap ' + (this.state.active && 'active')}>
-					<Social />
-				</nav>
-			</div>
-		);
-	}
+			<nav className={ active ? 'wrap active' : 'wrap'}>
+				<Social />
+			</nav>
+		</div>
+	);
 }
 
 export default Header
