@@ -1,5 +1,6 @@
 import React from 'react';
 import Social from '../components/Social';
+import ScrollToTop from '../components/ScrollToTop'
 
 class Footer extends React.Component {
 	render() {
@@ -7,6 +8,7 @@ class Footer extends React.Component {
 			<footer className="wrap">
 				<h5 className="name">brrian</h5>
 				<Social />
+				<ScrollToTop />
 			</footer>
 		);
 	}

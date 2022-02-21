@@ -166,6 +166,7 @@ h5 {
 .column, .row {
 	align-items: flex-start;
 	display: flex;
+	flex-wrap: wrap;
 	gap: var(--gap-width);
 }
 
@@ -288,6 +289,7 @@ section[data-size='large'] {
 
 .background {
 	background: url('./assets/background.jpg');
+	background-position: center;
 	background-size: cover;
 	height: 100vh;
 }
@@ -429,9 +431,9 @@ a[data-background]:hover, [data-background] a:hover {
 	margin-left: auto;
 }
 
-/* bops */
+/* bops and skills */
 
-.bops {
+.array {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 4rem;
@@ -440,20 +442,23 @@ a[data-background]:hover, [data-background] a:hover {
 /* gallery */
 
 .gallery {
+	/*
 	align-items: center;
-	display: grid;
+	display: inline-grid;
 	gap: var(--gap-width);
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	margin: 0 auto;
 	max-width: 168rem;
+	*/
+	display: block;
+	column-count: 4;
+	gap: var(--gap-width);
 }
 
 .gallery img {
+	display: inline-block;
+	margin-bottom: var(--gap-width);
 	width: 100%;
-}
-
-.gallery .column {
-	flex-wrap: wrap;
 }
 
 /* root variables */
@@ -523,6 +528,12 @@ a[data-background]:hover, [data-background] a:hover {
 
 /* responsive */
 
+@media only screen and (max-width: 1024px) {
+	.gallery {
+		column-count: 3;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	:root {
 		--header-height: 10rem;
@@ -553,9 +564,13 @@ a[data-background]:hover, [data-background] a:hover {
 		width: 100%;
 	}
 
-	/*.gallery {
-		grid-template-columns: 1fr;
-	}*/
+	.background {
+		height: 50vh;
+	}
+
+	.gallery {
+		column-count: 2;
+	}
 
 	.grid {
 		gap: calc(var(--gap-width) * 2);

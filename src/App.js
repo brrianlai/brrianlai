@@ -8,6 +8,7 @@ import Background from './sections/Background';
 import Skills from './sections/Skills';
 import Bops from './sections/Bops';
 import ButtonTest from './sections/ButtonTest'
+import Gallery from './sections/Gallery'
 import Footer from './sections/Footer';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 			<Skills />
 			<Bops />
 			<ButtonTest />
+			<Gallery />
 			<Footer />
 		</div>
 	);

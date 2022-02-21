@@ -9,7 +9,7 @@ class Skills extends React.Component {
 		return (
 			<section data-offset="left">
 				<h4 className="heading">Skills</h4>
-				<div className="bops">
+				<div className="array">
 					{skill.map(name => (
 						<p>{name}</p>
 					))}
