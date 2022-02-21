@@ -19,9 +19,7 @@ function App() {
 			<Introduction />
 			<Background />
 			<Skills />
-			<Projects />
 			<Bops />
-			<ButtonTest />
 			<Gallery />
 			<Footer />
 		</div>
