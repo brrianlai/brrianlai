@@ -1,9 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 const Background = () => {
-	return (
-		<div className="background"></div>
-	);
+	return <div className='background'></div>
 }
 
 export default Background

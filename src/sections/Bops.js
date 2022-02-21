@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const bopList = [
 	{
@@ -81,15 +81,15 @@ const bopList = [
 
 const Bops = () => {
 	return (
-		<section data-background="mint">
-			<h4 className="heading">Current bops</h4>
-			<div className="array">
+		<section data-background='mint'>
+			<h4 className='heading'>Current bops</h4>
+			<div className='array'>
 				{bopList.map(bop => (
 					<a href={bop.link}>{bop.name}</a>
 				))}
 			</div>
-	</section>
-	);
+		</section>
+	)
 }
 
 export default Bops

@@ -1,19 +1,21 @@
-import React from 'react';
+import React from 'react'
 
 function importAll(r) {
-	return r.keys().map(r);
+	return r.keys().map(r)
 }
 
-const photos = importAll(require.context('../assets/gallery', false, /\.(png|jpe?g|svg)$/));
+const photos = importAll(
+	require.context('../assets/gallery', false, /\.(png|jpe?g|svg)$/)
+)
 
 const Gallery = () => {
 	return (
-		<section className="gallery">
+		<section className='gallery'>
 			{photos.map(photo => (
 				<img src={photo}></img>
 			))}
 		</section>
-	);
+	)
 }
 
 export default Gallery

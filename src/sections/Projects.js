@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Button from '../components/Button'
 
 const projects = [
@@ -21,35 +21,38 @@ const projects = [
 /* to do: clean up code */
 
 const Projects = () => {
-	
 	return (
 		<section>
-			<h4 className="heading">Projects</h4>
+			<h4 className='heading'>Projects</h4>
+
 			{projects.map(project => (
-				<div className="grid" data-columns="1-2">
-					
-					{(project.preview) ? 
+				<div className='grid' data-columns='1-2'>
+					{project.preview ? (
 						<div>
 							<img src={project.preview} />
 						</div>
-					: null}
+					) : null}
 
-					<div className="project">
-						<h5 className="heading">{project.name}</h5>
+					<div className='project'>
+						<h5 className='heading'>{project.name}</h5>
 						<p>{project.description}</p>
-						<div class="array light-text">
-						{
-							(project.tags).map(tag => (
+
+						<div class='array light-text'>
+							{project.tags.map(tag => (
 								<p>{tag}</p>
-							))
-						}
+							))}
 						</div>
-						{(project.link && project.buttonText) ? <Button link={project.link}>{project.buttonText}</Button> : null}
+
+						{project.link && project.buttonText ? (
+							<Button link={project.link}>
+								{project.buttonText}
+							</Button>
+						) : null}
 					</div>
 				</div>
 			))}
 		</section>
-	);
+	)
 }
 
 export default Projects

@@ -1,7 +1,7 @@
-import React from 'react';
-import smoothscroll from 'smoothscroll-polyfill';
+import React from 'react'
+import smoothscroll from 'smoothscroll-polyfill'
 
-smoothscroll.polyfill();
+smoothscroll.polyfill()
 
 const toTop = () => {
 	window.scrollTo({
@@ -12,8 +12,10 @@ const toTop = () => {
 
 const ScrollToTop = () => {
 	return (
-		<a href="#" className="icon" onClick={toTop}><i className="ri-arrow-up-line"></i></a>
-	);
+		<a href='#' className='icon' onClick={toTop}>
+			<i className='ri-arrow-up-line'></i>
+		</a>
+	)
 }
 
 export default ScrollToTop
