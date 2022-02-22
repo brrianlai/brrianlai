@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from './Icon'
 import smoothscroll from 'smoothscroll-polyfill'
 
 smoothscroll.polyfill()
@@ -12,9 +13,7 @@ const toTop = () => {
 
 const ScrollToTop = () => {
 	return (
-		<a href='#' className='icon' onClick={toTop}>
-			<i className='ri-arrow-up-line'></i>
-		</a>
+		<div></div>
 	)
 }
 

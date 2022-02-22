@@ -15,7 +15,7 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+fieldset, form, label, legend, button,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
@@ -208,11 +208,6 @@ header {
 	height: var(--header-height);
 }
 
-header a {
-	font-weight: 500;
-	padding: 1.2rem;
-}
-
 .name {
 	margin-right: auto;
 }
@@ -324,20 +319,38 @@ section[data-size='large'] {
 	height: 100vh;
 }
 
+/* aa */
+
+section[data-background] a, .button[data-background], .button[data-background]:hover {
+	color: var(--black-87);
+}
+
+section[data-background] a:hover {
+	color: var(--black-38);
+}
+
+[data-background] .heading {
+	color: var(--black-100);
+}
+
 /* buttons */
 
 .button {
-	background: var(--light-100);
-	color: var(--dark-100);
-	display: block;
+	align-items: center;
+	background: var(--dark-100);
+	color: var(--light-87);
+	cursor: pointer;
+	display: inline-flex;
 	font-size: 1.4rem;
 	height: 4rem;
+	justify-content: center;
 	line-height: 4rem;
 	padding: 0 2rem;
+	transition: var(--transition-opacity);
 }
 
 .button:hover {
-	color: var(--dark-60);
+	opacity: 0.8;
 }
 
 .button[data-shape='round'] {
@@ -359,46 +372,31 @@ section[data-size='large'] {
 
 .button[data-background='white'] {
 	background: var(--white-100);
-	color: var(--black-100);
 }
 
-.button[data-background='white']:hover {
-	color: var(--black-38);
+.button[data-background='white'], .button[data-background='white']:hover {
+	color: var(--black-87);
 }
 
 .button[data-background='black'] {
 	background: var(--black-100);
-	color: var(--white-100);
 }
 
-.button[data-background='black']:hover {
-	color: var(--white-38);
+.button[data-background='black'], .button[data-background='black']:hover {
+	color: var(--white-87);
 }
 
 /* dynamic buttons */
 
 .button[data-background='dark'] {
 	background: var(--dark-100);
-	color: var(--light-100);
 }
 
-.button[data-background='dark']:hover {
-	color: var(--light-38);
+.button[data-background='dark'], .button[data-background='dark']:hover {
+	color: var(--light-87);
 }
 
 /* button and section backgrounds */
-
-[data-background], a[data-background], [data-background] a {
-	color: var(--black-87);
-}
-
-a[data-background]:hover, [data-background] a:hover {
-	color: var(--black-38);
-}
-
-[data-background] .heading {
-	color: var(--black-100);
-}
 
 [data-background='clay'] {
 	background: #c1a3a3;
@@ -465,7 +463,7 @@ a[data-background]:hover, [data-background] a:hover {
 
 .gallery {
 	display: block;
-	column-count: 4;
+	column-count: 3;
 	gap: var(--gap-width);
 	padding-bottom: calc(8rem - var(--gap-width));
 }
@@ -508,6 +506,7 @@ a[data-background]:hover, [data-background] a:hover {
 	--light-24: rgba(255, 255, 255, 0.24);
 
 	/* transitions */
+	--transition-opacity: opacity 0.2s ease;
 	--transition-color: color 0.2s ease;
 	--transition-fill: fill 0.2s ease;
 	--transition-transform: transform 0.5s ease;
@@ -542,12 +541,6 @@ a[data-background]:hover, [data-background] a:hover {
 }
 
 /* responsive */
-
-@media only screen and (max-width: 1024px) {
-	.gallery {
-		column-count: 3;
-	}
-}
 
 @media only screen and (max-width: 768px) {
 	:root {

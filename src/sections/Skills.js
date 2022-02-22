@@ -1,6 +1,6 @@
 import React from 'react'
 
-const skillList = ['HTML', 'CSS', 'React', 'Node.js', 'R', 'Python', 'Figma']
+const skillList = ['HTML', 'CSS', 'React', 'Figma']
 
 const Skills = () => {
 	return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from './Icon'
 
 const icons = [
 	{
@@ -19,8 +20,8 @@ const Social = () => {
 	return (
 		<div className='social-icons'>
 			{icons.map(icon => (
-				<a href={icon.link} className='icon'>
-					<i className={icon.name}></i>
+				<a href={icon.link}>
+					<Icon icon={icon.name} />
 				</a>
 			))}
 			<a href='https://vsco.co/brrian' className='icon icon-vsco'>

@@ -32,7 +32,7 @@ const Button = ({ children, link, background, shape, size }) => {
 		>
 			{children}
 		</a>
-	)
+	);
 }
 
 export default Button

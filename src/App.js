@@ -20,6 +20,7 @@ function App() {
 			<Background />
 			<Skills />
 			<Bops />
+			<ButtonTest />
 			<Gallery />
 			<Footer />
 		</div>

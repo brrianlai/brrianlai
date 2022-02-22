@@ -12,7 +12,7 @@ const Gallery = () => {
 	return (
 		<section className='gallery'>
 			{photos.map(photo => (
-				<img src={photo} loading='lazy'></img>
+				<img src={photo} alt='' loading='lazy'></img>
 			))}
 		</section>
 	)
