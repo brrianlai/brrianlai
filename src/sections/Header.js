@@ -1,5 +1,6 @@
 import React from 'react'
 import Social from '../components/Social'
+import Icon from '../components/Icon'
 
 const Header = () => {
 	const [active, setActive] = React.useState(false)
@@ -11,7 +12,7 @@ const Header = () => {
 				<h3 className='name'>brrian</h3>
 				<Social />
 				<a href='#' className='icon icon-menu' onClick={toggleActive}>
-					<i className='ri-menu-line'></i>
+					<Icon name='ri-menu-line' />
 				</a>
 			</header>
 

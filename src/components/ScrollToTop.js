@@ -13,7 +13,9 @@ const toTop = () => {
 
 const ScrollToTop = () => {
 	return (
-		<Icon icon='ri-arrow-up-line' onClick={toTop} />
+		<a href="#" onClick={toTop}>
+			<Icon name='ri-arrow-up-line' onClick={toTop} />
+		</a>
 	)
 }
 

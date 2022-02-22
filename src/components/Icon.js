@@ -1,9 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-const Icon = ({ icon }) => {
+const Icon = ({ name }) => {
 	return (
-		<i className={'icon ' + icon}></i>
+		<i className={'icon ' + name}></i>
 	)
 }
 

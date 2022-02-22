@@ -8,7 +8,9 @@ const backgrounds = [
 	'clay',
 	'yellow',
 	'mint',
-	'purple'
+	'purple',
+	'tan',
+	'brown'
 ]
 
 const shapes = ['square', 'rounded', 'round']

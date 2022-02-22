@@ -6,7 +6,7 @@ const Introduction = () => {
 		<section className='introduction'>
 			<div className='column'>
 				<h1 className='heading'>hi i live in vancouver</h1>
-				<Button link='#' background='clay' size='large'>
+				<Button link='#' background='tan' size='large' shape='rounded'>
 					i'm learning react
 				</Button>
 			</div>

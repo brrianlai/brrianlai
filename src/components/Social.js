@@ -21,7 +21,7 @@ const Social = () => {
 		<div className='social-icons'>
 			{icons.map(icon => (
 				<a href={icon.link}>
-					<Icon icon={icon.name} />
+					<Icon name={icon.name} />
 				</a>
 			))}
 			<a href='https://vsco.co/brrian' className='icon icon-vsco'>
