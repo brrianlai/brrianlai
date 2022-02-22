@@ -21,6 +21,18 @@ const ButtonTest = () => {
 					<Button link='#' background='purple'>
 						Purple
 					</Button>
+					<Button link='#' background='white'>
+						White (static)
+					</Button>
+					<Button link='#' background='black'>
+						Black (static)
+					</Button>
+					<Button link='#' background='light'>
+						Light (dynamic)
+					</Button>
+					<Button link='#' background='dark'>
+						Dark (dynamic)
+					</Button>
 				</div>
 				<h5 class='heading'>Sizes</h5>
 				<div class='row'>

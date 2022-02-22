@@ -319,20 +319,6 @@ section[data-size='large'] {
 	height: 100vh;
 }
 
-/* aa */
-
-section[data-background] a, .button[data-background], .button[data-background]:hover {
-	color: var(--black-87);
-}
-
-section[data-background] a:hover {
-	color: var(--black-38);
-}
-
-[data-background] .heading {
-	color: var(--black-100);
-}
-
 /* buttons */
 
 .button {
@@ -342,6 +328,7 @@ section[data-background] a:hover {
 	cursor: pointer;
 	display: inline-flex;
 	font-size: 1.4rem;
+	font-weight: 500;
 	height: 4rem;
 	justify-content: center;
 	line-height: 4rem;
@@ -350,7 +337,12 @@ section[data-background] a:hover {
 }
 
 .button:hover {
+	color: inherit;
 	opacity: 0.8;
+}
+
+.button[data-background] {
+	color: var(--black-87);
 }
 
 .button[data-shape='round'] {
@@ -372,34 +364,50 @@ section[data-background] a:hover {
 
 .button[data-background='white'] {
 	background: var(--white-100);
-}
-
-.button[data-background='white'], .button[data-background='white']:hover {
 	color: var(--black-87);
 }
 
 .button[data-background='black'] {
 	background: var(--black-100);
-}
-
-.button[data-background='black'], .button[data-background='black']:hover {
 	color: var(--white-87);
 }
 
 /* dynamic buttons */
 
-.button[data-background='dark'] {
-	background: var(--dark-100);
+.button[data-background='light'] {
+	background: var(--light-100);
+	color: var(--dark-87);
 }
 
-.button[data-background='dark'], .button[data-background='dark']:hover {
+.button[data-background='dark'] {
+	background: var(--dark-100);
 	color: var(--light-87);
 }
 
 /* button and section backgrounds */
 
+section[data-background] a {
+	color: var(--black-87);
+}
+
+section[data-background] a:hover {
+	color: var(--black-38);
+}
+
+[data-background] .heading {
+	color: var(--black-100);
+}
+
+[data-background='brown'] {
+	background: #38383b;
+}
+
 [data-background='clay'] {
 	background: #c1a3a3;
+}
+
+[data-background='tan'] {
+	background: #a8a6a1;
 }
 
 [data-background='yellow'] {
@@ -412,6 +420,12 @@ section[data-background] a:hover {
 
 [data-background='purple'] {
 	background: #c9cbff;
+}
+
+/* static white button styling with coloured backgrounds */
+
+[data-background='clay'] .button[data-background='white'], [data-background='clay'] .button[data-background='white']:hover {
+	color: #c1a3a3;
 }
 
 /* introduction */
@@ -506,9 +520,9 @@ section[data-background] a:hover {
 	--light-24: rgba(255, 255, 255, 0.24);
 
 	/* transitions */
-	--transition-opacity: opacity 0.2s ease;
 	--transition-color: color 0.2s ease;
 	--transition-fill: fill 0.2s ease;
+	--transition-opacity: opacity 0.2s ease;
 	--transition-transform: transform 0.5s ease;
 
 	/* padding */
