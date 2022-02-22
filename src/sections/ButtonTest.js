@@ -51,6 +51,15 @@ const ButtonTest = () => {
 						Round
 					</Button>
 				</div>
+				<h5 class='heading'>Icon</h5>
+				<div class='row'>
+					<Button link='#' iconLeft='ri-home-line'>
+						Left
+					</Button>
+					<Button link='#' iconRight='ri-menu-line'>
+						Right
+					</Button>
+				</div>
 			</div>
 		</section>
 	)

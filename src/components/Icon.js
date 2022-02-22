@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Icon = ({ name }) => {
+const Icon = ({ name, buttonSide }) => {
 	return (
 		<i className={'icon ' + name}></i>
 	)

@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from './Icon'
 
 const backgrounds = [
 	'dark',
@@ -17,7 +18,7 @@ const shapes = ['square', 'rounded', 'round']
 
 const sizes = ['small', 'large']
 
-const Button = ({ children, link, background, shape, size }) => {
+const Button = ({ children, link, background, shape, size, iconLeft, iconRight }) => {
 	const checkBackground = backgrounds.includes(background)
 		? background
 		: backgrounds[0]
@@ -32,7 +33,11 @@ const Button = ({ children, link, background, shape, size }) => {
 			data-shape={checkShape}
 			data-size={checkSize}
 		>
+			{iconLeft ? <Icon name={iconLeft} /> : null}
+
 			{children}
+
+			{iconRight ? <Icon name={iconRight} /> : null}
 		</a>
 	);
 }
