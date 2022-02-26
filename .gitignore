@@ -1,5 +1,10 @@
-
-.DS_Store
-.prettierrc
+# node_modules, build
 node_modules
 build
+
+# misc
+.DS_Store
+.prettierrc
+.cache
+.github
+.next
