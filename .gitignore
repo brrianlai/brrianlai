@@ -1,6 +1,7 @@
-# node_modules, build
+# folders
 node_modules
 build
+_static
 
 # misc
 .DS_Store
