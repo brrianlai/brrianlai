@@ -313,10 +313,8 @@ section[data-size='large'] {
 /* background */
 
 .background {
-	/*background: url('./background.jpg');*/
-	background-position: center;
-	background-size: cover;
 	height: 100vh;
+	position: relative;
 }
 
 /* buttons */
@@ -488,13 +486,13 @@ section[data-background] a:hover {
 }
 
 .profile {
-	aspect-ratio: 1;
-	/*background-image: url('./profile.jpg');*/
-	background-size: cover;
-	border-radius: 12rem;
-	display: block;
 	height: 24rem;
+	position: relative;
 	width: 24rem;
+}
+
+.profile img {
+	border-radius: 12rem;
 }
 
 /* array of strings */

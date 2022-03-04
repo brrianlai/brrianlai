@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Button from '../Button'
 
 const Introduction = () => {
@@ -11,7 +12,9 @@ const Introduction = () => {
 				</Button>
 			</div>
 			<div className='column'>
-				<div className='profile'></div>
+				<div className='profile'>
+					<Image src='/profile.jpg' layout='fill' />
+				</div>
 			</div>
 		</section>
 	)
