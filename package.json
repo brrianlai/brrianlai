@@ -1,6 +1,6 @@
 {
 	"private": true,
-	"homepage": "https://brrianlai.github.io/",
+	"homepage": ".",
 	"dependencies": {
 		"-": "^0.0.1",
 		"gh-pages": "^3.2.3",
