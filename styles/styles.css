@@ -517,12 +517,12 @@ section[data-background] a:hover {
 .gallery {
 	display: block;
 	column-count: 3;
-	gap: var(--gap-width);
 	padding-bottom: calc(8rem - var(--gap-width));
 }
 
 .gallery-photo {
 	display: inline-block;
+	height: 100%;
 	margin-bottom: var(--gap-width);
 	position: relative;
 	width: 100%;
