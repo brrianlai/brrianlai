@@ -8,15 +8,15 @@ const ButtonTest = () => {
 				<h4 class='heading'>Button test</h4>
 				<h5 class='heading'>Colours</h5>
 				<div class='row'>
-					<Button link='#'>Dark</Button>
-					<Button link='#' background='clay'>
-						Clay
+					<Button link='#'>Default</Button>
+					<Button link='#' background='red'>
+						Red
 					</Button>
-					<Button link='#' background='yellow'>
-						Yellow
+					<Button link='#' background='green'>
+						Green
 					</Button>
-					<Button link='#' background='mint'>
-						Mint
+					<Button link='#' background='blue'>
+						Blue
 					</Button>
 					<Button link='#' background='purple'>
 						Purple

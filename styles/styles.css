@@ -332,12 +332,11 @@ section[data-size='large'] {
 	justify-content: center;
 	line-height: 4rem;
 	padding: 0 2rem;
-	transition: var(--transition-opacity);
+	transition: var(--transition-background);
 }
 
 .button:hover {
 	color: inherit;
-	opacity: 0.8;
 }
 
 .button[data-shape='round'] {
@@ -453,8 +452,56 @@ section[data-background] a:hover {
 	background: #c9dfd6;
 }
 
-[data-background='purple'] {
-	background: #c9cbff;
+.button[data-background='red'] {
+	background: var(--red-50);
+	color: var(--red-700);
+}
+
+.button[data-background='red']:hover {
+	background: var(--red-100);
+}
+
+.button[data-background='red'] .icon {
+	color: var(--red-200);
+}
+
+.button[data-background='green'] {
+	background: var(--green-50);
+	color: var(--green-700);
+}
+
+.button[data-background='green']:hover {
+	background: var(--green-100);
+}
+
+.button[data-background='green'] .icon {
+	color: var(--green-200);
+}
+
+.button[data-background='blue'] {
+	background: var(--blue-50);
+	color: var(--blue-700);
+}
+
+.button[data-background='blue']:hover {
+	background: var(--blue-100);
+}
+
+.button[data-background='blue'] .icon {
+	color: var(--blue-200);
+}
+
+.button[data-background='purple'] {
+	background: var(--purple-50);
+	color: var(--purple-700);
+}
+
+.button[data-background='purple']:hover {
+	background: var(--purple-100);
+}
+
+.button[data-background='purple'] .icon {
+	color: var(--purple-200);
 }
 
 /* static white button styling with coloured backgrounds */
@@ -559,10 +606,35 @@ section[data-background] a:hover {
 	--light-38: rgba(255, 255, 255, 0.38);
 	--light-24: rgba(255, 255, 255, 0.24);
 
+	/* colours */
+	--red-700: #b91c1c;
+	--red-500: #ef4444;
+	--red-200: #fecaca;
+	--red-100: #fee2e2;
+	--red-50: #fef2f2;
+
+	--green-700: #15803d;
+	--green-500: #22c55e;
+	--green-200: #bbf7d0;
+	--green-100: #dcfce7;
+	--green-50: #f0fdf4;
+
+	--blue-700: #1d4ed8;
+	--blue-500: #3b82f6;
+	--blue-200: #bfdbfe;
+	--blue-100: #dbeafe;
+	--blue-50: #eff6ff;
+
+	--purple-700: #4338ca;
+	--purple-500: #6366f1;
+	--purple-200: #c7d2fe;
+	--purple-100: #e0e7ff;
+	--purple-50: #eef2ff;
+
 	/* transitions */
+	--transition-background: background 0.2s ease;
 	--transition-color: color 0.2s ease;
 	--transition-fill: fill 0.2s ease;
-	--transition-opacity: opacity 0.2s ease;
 	--transition-transform: transform 0.5s ease;
 
 	/* padding */

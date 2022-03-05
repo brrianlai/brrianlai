@@ -11,7 +11,11 @@ const backgrounds = [
 	'mint',
 	'purple',
 	'tan',
-	'brown'
+	'brown',
+	'red',
+	'green',
+	'blue',
+	'purple'
 ]
 
 const shapes = ['square', 'rounded', 'round']
