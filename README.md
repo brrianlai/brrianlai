@@ -1,3 +1,3 @@
-# [brrian.vercel.io](https://brrian.vercel.io)
+# [brrian.vercel.app](https://brrian.vercel.app)
 
 Built with Next.js
