@@ -4,7 +4,4 @@ build
 
 # misc
 .DS_Store
-.prettierrc
-.cache
-.github
 .next
