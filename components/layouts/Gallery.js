@@ -16,19 +16,10 @@ const photos = [
 
 const Gallery = () => {
 	return (
-		/*
-		<section className='gallery'>
-			{photos.map(photo => (
-				<div class="gallery-photo">
-					<Image src={photo} layout='fill' />
-				</div>
-			))}
-		</section>
-		*/
 		<section className='gallery'>
 			<div className='gallery-photo'>
-				{photos.map(photo => (
-					<Image src={photo} layout='fill' objectFit='cover' />		
+				{photos.map((photo, index) => (
+					<Image src={photo} layout='fill' objectFit='cover' key={index} />		
 				))}
 			</div>
 		</section>

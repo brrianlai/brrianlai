@@ -88,8 +88,8 @@ const Bops = () => {
 		<section data-background='mint'>
 			<h4 className='heading'>Current bops</h4>
 			<div className='array'>
-				{bopList.map(bop => (
-					<a href={bop.link}>{bop.name}</a>
+				{bopList.map((bop, index) => (
+					<a href={bop.link} key={index}>{bop.name}</a>
 				))}
 			</div>
 		</section>

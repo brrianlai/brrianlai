@@ -23,8 +23,8 @@ const icons = [
 const Social = () => {
 	return (
 		<div className='social-icons'>
-			{icons.map(icon => (
-				<a href={icon.link}>
+			{icons.map((icon, index) => (
+				<a href={icon.link} key={index}>
 					<Icon name={icon.name} />
 				</a>
 			))}
