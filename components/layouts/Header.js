@@ -9,7 +9,7 @@ const Header = () => {
 	return (
 		<div>
 			<header className='wrap'>
-				<h3 className='name'>brrian</h3>
+				<h3>brrian</h3>
 				<Social />
 				<a href='#' className='icon icon-menu' onClick={toggleActive}>
 					<Icon name='ri-menu-line' />

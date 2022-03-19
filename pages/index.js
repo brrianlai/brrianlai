@@ -4,6 +4,7 @@ import Introduction from '../components/layouts/Introduction'
 import Background from '../components/layouts/Background'
 import Skills from '../components/layouts/Skills'
 import Bops from '../components/layouts/Bops'
+import SectionTest from '../components/layouts/SectionTest'
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Background />
 			<Skills />
 			<Bops />
+			<SectionTest />
 		</Layout>
 	)
 }

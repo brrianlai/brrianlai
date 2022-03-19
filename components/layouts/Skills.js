@@ -11,7 +11,7 @@ const skillList = [
 const Skills = () => {
 	return (
 		<section data-offset='left'>
-			<h4 className='heading'>Skills</h4>
+			<h4>Skills</h4>
 			<div className='array'>
 				{skillList.map((name, index) => (
 					<p key={index}>{name}</p>

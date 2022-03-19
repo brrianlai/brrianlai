@@ -5,8 +5,8 @@ const ButtonTest = () => {
 	return (
 		<section>
 			<div className='grid'>
-				<h4 className='heading'>Button test</h4>
-				<h5 className='heading'>Colours</h5>
+				<h4>Button test</h4>
+				<h5>Colours</h5>
 				<div className='row'>
 					<Button link='#'>Default</Button>
 					<Button link='#' background='red'>
@@ -31,14 +31,14 @@ const ButtonTest = () => {
 						Dark (dynamic)
 					</Button>
 				</div>
-				<h5 className='heading'>Sizes</h5>
+				<h5>Sizes</h5>
 				<div className='row'>
 					<Button link='#' size='large'>
 						Large
 					</Button>
 					<Button link='#'>Normal</Button>
 				</div>
-				<h5 className='heading'>Shapes</h5>
+				<h5>Shapes</h5>
 				<div className='row'>
 					<Button link='#'>Square</Button>
 					<Button link='#' shape='rounded'>
@@ -48,7 +48,7 @@ const ButtonTest = () => {
 						Round
 					</Button>
 				</div>
-				<h5 className='heading'>Icons</h5>
+				<h5>Icons</h5>
 				<div className='row'>
 					<Button link='#' iconLeft='ri-search-line'>
 						Left

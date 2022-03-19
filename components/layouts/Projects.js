@@ -23,7 +23,7 @@ const projects = [
 const Projects = () => {
 	return (
 		<section>
-			<h4 className='heading'>Projects</h4>
+			<h4>Projects</h4>
 
 			{projects.map(project => (
 				<div className='grid' data-columns='1-2'>
