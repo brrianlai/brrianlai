@@ -11,6 +11,10 @@ const icons = [
 		link: 'https://github.com/brrianlai'
 	},
 	{
+		name: 'ri-linkedin-fill',
+		link: 'https://www.linkedin.com/in/brian-lai-8989b91aa/'
+	},
+	{
 		name: 'ri-instagram-line',
 		link: 'https://instagram.com/brrianlai'
 	}

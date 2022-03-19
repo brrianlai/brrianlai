@@ -4,16 +4,13 @@ import Button from '../Button'
 const ButtonTest = () => {
 	return (
 		<section>
-			<div class='grid'>
-				<h4 class='heading'>Button test</h4>
-				<h5 class='heading'>Colours</h5>
-				<div class='row'>
+			<div className='grid'>
+				<h4 className='heading'>Button test</h4>
+				<h5 className='heading'>Colours</h5>
+				<div className='row'>
 					<Button link='#'>Default</Button>
 					<Button link='#' background='red'>
 						Red
-					</Button>
-					<Button link='#' background='green'>
-						Green
 					</Button>
 					<Button link='#' background='blue'>
 						Blue
@@ -34,15 +31,15 @@ const ButtonTest = () => {
 						Dark (dynamic)
 					</Button>
 				</div>
-				<h5 class='heading'>Sizes</h5>
-				<div class='row'>
+				<h5 className='heading'>Sizes</h5>
+				<div className='row'>
 					<Button link='#' size='large'>
 						Large
 					</Button>
 					<Button link='#'>Normal</Button>
 				</div>
-				<h5 class='heading'>Shapes</h5>
-				<div class='row'>
+				<h5 className='heading'>Shapes</h5>
+				<div className='row'>
 					<Button link='#'>Square</Button>
 					<Button link='#' shape='rounded'>
 						Rounded
@@ -51,8 +48,8 @@ const ButtonTest = () => {
 						Round
 					</Button>
 				</div>
-				<h5 class='heading'>Icons</h5>
-				<div class='row'>
+				<h5 className='heading'>Icons</h5>
+				<div className='row'>
 					<Button link='#' iconLeft='ri-search-line'>
 						Left
 					</Button>

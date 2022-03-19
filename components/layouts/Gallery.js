@@ -26,11 +26,11 @@ const Gallery = () => {
 		</section>
 		*/
 		<section className='gallery'>
-			{photos.map(photo => (
-				<div className='gallery-photo'>
-					<Image src={photo} layout='responsive' object-fit='contain' height='100%' width='100%' />
-				</div>
-			))}
+			<div className='gallery-photo'>
+				{photos.map(photo => (
+					<Image src={photo} layout='fill' objectFit='cover' />		
+				))}
+			</div>
 		</section>
 	)
 }

@@ -14,7 +14,7 @@ const bopList = [
 		link: 'https://www.youtube.com/watch?v=dWUUHloolgE'
 	},
 	{
-		name: 'Hoàng Duyên - Sài Gòn Đau Lòng Quá',
+		name: 'Hứa Kim Tuyền, Hoàng Duyên - Sài Gòn Đau Lòng Quá',
 		link: 'https://www.youtube.com/watch?v=BdPk9ipvczM'
 	},
 	{
@@ -30,7 +30,7 @@ const bopList = [
 		link: 'https://www.youtube.com/watch?v=o97NRF_2KAY'
 	},
 	{
-		name: 'Hoàng Duyên - Sài Gòn Hôm Nay Mưa',
+		name: 'JSOL, Hoàng Duyên - Sài Gòn Hôm Nay Mưa',
 		link: 'https://www.youtube.com/watch?v=mnBAZ-VkuEg'
 	},
 	{
@@ -66,7 +66,7 @@ const bopList = [
 		link: 'https://www.youtube.com/watch?v=AOLzJUEX6Ds'
 	},
 	{
-		name: 'softy - time to be with you',
+		name: 'softy, Jword, Hayne - time to be with you',
 		link: 'https://www.youtube.com/watch?v=meUoeZ6MHM8'
 	},
 	{
@@ -76,6 +76,10 @@ const bopList = [
 	{
 		name: 'Ren Ran - 空空如也',
 		link: 'https://www.youtube.com/watch?v=G2jfo3ljyd4'
+	},
+	{
+		name: 'Paramore - Pool',
+		link: 'https://www.youtube.com/watch?v=3m8ElO9Y50Y'
 	}
 ]
 
