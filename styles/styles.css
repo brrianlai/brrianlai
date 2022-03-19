@@ -123,14 +123,6 @@ h5 {
 	line-height: 2.8rem;
 }
 
-code {
-	background: var(--dark-6);
-	border-radius: 0.4rem;
-	display: inline-block;
-	font-family: 'Roboto Mono', monospace;
-	padding: 0 0.5rem;
-}
-
 /* icons */
 
 .icon {

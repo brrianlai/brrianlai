@@ -5,7 +5,7 @@ const SectionTest = () => {
 	return (
 		<div>
 			<section>
-				<p><code>export default SectionTest</code></p>
+				<h5>export default SectionTest</h5>
 				<h4>Simple stacked</h4>
 				<p>Paragraph</p>
 				<Button link='#' background='dark'>Button</Button>
