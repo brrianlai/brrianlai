@@ -420,6 +420,10 @@ section[data-background] a:hover {
 	color: var(--black-100);
 }
 
+[data-background] p {
+	color: var(--black-87);
+}
+
 [data-background='brown'] {
 	background: #38383b;
 }
