@@ -62,7 +62,7 @@ const bopList = [
 		link: 'https://www.youtube.com/watch?v=DX6Oj_dj3GE'
 	},
 	{
-		name: 'issues - No Problem (Keep It Alive)',
+		name: 'Issues - No Problem (Keep It Alive)',
 		link: 'https://www.youtube.com/watch?v=AOLzJUEX6Ds'
 	},
 	{

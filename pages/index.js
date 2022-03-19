@@ -4,7 +4,6 @@ import Introduction from '../components/layouts/Introduction'
 import Background from '../components/layouts/Background'
 import Skills from '../components/layouts/Skills'
 import Bops from '../components/layouts/Bops'
-import Gallery from '../components/layouts/Gallery'
 
 function App() {
 	return (
@@ -13,7 +12,6 @@ function App() {
 			<Background />
 			<Skills />
 			<Bops />
-			<Gallery />
 		</Layout>
 	)
 }
