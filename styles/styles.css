@@ -170,6 +170,9 @@ h5 {
 	gap: var(--gap-width);
 }
 
+[data-align='center'] {
+	align-items: center;
+}
 
 [data-columns='2'] {
 	grid-template-columns: repeat(2, 1fr);
@@ -193,6 +196,14 @@ h5 {
 
 [data-gap='no-gap'] {
 	gap: 0;
+}
+
+[data-gap='small'] {
+	gap: var(--gap-width-small);
+}
+
+[data-gap='smaller'] {
+	gap: var(--gap-width-smaller);
 }
 
 /* header, footer */
@@ -538,26 +549,6 @@ section[data-background] a:hover {
 	gap: 1.6rem;
 }
 
-/* gallery */
-
-.gallery {
-	column-count: 3;
-	gap: 4rem;
-	width: 100%;
-}
-
-/*.gallery-photo {
-	display: inline-block;
-	height: 100%;
-	margin-bottom: var(--gap-width);
-	position: relative;
-	width: 100%;
-}*/
-
-.gallery-photo {
-	width: 100%;
-}
-
 /* root variables */
 
 :root {
@@ -626,6 +617,9 @@ section[data-background] a:hover {
 
 	/* padding */
 	--gap-width: 4rem;
+	--gap-width-small: 2rem;
+	--gap-width-smaller: 1rem;
+	--gap-width-smallest: 0.5rem;
 	--header-height: 12rem;
 	--section-padding: 8rem 4rem;
 	--section-padding-large: 8rem 8rem;

@@ -3,10 +3,6 @@ import Icon from './Icon'
 
 const icons = [
 	{
-		name: 'ri-mail-fill',
-		link: 'mailto:laibrian@alumni.ubc.ca'
-	},
-	{
 		name: 'ri-github-fill',
 		link: 'https://github.com/brrianlai'
 	},

@@ -8,10 +8,7 @@ const Introduction = () => {
 	return (
 		<section className='introduction'>
 			<div className='column'>
-				<h1>hi i live in vancouver</h1>
-				<Button link='#' background='dark' size='large' shape='rounded'>
-					i'm learning react and next.js
-				</Button>
+				<h1>Brian Lai</h1>
 			</div>
 			<div className='column'>
 				<div className='profile'>
