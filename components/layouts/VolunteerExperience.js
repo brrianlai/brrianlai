@@ -32,7 +32,6 @@ const VolunteerExperience = () => {
 							<h6>{volunteer.subheading}</h6>
 							<h6>{volunteer.date}</h6>
 						</div>
-						<p>{volunteer.description}</p>
 					</div>
 				))}
 		</section>

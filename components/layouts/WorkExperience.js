@@ -26,7 +26,6 @@ const WorkExperience = () => {
 							<h6>{work.subheading}</h6>
 							<h6>{work.date}</h6>
 						</div>
-						<p>{work.description}</p>
 					</div>
 				))}
 		</section>
