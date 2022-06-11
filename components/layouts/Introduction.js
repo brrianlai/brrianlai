@@ -7,7 +7,8 @@ const profile = '/profile.jpg'
 const Introduction = () => {
 	return (
 		<section className='introduction'>
-			<div className='column'>
+			<div className='column' data-gap='smaller'>
+				<h4>Nice to meet you! I'm</h4>
 				<h1>Brian Lai</h1>
 			</div>
 			<div className='column'>
