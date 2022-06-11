@@ -12,7 +12,7 @@ const Introduction = () => {
 					<h4>Nice to meet you! I'm</h4>
 					<h1>Brian Lai</h1>
 				</div>
-				<Button link='/resume-20220608.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>
+				<Button link='/resume-20220611.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>
 			</div>
 			<div className='column'>
 				<div className='profile'>
