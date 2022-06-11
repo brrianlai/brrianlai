@@ -5,7 +5,11 @@ const Education = () => {
 		<section>
 			<h4>Education</h4>
 			<h1>University of British Columbia</h1>
-			<p>BSc in Biology — Apr 2022</p>
+			<div className='row'>
+				<h5>BSc in Biology</h5>
+				<p>Apr 2022</p>
+			</div>
+			
 		</section>
 	)
 }
