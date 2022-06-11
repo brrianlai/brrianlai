@@ -342,10 +342,6 @@ section[data-size='large'] {
 	transition: var(--transition-background);
 }
 
-.button:hover {
-	background: var(--dark-60);
-}
-
 .button[data-shape='round'] {
 	border-radius: 3rem;
 }
@@ -365,7 +361,7 @@ section[data-size='large'] {
 /* button icons */
 
 .button .icon {
-	color: var(--light-87);
+	color: var(--light-100);
 }
 
 .button[data-size='small'] .icon {
@@ -415,7 +411,7 @@ section[data-size='large'] {
 }
 
 .button[data-background='light'] .icon {
-	color: var(--dark-100);
+	color: var(--light-100);
 }
 
 .button[data-background='dark'] {
