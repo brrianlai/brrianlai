@@ -556,7 +556,7 @@ section[data-background] a:hover {
 
 /* dark mode */
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--background-color: #000;
 
