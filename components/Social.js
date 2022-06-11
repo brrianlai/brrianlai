@@ -20,11 +20,11 @@ const Social = () => {
 	return (
 		<div className='array array-small social'>
 			{icons.map((icon, index) => (
-				<a href={icon.link} key={index}>
+				<a href={icon.link} key={index} target='_blank'>
 					<Icon name={icon.name} />
 				</a>
 			))}
-			<a href='https://vsco.co/brrian' className='icon icon-vsco'>
+			<a href='https://vsco.co/brrian' className='icon icon-vsco' target='_blank'>
 				<svg
 					width='22'
 					height='22'

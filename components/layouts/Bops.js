@@ -86,7 +86,7 @@ const bopList = [
 const Bops = () => {
 	return (
 		<section data-background='mint'>
-			<h4>Current bops</h4>
+			<h4>Current Bops</h4>
 			<div className='array'>
 				{bopList.map((bop, index) => (
 					<a href={bop.link} key={index}>{bop.name}</a>

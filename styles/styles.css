@@ -228,11 +228,11 @@ header, footer {
 }
 
 footer h5, footer .icon {
-	color: var(--dark-24);
+	color: var(--dark-38);
 }
 
-footer .icon-vsco {
-	fill: var(--dark-24);
+footer .icon:hover {
+	color: var(--dark-87);
 }
 
 /* menu */
