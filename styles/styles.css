@@ -388,7 +388,7 @@ section[data-size='large'] {
 }
 
 .button[data-background='black'] .icon {
-	color: var(--white-38);
+	color: var(--white-100);
 }
 
 /* dynamic buttons */
@@ -408,7 +408,7 @@ section[data-size='large'] {
 }
 
 .button[data-background='dark'] .icon {
-	color: var(--light-38);
+	color: var(--light-100);
 }
 
 /* button and section backgrounds */
@@ -523,15 +523,6 @@ section[data-background] a:hover {
 	display: grid;
 	gap: 4rem;
 	grid-template-columns: 2fr 1fr;
-}
-
-.introduction .column:first-child {
-	order: 1;
-}
-
-.introduction .column:last-child {
-	justify-self: end;
-	order: 2;
 }
 
 .profile {
@@ -706,13 +697,6 @@ section[data-background] a:hover {
 	.introduction {
 		align-items: flex-start;
 		display: flex;
-	}
-
-	.introduction .column:first-child {
-		order: 2;
-	}
-	
-	.introduction .column:last-child {
-		order: 1;
+		flex-direction: column-reverse;
 	}
 }

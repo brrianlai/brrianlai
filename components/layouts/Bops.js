@@ -46,6 +46,10 @@ const bopList = [
 		link: 'https://www.youtube.com/watch?v=5YlJt5EYrlM'
 	},
 	{
+		name: 'KATIE - Classic',
+		link: 'https://www.youtube.com/watch?v=uRyXIBIxCeg'
+	},
+	{
 		name: 'IU - Dear Name',
 		link: 'https://www.youtube.com/watch?v=JSOBF_WhqEM'
 	},
@@ -70,16 +74,12 @@ const bopList = [
 		link: 'https://www.youtube.com/watch?v=meUoeZ6MHM8'
 	},
 	{
-		name: 'McKay - You Will Never Know',
-		link: 'https://www.youtube.com/watch?v=Nux6CdWeHKY'
-	},
-	{
 		name: 'Ren Ran - 空空如也',
 		link: 'https://www.youtube.com/watch?v=G2jfo3ljyd4'
 	},
 	{
-		name: 'Paramore - Pool',
-		link: 'https://www.youtube.com/watch?v=3m8ElO9Y50Y'
+		name: 'Kehlani, Ty Dolla $ign - Nights Like This',
+		link: 'https://www.youtube.com/watch?v=I99qCuWx1mI'
 	}
 ]
 

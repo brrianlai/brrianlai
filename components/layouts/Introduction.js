@@ -7,9 +7,12 @@ const profile = '/profile.jpg'
 const Introduction = () => {
 	return (
 		<section className='introduction'>
-			<div className='column' data-gap='smaller'>
-				<h4>Nice to meet you! I'm</h4>
-				<h1>Brian Lai</h1>
+			<div className='column'>
+				<div className='column' data-gap='smaller'>
+					<h4>Nice to meet you! I'm</h4>
+					<h1>Brian Lai</h1>
+				</div>
+				<Button link='/resume-20220608.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>
 			</div>
 			<div className='column'>
 				<div className='profile'>
