@@ -5,6 +5,7 @@ import Background from '../components/layouts/Background'
 import Education from '../components/layouts/Education'
 import WorkExperience from '../components/layouts/WorkExperience'
 import VolunteerExperience from '../components/layouts/VolunteerExperience'
+import Courses from '../components/layouts/Courses'
 import Skills from '../components/layouts/Skills'
 import Bops from '../components/layouts/Bops'
 import SectionTest from '../components/layouts/SectionTest'
@@ -17,6 +18,7 @@ function App() {
 			<Education />
 			<WorkExperience />
 			<VolunteerExperience />
+			<Courses />
 			<Skills />
 			<Bops />
 		</Layout>

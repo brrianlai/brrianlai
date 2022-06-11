@@ -3,10 +3,12 @@ import React from 'react'
 const skillList = [
 	'HTML',
 	'CSS',
-	'React',
 	'Figma (UI design)',
 	'Microsoft Office',
-	'Statistics']
+	'Statistics',
+	'Organic chemistry lab',
+	'Molecular biology lab'
+]
 
 const Skills = () => {
 	return (
