@@ -367,7 +367,7 @@ section[data-size='large'] {
 .button[data-size='small'] .icon {
 	font-size: 1.6rem;
 	height: 4rem;
-	margin: 0 -1.6rem;
+	margin: 0 -1.8rem;
 	width: 4rem;
 }
 
@@ -536,31 +536,6 @@ section[data-background] a:hover {
 	--light-24: rgba(255, 255, 255, 0.24);
 	--light-6: rgba(255, 255, 255, 0.06);
 
-	/* colours */
-	--red-700: #b91c1c;
-	--red-500: #ef4444;
-	--red-200: #fecaca;
-	--red-100: #fee2e2;
-	--red-50: #fef2f2;
-
-	--green-700: #15803d;
-	--green-500: #22c55e;
-	--green-200: #bbf7d0;
-	--green-100: #dcfce7;
-	--green-50: #f0fdf4;
-
-	--blue-700: #1d4ed8;
-	--blue-500: #3b82f6;
-	--blue-200: #bfdbfe;
-	--blue-100: #dbeafe;
-	--blue-50: #eff6ff;
-
-	--purple-700: #4338ca;
-	--purple-500: #6366f1;
-	--purple-200: #c7d2fe;
-	--purple-100: #e0e7ff;
-	--purple-50: #eef2ff;
-
 	/* transitions */
 	--transition-background: background 0.2s ease;
 	--transition-color: color 0.2s ease;
@@ -581,7 +556,7 @@ section[data-background] a:hover {
 
 /* dark mode */
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	:root {
 		--background-color: #000;
 
@@ -596,15 +571,6 @@ section[data-background] a:hover {
 		--light-60: rgba(0, 0, 0, 0.6);
 		--light-38: rgba(0, 0, 0, 0.38);
 		--light-24: rgba(0, 0, 0, 0.24);
-	}
-
-	.button[data-background] {
-		background: var(--white-24);
-		color: var(--white-100);
-	}
-
-	.button[data-background]:hover {
-		background: var(--white-38);
 	}
 }
 
