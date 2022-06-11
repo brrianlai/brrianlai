@@ -158,6 +158,10 @@ h6 {
 	fill: var(--dark-38);
 }
 
+.scrolltotop {
+	cursor: pointer;
+}
+
 /* grid */
 
 .grid {
