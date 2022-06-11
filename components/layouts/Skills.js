@@ -6,8 +6,6 @@ const skillList = [
 	'Figma (UI design)',
 	'Microsoft Office',
 	'Statistics',
-	'Organic chemistry lab',
-	'Molecular biology lab'
 ]
 
 const Skills = () => {

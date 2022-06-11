@@ -7,7 +7,7 @@ const courseList = [
 	},
 	{
 		code: 'CPSC 103',
-		name: 'Introduction to Systematic Program Design'
+		name: 'Systematic Program Design'
 	},
 	{
 		code: 'STAT 200',
@@ -19,11 +19,19 @@ const courseList = [
 	},
 	{
 		code: 'BIOL 341',
-		name: 'Introductory Molecular Biology Laboratory'
+		name: 'Molecular Biology Laboratory'
 	},
 	{
 		code: 'BIOL 363',
-		name: 'Laboratory in Animal Physiology'
+		name: 'Animal Physiology Laboratory'
+	},
+	{
+		code: 'PCTH 325',
+		name: 'Rational Basis of Drug Therapy'
+	},
+	{
+		code: 'CLST 301',
+		name: 'Technical Terms of Medicine and Biological Science'
 	}
 ]
 
