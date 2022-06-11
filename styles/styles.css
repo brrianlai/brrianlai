@@ -343,7 +343,7 @@ section[data-size='large'] {
 }
 
 .button:hover {
-	background: var(--dark-87);
+	background: var(--dark-60);
 }
 
 .button[data-shape='round'] {
@@ -386,9 +386,17 @@ section[data-size='large'] {
 	color: var(--black-100);
 }
 
+.button[data-background='white']:hover {
+	background: var(--white-60);
+}
+
 .button[data-background='black'] {
 	background: var(--black-100);
 	color: var(--white-100);
+}
+
+.button[data-background='black']:hover {
+	background: var(--black-60);
 }
 
 .button[data-background='black'] .icon {
@@ -402,13 +410,21 @@ section[data-size='large'] {
 	color: var(--dark-100);
 }
 
+.button[data-background='light']:hover {
+	background: var(--light-60);
+}
+
 .button[data-background='light'] .icon {
-	color: var(--dark-38);
+	color: var(--dark-100);
 }
 
 .button[data-background='dark'] {
 	background: var(--dark-100);
 	color: var(--light-100);
+}
+
+.button[data-background='dark']:hover {
+	background: var(--dark-60);
 }
 
 .button[data-background='dark'] .icon {
@@ -457,68 +473,6 @@ section[data-background] a:hover {
 [data-background='mint'] {
 	background: #c9dfd6;
 }
-
-/*.button[data-background='red'] {
-	background: var(--red-50);
-	color: var(--red-700);
-}
-
-.button[data-background='red']:hover {
-	background: var(--red-100);
-}
-
-.button[data-background='red'] .icon {
-	color: var(--red-200);
-}
-
-.button[data-background='green'] {
-	background: var(--green-50);
-	color: var(--green-700);
-}
-
-.button[data-background='green']:hover {
-	background: var(--green-100);
-}
-
-.button[data-background='green'] .icon {
-	color: var(--green-200);
-}
-
-.button[data-background='blue'] {
-	background: var(--blue-50);
-	color: var(--blue-700);
-}
-
-.button[data-background='blue']:hover {
-	background: var(--blue-100);
-}
-
-.button[data-background='blue'] .icon {
-	color: var(--blue-200);
-}
-
-.button[data-background='purple'] {
-	background: var(--purple-50);
-	color: var(--purple-700);
-}
-
-.button[data-background='purple']:hover {
-	background: var(--purple-100);
-}
-
-.button[data-background='purple'] .icon {
-	color: var(--purple-200);
-}*/
-
-/* static white button styling with coloured backgrounds */
-
-/*
-
-[data-background='clay'] .button[data-background='white'], [data-background='clay'] .button[data-background='white']:hover {
-	color: #c1a3a3;
-}
-
-*/
 
 /* introduction */
 
