@@ -8,8 +8,9 @@ const Education = () => {
 			<div className='row'>
 				<h5>BSc in Biology</h5>
 				<p>Apr 2022</p>
+				<p>Canada</p>
+				<p>Awarded the B.C. Achievement scholarship in 2018</p>
 			</div>
-			<p>Awarded the B.C. Achievement scholarship in 2018</p>
 		</section>
 	)
 }

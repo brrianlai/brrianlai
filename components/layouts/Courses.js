@@ -39,7 +39,7 @@ const Courses = () => {
 	return (
 		<section>
 			<h4>Courses Taken</h4>
-			<div className='array'>
+			<div className='row'>
 				{courseList.map((course, index) => (
 					<div className='row' data-gap='smaller' key={index}>
 						<h5>{course.code}</h5>

@@ -501,18 +501,6 @@ section[data-background] a:hover {
 	border-radius: 12rem;
 }
 
-/* arrays */
-
-.array {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 4rem;
-}
-
-.array-small {
-	gap: 1.6rem;
-}
-
 /* root variables */
 
 :root {

@@ -6,12 +6,16 @@ const bopList = [
 		link: 'https://www.youtube.com/watch?v=a0OHkWX7B-E'
 	},
 	{
-		name: 'Ren Ran - 雀跃',
-		link: 'https://www.youtube.com/watch?v=3QOmooM3b8I'
+		name: 'Kehlani, Ty Dolla $ign - Nights Like This',
+		link: 'https://www.youtube.com/watch?v=I99qCuWx1mI'
 	},
 	{
 		name: 'Tia Ray - On the Clouds',
 		link: 'https://www.youtube.com/watch?v=dWUUHloolgE'
+	},
+	{
+		name: 'Ren Ran - 雀跃',
+		link: 'https://www.youtube.com/watch?v=3QOmooM3b8I'
 	},
 	{
 		name: 'Hứa Kim Tuyền, Hoàng Duyên - Sài Gòn Đau Lòng Quá',
@@ -76,10 +80,6 @@ const bopList = [
 	{
 		name: 'Ren Ran - 空空如也',
 		link: 'https://www.youtube.com/watch?v=G2jfo3ljyd4'
-	},
-	{
-		name: 'Kehlani, Ty Dolla $ign - Nights Like This',
-		link: 'https://www.youtube.com/watch?v=I99qCuWx1mI'
 	}
 ]
 
@@ -87,7 +87,7 @@ const Bops = () => {
 	return (
 		<section data-background='mint'>
 			<h4>Current Bops</h4>
-			<div className='array'>
+			<div className='row'>
 				{bopList.map((bop, index) => (
 					<a href={bop.link} key={index}>{bop.name}</a>
 				))}

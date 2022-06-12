@@ -23,17 +23,28 @@ const volunteerList = [
 
 const VolunteerExperience = () => {
 	return (
-		<section data-offset='left'>
-			<h4>Volunteer Experience</h4>
-			{volunteerList.map((volunteer, index) => (
-					<div className='column' data-gap='smaller' data-layout='justified'>
-						<h5>{volunteer.name}</h5>
-						<div className='row' data-gap='smaller' data-layout='justified'>
-							<h6>{volunteer.subheading}</h6>
-							<h6>{volunteer.date}</h6>
+		<section>
+
+			<div className='grid' data-columns='1-2'>
+
+				<div className='column'>
+					<h4>Volunteer Experience</h4>
+				</div>
+
+				<div className='column'>
+					{volunteerList.map((volunteer, index) => (
+						<div className='column' data-gap='smaller' data-layout='justified'>
+							<h5>{volunteer.name}</h5>
+							<div className='row' data-gap='smaller' data-layout='justified'>
+								<h6>{volunteer.subheading}</h6>
+								<h6>{volunteer.date}</h6>
+							</div>
 						</div>
-					</div>
-				))}
+					))}
+				</div>
+
+			</div>
+
 		</section>
 	)
 }

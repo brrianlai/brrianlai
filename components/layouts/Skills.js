@@ -10,9 +10,9 @@ const skillList = [
 
 const Skills = () => {
 	return (
-		<section data-offset='left'>
+		<section>
 			<h4>Skills</h4>
-			<div className='array'>
+			<div className='row'>
 				{skillList.map((name, index) => (
 					<p key={index}>{name}</p>
 				))}
