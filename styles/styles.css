@@ -411,7 +411,7 @@ section[data-size='large'] {
 }
 
 .button[data-background='light'] .icon {
-	color: var(--light-100);
+	color: var(--dark-100);
 }
 
 .button[data-background='dark'] {
@@ -425,6 +425,18 @@ section[data-size='large'] {
 
 .button[data-background='dark'] .icon {
 	color: var(--light-100);
+}
+
+/* outlined buttons */
+
+.button[data-outline='true'] {
+	border: 0.2rem solid var(--dark-6);
+	transition: var(--transition-border);
+}
+
+.button[data-outline='true']:hover {
+	border: 0.2rem solid var(--dark-24);
+	transition: var(--transition-border);
 }
 
 /* button and section backgrounds */
@@ -538,6 +550,7 @@ section[data-background] a:hover {
 
 	/* transitions */
 	--transition-background: background 0.2s ease;
+	--transition-border: border 0.2s ease;
 	--transition-color: color 0.2s ease;
 	--transition-fill: fill 0.2s ease;
 	--transition-transform: transform 0.5s ease;
@@ -556,7 +569,7 @@ section[data-background] a:hover {
 
 /* dark mode */
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	:root {
 		--background-color: #000;
 
@@ -565,12 +578,14 @@ section[data-background] a:hover {
 		--dark-60: rgba(255, 255, 255, 0.6);
 		--dark-38: rgba(255, 255, 255, 0.38);
 		--dark-24: rgba(255, 255, 255, 0.24);
+		--dark-6: rgba(255, 255, 255, 0.12);
 
 		--light-100: #000;
 		--light-87: rgba(0, 0, 0, 0.87);
 		--light-60: rgba(0, 0, 0, 0.6);
 		--light-38: rgba(0, 0, 0, 0.38);
 		--light-24: rgba(0, 0, 0, 0.24);
+		--light-6: rgba(0, 0, 0, 0.12);
 	}
 }
 

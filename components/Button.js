@@ -22,12 +22,13 @@ const shapes = ['square', 'rounded', 'round']
 
 const sizes = ['small', 'large']
 
-const Button = ({ children, link, background, shape, size, iconLeft, iconRight }) => {
-	const checkBackground = backgrounds.includes(background)
-		? background
-		: backgrounds[0]
+const outlines = ['false', 'true']
+
+const Button = ({ children, link, background, shape, size, outline, iconLeft, iconRight }) => {
+	const checkBackground = backgrounds.includes(background) ? background : backgrounds[0]
 	const checkShape = shapes.includes(shape) ? shape : shapes[0]
 	const checkSize = sizes.includes(size) ? size : sizes[0]
+	const checkOutline = outlines.includes(outline) ? outline : outlines[0]
 
 	return (
 		<a
@@ -36,6 +37,7 @@ const Button = ({ children, link, background, shape, size, iconLeft, iconRight }
 			data-background={checkBackground}
 			data-shape={checkShape}
 			data-size={checkSize}
+			data-outline={checkOutline}
 		>
 			{iconLeft ? <Icon name={iconLeft} /> : null}
 
