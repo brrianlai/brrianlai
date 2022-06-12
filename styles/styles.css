@@ -170,15 +170,15 @@ h6 {
 	width: 100%;
 }
 
-.column {
-	flex-direction: column;
-}
-
 .column, .row {
 	align-items: flex-start;
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--gap-width);
+}
+
+.column {
+	flex-direction: column;
 }
 
 [data-align='center'] {
@@ -267,8 +267,6 @@ section {
 	padding: var(--section-padding);
 	width: 100%;
 }
-
-/* section size */
 
 section[data-size='large'] {
 	padding: var(--section-padding-large);
@@ -499,6 +497,13 @@ section[data-background] a:hover {
 
 .profile img {
 	border-radius: 12rem;
+}
+
+/* gallery */
+
+.gallery {
+	flex-direction: row;
+	gap: var(--gap-width)
 }
 
 /* root variables */
