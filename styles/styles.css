@@ -503,7 +503,7 @@ section[data-background] a:hover {
 
 .gallery {
 	flex-direction: row;
-	gap: var(--gap-width)
+	gap: var(--gap-width);
 }
 
 /* root variables */

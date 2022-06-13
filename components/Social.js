@@ -18,7 +18,7 @@ const icons = [
 
 const Social = () => {
 	return (
-		<div className='array array-small social'>
+		<div className='row social' data-gap='small'>
 			{icons.map((icon, index) => (
 				<a href={icon.link} key={index} target='_blank'>
 					<Icon name={icon.name} />

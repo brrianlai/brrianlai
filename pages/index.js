@@ -8,7 +8,6 @@ import VolunteerExperience from '../components/layouts/VolunteerExperience'
 import Courses from '../components/layouts/Courses'
 import Skills from '../components/layouts/Skills'
 import Bops from '../components/layouts/Bops'
-import SectionTest from '../components/layouts/SectionTest'
 import Gallery from '../components/Gallery'
 import Image from 'next/image'
 
@@ -19,15 +18,35 @@ function App() {
 			<Background />
 			<Education />
 			<Gallery>
-				<Image src='/IMG_6077.jpeg' width='4032' height='3024' />
-				<Image src='/IMG_20170628_200243.jpg' width='4048' height='3036' />
+				<Image
+					src='/IMG_6077.jpeg'
+					width='4032'
+					height='3024'
+				/>
+				<Image
+					src='/IMG_20170628_200243.jpg'
+					width='4048'
+					height='3036'
+				/>
 			</Gallery>
 			<WorkExperience />
 			<VolunteerExperience />
 			<Gallery>
-				<Image src='/IMG_6432.jpg' width='4032' height='3024' />
-				<Image src='/IMG_8977.jpeg' width='3690' height='2768' />
-				<Image src='/IMG_3994.jpeg' width='4032' height='3024' />
+				<Image
+					src='/IMG_6432.jpg'
+					width='4032'
+					height='3024'
+				/>
+				<Image
+					src='/IMG_8977.jpeg'
+					width='3690'
+					height='2768'
+				/>
+				<Image
+					src='/IMG_3994.jpeg'
+					width='4032'
+					height='3024'
+				/>
 			</Gallery>
 			<Courses />
 			<Skills />

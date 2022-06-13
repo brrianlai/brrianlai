@@ -22,6 +22,10 @@ const bopList = [
 		link: 'https://www.youtube.com/watch?v=BdPk9ipvczM'
 	},
 	{
+		name: 'Nathania - Lost Treasure',
+		link: 'https://www.youtube.com/watch?v=BtgwAoimotc'
+	},
+	{
 		name: 'Issues - Beautiful Oblivion',
 		link: 'https://www.youtube.com/watch?v=AZ8VEstc5IM'
 	},
