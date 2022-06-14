@@ -350,7 +350,7 @@ section[data-size='large'] {
 
 .button[data-size='large'] {
 	font-size: 1.6rem;
-	gap: 2.4rem;
+	gap: 2rem;
 	height: 6rem;
 	line-height: 6rem;
 	padding: 0 3rem;
@@ -365,12 +365,12 @@ section[data-size='large'] {
 .button[data-size='small'] .icon {
 	font-size: 1.6rem;
 	height: 4rem;
-	margin: 0 -1.8rem;
+	margin: 0 -1.6rem;
 	width: 4rem;
 }
 
 .button[data-size='large'] .icon {
-	margin: 0 -2rem;
+	margin: 0 -1.6rem;
 }
 
 /* static buttons */
@@ -555,7 +555,7 @@ section[data-background] a:hover {
 	--gap-width-smallest: 0.5rem;
 	--header-height: 12rem;
 	--section-padding: 8rem 4rem;
-	--section-padding-large: 8rem 8rem;
+	--section-padding-large: 12rem 8rem;
 	--wrap-padding: 0 4rem;
 	--wrap-padding-large: 0 8rem;
 }

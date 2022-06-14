@@ -10,6 +10,7 @@ import Skills from '../components/layouts/Skills'
 import Bops from '../components/layouts/Bops'
 import Gallery from '../components/Gallery'
 import Image from 'next/image'
+import Button from '../components/Button'
 
 function App() {
 	return (
@@ -31,6 +32,10 @@ function App() {
 			</Gallery>
 			<WorkExperience />
 			<VolunteerExperience />
+			<section data-layout='center'>
+				<h1>Check out my photos</h1>
+				<Button link='https://vsco.co/brrian' size='large' shape='round' iconRight='ri-arrow-right-line'>VSCO</Button>
+			</section>
 			<Gallery>
 				<Image
 					src='/IMG_6432.jpg'
