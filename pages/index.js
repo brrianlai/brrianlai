@@ -33,7 +33,7 @@ function App() {
 			<WorkExperience />
 			<VolunteerExperience />
 			<section data-layout='center'>
-				<h1>Check out my photos</h1>
+				<h2>Check out my photos</h2>
 				<Button link='https://vsco.co/brrian' size='large' shape='round' iconRight='ri-arrow-right-line'>VSCO</Button>
 			</section>
 			<Gallery>
@@ -43,9 +43,9 @@ function App() {
 					height='3024'
 				/>
 				<Image
-					src='/IMG_8977.jpeg'
-					width='3690'
-					height='2768'
+					src='/IMG_3060.jpg'
+					width='4032'
+					height='3024'
 				/>
 				<Image
 					src='/IMG_3994.jpeg'
