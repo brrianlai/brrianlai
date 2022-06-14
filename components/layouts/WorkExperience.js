@@ -5,13 +5,13 @@ const workList = [
 		name: 'A1 Learning Centre',
 		date: 'May 2022 – present',
 		subheading: 'Elementary Tutoring',
-		description: 'null'
+		description: 'Work closely with 20+ elementary students in Math and English subjects.'
 	},
 	{
 		name: 'Adventure Zone',
 		date: 'Aug 2015 – Jan 2019',
 		subheading: 'Receptionist',
-		description: 'null'
+		description: 'Managed admissions, cash deposits, bookings, new employee training, and store opening/closing as a keyholder. Maintained and repaired computers and arcade machines.'
 	}
 ]
 
@@ -27,16 +27,17 @@ const WorkExperience = () => {
 
 				<div className='column'>
 					{workList.map((work, index) => (
-						<div className='column' data-gap='smaller' data-layout='justified'>
+						<div className='column' data-gap='smaller' data-layout='justified' key={index}>
 							<h5>{work.name}</h5>
 							<div className='row' data-gap='smaller' data-layout='justified'>
 								<h6>{work.subheading}</h6>
 								<h6>{work.date}</h6>
 							</div>
+							<p>{work.description}</p>
 						</div>
 					))}
 				</div>
-				
+
 			</div>
 
 		</section>
