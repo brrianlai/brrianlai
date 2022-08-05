@@ -447,37 +447,54 @@ section[data-background] a:hover {
 	color: var(--black-38);
 }
 
-[data-background] h1,
-[data-background] h2,
-[data-background] h3,
-[data-background] h4,
-[data-background] h5,
-[data-background] h6 {
+section[data-background] h1,
+section[data-background] h2,
+section[data-background] h3,
+section[data-background] h4,
+section[data-background] h5,
+section[data-background] h6 {
 	color: var(--black-100);
 }
 
-[data-background] p {
+section[data-background] p {
 	color: var(--black-87);
 }
 
-[data-background='brown'] {
+section[data-background='brown'] {
 	background: #38383b;
 }
 
-[data-background='clay'] {
+section[data-background='clay'] {
 	background: #c1a3a3;
 }
 
-[data-background='tan'] {
+section[data-background='tan'] {
 	background: #a8a6a1;
 }
 
-[data-background='yellow'] {
+section[data-background='yellow'] {
 	background: #ebd8b7;
 }
 
-[data-background='mint'] {
+section[data-background='mint'] {
 	background: #c9dfd6;
+}
+
+section[data-background='grey'] {
+	background: var(--background-grey);
+}
+
+section[data-background='grey'] h1,
+section[data-background='grey'] h2,
+section[data-background='grey'] h3,
+section[data-background='grey'] h4,
+section[data-background='grey'] h5,
+section[data-background='grey'] h6 {
+	color: var(--dark-100);
+}
+
+section[data-background='grey'] p {
+	color: var(--dark-87);
 }
 
 /* introduction */
@@ -541,6 +558,9 @@ section[data-background] a:hover {
 	--light-24: rgba(255, 255, 255, 0.24);
 	--light-6: rgba(255, 255, 255, 0.06);
 
+	/* backgrounds */
+	--background-grey: rgba(0, 0, 0, 0.04);
+
 	/* transitions */
 	--transition-background: background 0.2s ease;
 	--transition-border: border 0.2s ease;
@@ -579,6 +599,8 @@ section[data-background] a:hover {
 		--light-38: rgba(0, 0, 0, 0.38);
 		--light-24: rgba(0, 0, 0, 0.24);
 		--light-6: rgba(0, 0, 0, 0.12);
+
+		--background-grey: rgba(255, 255, 255, 0.1);
 	}
 }
 

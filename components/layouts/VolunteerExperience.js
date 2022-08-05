@@ -23,7 +23,7 @@ const volunteerList = [
 
 const VolunteerExperience = () => {
 	return (
-		<section>
+		<section data-background='grey'>
 
 			<div className='grid' data-columns='1-2'>
 
