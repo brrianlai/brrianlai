@@ -484,7 +484,7 @@ section[data-background='mint'] {
 }
 
 section[data-background='grey'] {
-	background: var(--background-grey);
+	background-image: linear-gradient(var(--background-grey), var(--background-grey), var(--dark-6));
 }
 
 section[data-background='grey'] h1,
