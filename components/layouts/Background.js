@@ -6,7 +6,7 @@ const background = '/background.jpg'
 const Background = () => {
 	return (
 		<div className='background'>
-			<Image src={background} fill priority />
+			<Image src={background} fill sizes="100vw" priority />
 		</div>
 	);
 }
