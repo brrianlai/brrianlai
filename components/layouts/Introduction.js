@@ -20,7 +20,7 @@ const Introduction = () => {
 			</div>
 			<div className='column'>
 				<div className='profile'>
-					<Image src={profile} width="1125" height="1125" priority />
+					<Image src={profile} width="1125" height="1125" sizes="(max-width: 768px) 100vw, 24rem" priority />
 				</div>
 			</div>
 		</section>
