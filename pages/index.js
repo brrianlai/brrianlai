@@ -9,7 +9,7 @@ import Courses from '../components/layouts/Courses'
 import Skills from '../components/layouts/Skills'
 import Bops from '../components/layouts/Bops'
 import Gallery from '../components/Gallery'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import Button from '../components/Button'
 
 function App() {
@@ -21,13 +21,15 @@ function App() {
 			<Gallery>
 				<Image
 					src='/IMG_6077.jpeg'
-					width='4032'
-					height='3024'
+					width="4024"
+					height="3024"
+					sizes="50vw"
 				/>
 				<Image
 					src='/IMG_20170628_200243.jpg'
-					width='4048'
-					height='3036'
+					width="4048"
+					height="3036"
+					sizes="50vw"
 				/>
 			</Gallery>
 			<WorkExperience />
@@ -39,18 +41,21 @@ function App() {
 			<Gallery>
 				<Image
 					src='/IMG_6432.jpg'
-					width='4032'
-					height='3024'
+					width="3798"
+					height="2844"
+					sizes="33vw"
 				/>
 				<Image
 					src='/IMG_3060.jpg'
-					width='4032'
-					height='3024'
+					width="4024"
+					height="3024"
+					sizes="33vw"
 				/>
 				<Image
 					src='/IMG_3994.jpeg'
-					width='4032'
-					height='3024'
+					width="4024"
+					height="3024"
+					sizes="33vw"
 				/>
 			</Gallery>
 			<Courses />

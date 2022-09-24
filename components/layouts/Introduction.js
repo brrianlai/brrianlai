@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import Button from '../Button'
 
 const profile = '/profile.jpg'
@@ -20,7 +20,7 @@ const Introduction = () => {
 			</div>
 			<div className='column'>
 				<div className='profile'>
-					<Image src={profile} layout='fill' priority='true'/>
+					<Image src={profile} width="1125" height="1125" priority />
 				</div>
 			</div>
 		</section>

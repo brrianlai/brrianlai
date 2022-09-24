@@ -1,10 +1,13 @@
 import React from 'react'
-import Image from 'next/image'
 
 const Gallery = ({ children }) => {
 	return (
 		<section className='gallery'>
-			{children}
+			{children.map((child, index) => (
+				<div className='gallery-photo' key={index}>
+					{child}
+				</div>
+			))}
 		</section>
 	)
 }

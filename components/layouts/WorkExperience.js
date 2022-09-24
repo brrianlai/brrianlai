@@ -2,6 +2,12 @@ import React from 'react'
 
 const workList = [
 	{
+		name: 'Canadian Border Services Agency (CBSA)',
+		date: 'October 2022 – present',
+		subheading: 'Administrative Assistant',
+		description: ''
+	},
+	{
 		name: 'A1 Learning Centre',
 		date: 'May 2022 – present',
 		subheading: 'Elementary Tutoring',
