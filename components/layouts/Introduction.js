@@ -53,7 +53,7 @@ const Introduction = () => {
 			</motion.div>
 			<div className='column'>
 				<div className='profile'>
-					<Image src={profile} width="1125" height="1125" sizes="(max-width: 768px) 16rem, 24rem" priority />
+					<Image src={profile} width='1125' height='1125' sizes='(max-width: 768px) 16rem, 24rem' priority alt='Profile photo'/>
 				</div>
 			</div>
 		</section>

@@ -1,11 +1,3 @@
-/* todo
-
-1. fix button link styling in dark mode
-2. merge button theming into section theming
-3. fix responsive data-gap conflict
-
-*/
-
 /* css reset */
 
 html, body, div, span, applet, object, iframe,
@@ -93,7 +85,7 @@ a:hover, .icon:hover {
 	color: var(--dark-38);
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .semibold {
 	color: var(--dark-100);
 	font-weight: 500;
 }
@@ -128,6 +120,14 @@ h6 {
 	font-size: 1.4rem;
 	font-weight: 400;
 	line-height: 2.6rem;
+}
+
+.weight-400 {
+	font-weight: 400;
+}
+
+.weight-500 {
+	font-weight: 500;
 }
 
 /* icons */
@@ -397,6 +397,10 @@ section[data-size='large'] {
 	color: var(--white-100);
 }
 
+.button[data-background='clear'] {
+	background: none;
+}
+
 /* dynamic buttons */
 
 .button[data-background='light'] {
@@ -439,19 +443,11 @@ section[data-size='large'] {
 
 /* button and section backgrounds */
 
-section[data-background] a {
-	color: var(--black-87);
-}
-
-section[data-background] a:hover {
-	color: var(--black-38);
-}
-
 section[data-background] h1,
 section[data-background] h2,
 section[data-background] h3,
 section[data-background] h4,
-section[data-background] h5, {
+section[data-background] h5 {
 	color: var(--black-100);
 }
 
@@ -461,6 +457,14 @@ section[data-background] h6 {
 
 section[data-background] p {
 	color: var(--black-87);
+}
+
+section[data-background] .button[data-outline='true'] {
+	border: 0.2rem solid var(--black-6);
+}
+
+section[data-background] .button[data-outline='true']:hover {
+	border: 0.2rem solid var(--black-24);
 }
 
 section[data-background='brown'] {
@@ -495,7 +499,7 @@ section[data-background='grey'] h5 {
 	color: var(--dark-100);
 }
 
-section[data-background] h6 {
+section[data-background='grey'] h6 {
 	color: var(--dark-60);
 }
 

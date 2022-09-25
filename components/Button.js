@@ -15,7 +15,8 @@ const backgrounds = [
 	'red',
 	'green',
 	'blue',
-	'purple'
+	'purple',
+	'clear'
 ]
 
 const shapes = ['square', 'rounded', 'round']

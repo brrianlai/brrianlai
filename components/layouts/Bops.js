@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../Button'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const container = {
@@ -213,17 +214,17 @@ const Bops = () => {
 				<motion.div
 					className='row'
 					variants={container}
-					initial="hidden"
-					whileInView="show"
+					initial='hidden'
+					whileInView='show'
 				>
 					{bopList.map((bop, index) => (
 						<motion.div variants={item}>
-							<a href={bop.link} key={index}>
-								<div className='row' data-gap='smaller'>
-									<h5>{bop.artist}</h5>
-									<p>{bop.title}</p>
+							<Button link={bop.link} key={index} background='clear' outline='true' shape='round'>
+								<div className='row' data-gap='smaller' data-align='center'>
+									<p>{bop.artist}</p>
+									<p className='weight-400'>{bop.title}</p>
 								</div>
-							</a>
+							</Button>
 						</motion.div>
 					))}
 				</motion.div>

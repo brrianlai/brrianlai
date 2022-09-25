@@ -24,8 +24,8 @@ const Fade = ({ children }) => {
 				{children.map((child, index) => (
 					<motion.div
 						variants={container}
-						initial="hidden"
-						whileInView="show"
+						initial='hidden'
+						whileInView='show'
 						viewport={{ once: true }}
 						key={{index}}
 					>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Social from '../Social'
 import ScrollToTop from '../ScrollToTop'
 
 const Footer = () => {
