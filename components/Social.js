@@ -21,7 +21,7 @@ const icons = [
 
 const Social = () => {
 	return (
-		<div className='row social' data-gap='small'>
+		<div className='row social' data-gap='smaller'>
 			{icons.map((icon, index) => (
 				<a href={icon.link} key={index} target='_blank' alt={icon.alt}>
 					<Icon name={icon.name} />
