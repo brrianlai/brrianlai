@@ -1,22 +1,38 @@
 import React from 'react'
 import { motion, AnimatePresence} from 'framer-motion'
 
+const container = {
+	hidden: {
+		opacity: 0,
+		y: 20
+	},
+	show: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.5,
+			delay: 0.4,
+			ease: 'easeOut'
+		}
+	}
+}
+
 const Fade = ({ children }) => {
 	return (
 		<div>
-			{children.map((child, index) => (
-				<AnimatePresence>
+			<AnimatePresence mode={false}>
+				{children.map((child, index) => (
 					<motion.div
-						initial={{ opacity: 0, y: 40 }}
-						whileInView={{ opacity: 1, y: 0}}
+						variants={container}
+						initial="hidden"
+						whileInView="show"
 						viewport={{ once: true }}
-						transition={{ duration: 0.6 }}
 						key={{index}}
 					>
 						{child}
 					</motion.div>
-				</AnimatePresence>
-			))}
+				))}
+			</AnimatePresence>
 		</div>
 	)
 }
