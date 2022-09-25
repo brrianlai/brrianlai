@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../Button'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const container = {
@@ -219,12 +218,12 @@ const Bops = () => {
 				>
 					{bopList.map((bop, index) => (
 						<motion.div variants={item}>
-							<Button link={bop.link} key={index} background='clear' outline='true' shape='round'>
+							<a href={bop.link} key={index}>
 								<div className='row' data-gap='smaller' data-align='center'>
-									<p>{bop.artist}</p>
-									<p className='weight-400'>{bop.title}</p>
+									<p className='weight-500'>{bop.artist}</p>
+									<p className='weight'>{bop.title}</p>
 								</div>
-							</Button>
+							</a>
 						</motion.div>
 					))}
 				</motion.div>
