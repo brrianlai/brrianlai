@@ -9,7 +9,7 @@ const container = {
 	hidden: {},
 	show: {
 		transition: {
-			staggerChildren: 0.12,
+			staggerChildren: 0.08,
 		}
 	}
 }
@@ -17,14 +17,14 @@ const container = {
 const item = {
 	hidden: {
 		opacity: 0,
-		x: 15
+		x: 20
 	},
 	show: {
 		opacity: 1,
 		x: 0,
 		transition: {
-			duration: 0.5,
-			ease: 'easeInOut'
+			duration: 0.4,
+			ease: [0.25, 0.1, 0.25, 1]
 		}
 	}
 }
@@ -37,14 +37,10 @@ const Introduction = () => {
 				animate='show'
 				variants={container}
 			>
-				<motion.div
-					className='column'
-					data-gap='smaller'
-					variants={item}
-				>
-					<h4>Nice to meet you! I'm</h4>
-					<h1>Brian Lai</h1>
-				</motion.div>
+				<div className='column' data-gap='smaller'>
+					<motion.h4 variants={item}>Nice to meet you! I'm</motion.h4>
+					<motion.h1 variants={item}>Brian Lai</motion.h1>
+				</div>
 				<motion.h5 variants={item}>A recent Biology graduate from UBC with an interest in design and front-end web development</motion.h5>
 				<motion.div className='row' variants={item}>
 					<Button link='/resume-20220611.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>

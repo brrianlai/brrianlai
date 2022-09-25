@@ -1,17 +1,18 @@
-/* imports */
+/* import layouts */
 import Layout from '../components/layouts/Layout'
 import Introduction from '../components/layouts/Introduction'
 import Background from '../components/layouts/Background'
 import Education from '../components/layouts/Education'
 import WorkExperience from '../components/layouts/WorkExperience'
 import VolunteerExperience from '../components/layouts/VolunteerExperience'
-import Courses from '../components/layouts/Courses'
-import Skills from '../components/layouts/Skills'
 import Bops from '../components/layouts/Bops'
+
+/* import components */
 import Gallery from '../components/Gallery'
-import Image from 'next/future/image'
 import Button from '../components/Button'
 import Fade from '../components/Fade'
+
+import Image from 'next/future/image'
 
 function App() {
 	return (
@@ -60,8 +61,6 @@ function App() {
 						sizes="33vw"
 					/>
 				</Gallery>
-				<Courses />
-				<Skills />
 				<Bops />
 			</Fade>
 		</Layout>
