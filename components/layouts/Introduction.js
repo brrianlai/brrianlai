@@ -41,7 +41,7 @@ const Introduction = () => {
 					<motion.h4 variants={item}>Nice to meet you! I'm</motion.h4>
 					<motion.h1 variants={item}>Brian Lai</motion.h1>
 				</div>
-				<motion.h5 variants={item}>A recent Biology graduate from UBC with an interest in web and app design</motion.h5>
+				<motion.h5 variants={item}>A Biology undergraduate student from UBC with an interest in web and app design</motion.h5>
 				<motion.div className='row' variants={item}>
 					<Button link='/resume-20220611.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>
 					<Button link='mailto:laibrian@alumni.ubc.ca' shape='round' size='large' iconLeft='ri-mail-line' background='light' outline='true'>Contact me</Button>
