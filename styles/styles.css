@@ -328,7 +328,6 @@ section[data-size='large'] {
 	gap: 1.6rem;
 	height: 4rem;
 	justify-content: center;
-	line-height: 4rem;
 	padding: 0 2rem;
 	transition: var(--transition-background);
 }
@@ -345,7 +344,6 @@ section[data-size='large'] {
 	font-size: 1.6rem;
 	gap: 2rem;
 	height: 6rem;
-	line-height: 6rem;
 	padding: 0 3rem;
 }
 
