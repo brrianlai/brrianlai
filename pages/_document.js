@@ -9,7 +9,7 @@ const Document = () => {
 			<body>
 				<Main />
 				<NextScript />
-				<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+				<link rel="preconnect" href="https://cdn.jsdelivr.net/" />
 				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
 			</body>
 		</Html>
