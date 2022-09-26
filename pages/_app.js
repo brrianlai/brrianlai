@@ -1,6 +1,15 @@
 import '../styles/styles.css'
+import Head from 'next/head'
 
-// This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
-	return < Component {...pageProps } />
+	return (
+		<div>
+			<Head>
+				<meta charset='UTF-8' />
+				<meta name='author' content='Brian Lai' />
+				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+			</Head>
+			<Component {...pageProps } />
+		</div>
+	)
 }

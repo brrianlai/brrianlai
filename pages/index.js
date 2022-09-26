@@ -12,11 +12,15 @@ import Gallery from '../components/Gallery'
 import Button from '../components/Button'
 import Fade from '../components/Fade'
 
+import Head from 'next/head'
 import Image from 'next/future/image'
 
 function App() {
 	return (
 		<Layout>
+			<Head>
+				<title>Brian Lai - UBC Biology undergraduate student</title>
+			</Head>
 			<Introduction />
 			<Background />
 			<Fade>
