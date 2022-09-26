@@ -38,7 +38,7 @@ const Introduction = () => {
 				variants={container}
 			>
 				<div className='column' data-gap='smaller'>
-					<motion.h3 variants={item}>Nice to meet you! I'm</motion.h3>
+					<motion.h4 variants={item}>Nice to meet you! I'm</motion.h4>
 					<motion.h1 variants={item}>Brian Lai</motion.h1>
 				</div>
 				<motion.h5 variants={item}>A Biology undergraduate student from UBC with an interest in web and app design</motion.h5>
