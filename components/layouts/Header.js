@@ -8,7 +8,7 @@ const Header = () => {
 
 	return (
 		<div>
-			<header className='wrap'>
+			<header>
 				<h3>brrian</h3>
 				<Social />
 				<a href='#' className='icon icon-menu' onClick={toggleActive}>
@@ -16,7 +16,7 @@ const Header = () => {
 				</a>
 			</header>
 
-			<nav className={active ? 'wrap active' : 'wrap'}>
+			<nav className={active ? 'active' : ''}>
 				<Social />
 			</nav>
 		</div>
