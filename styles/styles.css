@@ -243,14 +243,12 @@ nav {
 	align-items: center;
 	background: var(--background-color);
 	display: none;
-	flex-direction: row;
-	height: var(--header-height);
+	flex-direction: column;
 	overflow: hidden;
-	padding: var(--wrap-padding);
 	position: absolute;
 	right: 0;
 	top: 0;
-	transform: translate(100%, 0);
+	transform: translate(0, -100%);
 	transition: var(--transition-transform);
 	width: 100%;
 	z-index: 1;

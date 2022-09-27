@@ -17,6 +17,9 @@ const Header = () => {
 			</header>
 
 			<nav className={active ? 'active' : ''}>
+				<a href='#' className='icon' onClick={toggleActive}>
+					<Icon name='ri-close-line' />
+				</a>
 				<Social />
 			</nav>
 		</div>
