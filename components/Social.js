@@ -3,28 +3,28 @@ import Icon from './Icon'
 
 const icons = [
 	{
-		name: 'ri-github-fill',
+		name: 'Github',
 		link: 'https://github.com/brrianlai',
-		alt: 'Github'
+		icon: 'ri-github-fill'
 	},
 	{
-		name: 'ri-linkedin-fill',
+		name: 'LinkedIn',
 		link: 'https://www.linkedin.com/in/brian-lai-8989b91aa/',
-		alt: 'LinkedIn'
+		icon: 'ri-linkedin-fill'
 	},
 	{
-		name: 'ri-instagram-line',
+		name: 'Instagram',
 		link: 'https://instagram.com/brrianlai',
-		alt: 'Instagram'
+		icon: 'ri-instagram-line'
 	}
 ]
 
 const Social = () => {
 	return (
-		<div className='social'>
+		<div className='social row' data-gap='smaller'>
 			{icons.map((icon, index) => (
-				<a href={icon.link} key={index} target='_blank' alt={icon.alt}>
-					<Icon name={icon.name} />
+				<a href={icon.link} key={index} target='_blank' alt={icon.name}>
+					<Icon name={icon.icon} />
 				</a>
 			))}
 			<a href='https://vsco.co/brrian' className='icon icon-vsco' target='_blank' alt='VSCO'>
