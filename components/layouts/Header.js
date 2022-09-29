@@ -28,7 +28,7 @@ const Header = () => {
 	return (
 		<div>
 			<header>
-				<h3>brrian</h3>
+				<h4>brrian</h4>
 				<Social />
 				<a href='#' className='icon icon-menu' onClick={toggleActive}>
 					<Icon name='ri-menu-line' />
