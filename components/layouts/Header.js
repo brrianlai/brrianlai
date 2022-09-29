@@ -5,7 +5,7 @@ import List, { ListItem } from '../List'
 
 const navItems = [
 	{
-		name: 'Github',
+		name: 'GitHub',
 		link: 'https://github.com/brrianlai',
 		icon: 'ri-github-fill'
 	},
