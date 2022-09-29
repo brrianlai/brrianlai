@@ -248,10 +248,10 @@ nav {
 	background: var(--background-color);
 	display: none;
 	flex-direction: column;
-	overflow: hidden;
+	height: 100vh;
 	padding-bottom: var(--gap-width-smaller);
 	padding-top: var(--header-height);
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 0;
 	transform: translate(0, -100%);
@@ -293,6 +293,15 @@ nav.active {
 
 .list-row {
 	align-items: center;
+}
+
+/* divider */
+
+.divider {
+	background: var(--dark-6);
+	height: 0.1rem;
+	margin: var(--gap-width-smaller);
+	width: 100%;
 }
 
 /* sections */
@@ -615,7 +624,7 @@ section[data-background='grey'] p {
 	--transition-border: border 0.2s ease;
 	--transition-color: color 0.2s ease;
 	--transition-fill: fill 0.2s ease;
-	--transition-transform: transform 0.5s ease;
+	--transition-transform: transform 0.6s ease;
 
 	/* padding */
 	--gap-width: 4rem;
@@ -681,10 +690,6 @@ section[data-background='grey'] p {
 
 	main {
 		padding-top: var(--header-height);
-	}
-
-	nav {
-		position: fixed;
 	}
 
 	.background {

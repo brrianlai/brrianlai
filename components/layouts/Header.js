@@ -2,6 +2,7 @@ import React from 'react'
 import Social from '../Social'
 import Icon from '../Icon'
 import List, { ListItem } from '../List'
+import Divider from '../Divider'
 
 const navItems = [
 	{
@@ -36,7 +37,9 @@ const Header = () => {
 			</header>
 
 			<nav className={active ? 'active' : ''}>
+			<Divider />
 				<List>
+					
 					{navItems.map((navItem, index) => (
 						<ListItem name={navItem.name} iconRight={navItem.icon} link={navItem.link} />
 					))}
