@@ -230,7 +230,6 @@ header, footer {
 }
 
 header {
-	position: fixed;
 	z-index: 2;
 }
 
