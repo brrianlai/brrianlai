@@ -42,7 +42,7 @@ const Introduction = () => {
 					<motion.h1 variants={item}>Brian Lai</motion.h1>
 				</div>
 				<motion.h5 variants={item}>A Biology undergraduate student from UBC with an interest in web and app design</motion.h5>
-				<motion.div className='row' variants={item}>
+				<motion.div className='row' variants={item} data-gap='small'>
 					<Button link='/resume-20220611.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>
 					<Button link='mailto:laibrian@alumni.ubc.ca' shape='round' size='large' iconLeft='ri-mail-line' background='light' outline='true'>Contact me</Button>
 				</motion.div>
