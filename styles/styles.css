@@ -146,6 +146,7 @@ h6 {
 
 .icon-menu {
 	display: none;
+	cursor: pointer;
 }
 
 .icon-vsco {
@@ -229,8 +230,13 @@ header, footer {
 }
 
 header {
-	position: relative;
+	position: fixed;
 	z-index: 2;
+}
+
+header, nav {
+	backdrop-filter: blur(6rem);
+	-webkit-backdrop-filter: blur(6rem);
 }
 
 footer h5, footer .icon {
@@ -245,15 +251,12 @@ footer .icon:hover {
 
 nav {
 	align-items: center;
-	background: var(--background-color);
+	background: var(--light-87);
 	display: none;
 	flex-direction: column;
-	height: 100vh;
 	padding-bottom: var(--gap-width-smaller);
-	padding-top: var(--header-height);
+	padding-top: calc(var(--header-height) + var(--gap-width-smaller));
 	position: fixed;
-	right: 0;
-	top: 0;
 	transform: translate(0, -100%);
 	transition: var(--transition-transform);
 	width: 100%;
@@ -280,19 +283,24 @@ nav.active {
 	height: 6rem;
 	justify-content: space-between;
 	padding: var(--wrap-padding);
+	transition: var(--transition-background);
 	width: 100%;
 }
 
-.list-item h5, .list-item .icon {
-	transition: var(--transition-color);
-}
-
-.list-item:hover h5, .list-item:hover .icon {
-	color: var(--dark-38);
+.list-item:hover {
+	background: var(--dark-6);
 }
 
 .list-row {
 	align-items: center;
+}
+
+.list-row .icon:hover {
+	color: var(--dark-100);
+}
+
+.list-row .icon-vsco:hover {
+	fill: var(--dark-100);
 }
 
 /* divider */
@@ -674,8 +682,6 @@ section[data-background='grey'] p {
 	}
 
 	header {
-		backdrop-filter: blur(8rem);
-		-webkit-backdrop-filter: blur(8rem);
 		background: var(--light-60);
 		position: fixed;
 	}

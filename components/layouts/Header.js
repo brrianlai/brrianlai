@@ -27,17 +27,16 @@ const Header = () => {
 	const toggleActive = () => setActive(value => !value)
 
 	return (
-		<div>
+		<div className='background-blur'>
 			<header>
 				<h4>brrian</h4>
 				<Social />
-				<a href='#' className='icon icon-menu' onClick={toggleActive}>
+				<div className='icon icon-menu' onClick={toggleActive} aria-label='Menu button'>
 					<Icon name='ri-menu-line' />
-				</a>
+				</div>
 			</header>
 
 			<nav className={active ? 'active' : ''}>
-			<Divider />
 				<List>
 					
 					{navItems.map((navItem, index) => (
