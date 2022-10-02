@@ -4,13 +4,13 @@ const workList = [
 	{
 		name: 'Canada Border Services Agency (CBSA)',
 		date: 'Oct 2022 – present',
-		subheading: 'Administrative Assistant',
+		subheading: 'Administrative assistant',
 		description: ''
 	},
 	{
 		name: 'A1 Learning Centre',
 		date: 'May 2022 – present',
-		subheading: 'Elementary Tutoring',
+		subheading: 'Tutor',
 		description: 'Work closely with 20+ elementary students in Math and English subjects.'
 	},
 	{

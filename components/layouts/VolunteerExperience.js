@@ -4,19 +4,19 @@ const volunteerList = [
 	{
 		name: 'Vancouver Coastal Health',
 		date: 'Aug 2019 – Mar 2020',
-		subheading: 'Social Recreation Volunteer, Dementia Care Unit',
+		subheading: 'Social Recreation Volunteer',
 		description: 'Engaged in social activities and interactions with residents to reinforce their cognitive abilities. Developed interpersonal and communicational skills through connections with residents.'
 	},
 	{
 		name: 'UBC Faculty of Education',
-		date: 'May – Aug 2019',
-		subheading: 'Cultural Ambassador, Vancouver Summer Program',
+		date: 'May 2019 – Aug 2019',
+		subheading: 'Cultural Ambassador',
 		description: 'Led social and recreational activities for 250+ international undergraduate students. Assisted in organizing plans for upcoming activities with program coordinators. Immersed students with sociocultural experiences in Canadian culture.'
 	},
 	{
 		name: 'Thunderbird Elementary',
 		date: 'Sep 2017 – Jun 2018',
-		subheading: 'Mentor, Community Schools Team',
+		subheading: 'Tutor',
 		description: 'Guided elementary students in academic and physical activities after school, including Math and English.'
 	}
 ]
