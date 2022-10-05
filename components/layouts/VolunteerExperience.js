@@ -33,11 +33,13 @@ const VolunteerExperience = () => {
 
 				<div className='column'>
 					{volunteerList.map((volunteer, index) => (
-						<div className='column' data-gap='smaller' data-layout='justified' key={index}>
-							<h5>{volunteer.name}</h5>
-							<div className='row' data-gap='smaller' data-layout='justified'>
-								<h6>{volunteer.subheading}</h6>
-								<h6>{volunteer.date}</h6>
+						<div className='column' data-gap='smaller' data-width='full' key={index}>
+							<div className='row' data-layout='justified'>
+								<div className='row'>
+									<h5>{volunteer.name}</h5>
+									<p>{volunteer.subheading}</p>
+								</div>
+								<p>{volunteer.date}</p>
 							</div>
 							<p>{volunteer.description}</p>
 						</div>

@@ -33,11 +33,13 @@ const WorkExperience = () => {
 
 				<div className='column'>
 					{workList.map((work, index) => (
-						<div className='column' data-gap='smaller' data-layout='justified' key={index}>
-							<h5>{work.name}</h5>
-							<div className='row' data-gap='smaller' data-layout='justified'>
-								<h6>{work.subheading}</h6>
-								<h6>{work.date}</h6>
+						<div className='column' data-gap='smaller' data-width='full' key={index}>
+							<div className='row' data-layout='justified'>
+								<div className='row'>
+									<h5>{work.name}</h5>
+									<p>{work.subheading}</p>
+								</div>
+								<p>{work.date}</p>
 							</div>
 							<p>{work.description}</p>
 						</div>
