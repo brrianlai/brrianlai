@@ -33,7 +33,7 @@ const WorkExperience = () => {
 
 				<div className='column'>
 					{workList.map((work, index) => (
-						<div className='column' data-gap='smaller' data-width='full' key={index}>
+						<div className='column' data-gap='smaller' key={index}>
 							<div className='row' data-layout='justified'>
 								<div className='row'>
 									<h5>{work.name}</h5>
