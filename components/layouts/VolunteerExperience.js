@@ -35,7 +35,7 @@ const VolunteerExperience = () => {
 					{volunteerList.map((volunteer, index) => (
 						<div className='column' data-gap='smaller' key={index}>
 							<h5>{volunteer.name}</h5>
-							<div className='row' data-layout='justified'>
+							<div className='row' data-gap='smaller' data-layout='justified'>
 								<p>{volunteer.subheading}</p>
 								<p>{volunteer.date}</p>
 							</div>
