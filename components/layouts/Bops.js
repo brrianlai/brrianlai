@@ -219,8 +219,8 @@ const Bops = () => {
 						<motion.div variants={item}>
 							<a href={bop.link} key={index} target='_blank'>
 								<div className='row' data-gap='smaller' data-align='center'>
-									<p className='weight-500'>{bop.artist}</p>
-									<p className='weight'>{bop.title}</p>
+									<h5>{bop.artist}</h5>
+									<p>{bop.title}</p>
 								</div>
 							</a>
 						</motion.div>
