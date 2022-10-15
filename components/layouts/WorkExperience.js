@@ -3,19 +3,19 @@ import React from 'react'
 const workList = [
 	{
 		name: 'Canada Border Services Agency (CBSA)',
-		date: 'Oct 2022 – present',
+		date: 'Oct 2022 to present',
 		subheading: 'Administrative assistant',
 		description: ''
 	},
 	{
 		name: 'A1 Learning Centre',
-		date: 'May 2022 – present',
+		date: 'May 2022 to present',
 		subheading: 'Tutor',
 		description: 'Work closely with 20+ elementary students in Math and English subjects.'
 	},
 	{
 		name: 'Adventure Zone',
-		date: 'Aug 2015 – Jan 2019',
+		date: 'Aug 2015 to Jan 2019',
 		subheading: 'Receptionist',
 		description: 'Managed admissions, cash deposits, bookings, new employee training, and store opening/closing as a keyholder. Maintained and repaired computers and arcade machines.'
 	}

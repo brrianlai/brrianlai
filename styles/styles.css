@@ -218,8 +218,9 @@ h6 {
 
 /* header, footer */
 
-header, footer {
+header, footer, nav {
 	align-items: center;
+	background: var(--background-color);
 	display: flex;
 	gap: 1.6rem;
 	height: var(--header-height);
@@ -228,13 +229,8 @@ header, footer {
 	width: 100%;
 }
 
-header {
+header .icon-menu {
 	z-index: 2;
-}
-
-header, nav {
-	backdrop-filter: blur(6rem);
-	-webkit-backdrop-filter: blur(6rem);
 }
 
 footer h5, footer .icon {
@@ -248,16 +244,11 @@ footer .icon:hover {
 /* menu */
 
 nav {
-	align-items: center;
-	background: var(--light-87);
 	display: none;
-	flex-direction: column;
-	padding-bottom: var(--gap-width-smaller);
-	padding-top: calc(var(--header-height) + var(--gap-width-smaller));
-	position: fixed;
-	transform: translate(0, -100%);
+	position: absolute;
+	transform: translate(-100%, 0);
 	transition: var(--transition-transform);
-	width: 100%;
+	top: 0;
 	z-index: 1;
 }
 
@@ -727,21 +718,12 @@ section[data-background='grey'] p {
 		--wrap-padding-large: 0 2.4rem;
 	}
 
-	header {
-		background: var(--light-60);
-		position: fixed;
-	}
-
 	header .social {
 		display: none;
 	}
 
 	header .icon-menu, nav {
 		display: flex;
-	}
-
-	main {
-		padding-top: var(--header-height);
 	}
 
 	.background {

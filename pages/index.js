@@ -6,7 +6,6 @@ import Education from '../components/layouts/Education'
 import Projects from '../components/layouts/Projects'
 import WorkExperience from '../components/layouts/WorkExperience'
 import VolunteerExperience from '../components/layouts/VolunteerExperience'
-import Bops from '../components/layouts/Bops'
 
 /* import components */
 import Gallery from '../components/Gallery'
@@ -67,7 +66,6 @@ function App() {
 						sizes='33vw'
 					/>
 				</Gallery>
-				<Bops />
 			</Fade>
 		</Layout>
 	)
