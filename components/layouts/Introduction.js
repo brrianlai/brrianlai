@@ -26,6 +26,7 @@ const item = {
 		}
 	}
 }
+
 const Introduction = () => {
 	return (
 		<section className='introduction'>
