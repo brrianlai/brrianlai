@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../Card'
-import { motion, AnimatePresence, MotionConfig } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const container = {
 	hidden: {
@@ -70,30 +70,28 @@ const Projects = () => {
 	return (
 		<section>
 			<h4>Projects</h4>
-			<AnimatePresence mode={false}>
-				<motion.div
-					className='grid'
-					data-columns='3'
-					variants={container}
-					initial='hidden'
-					whileInView='show'
-				>
-					{projects.map((project, index) => (
-						<motion.div variants={item}>
-							<Card
-								title={project.name}
-								key={index}
-								tags={project.tags}
-								image={project.preview}
-								height={project.height}
-								width={project.width}
-								sizes='(max-width: 768px) 100vw, 33vw'
-								link={project.link}
-							/>
-						</motion.div>
-					))}
-				</motion.div>
-			</AnimatePresence>
+			<motion.div
+				className='grid'
+				data-columns='3'
+				variants={container}
+				initial='hidden'
+				animate='show'
+			>
+				{projects.map((project, index) => (
+					<motion.div variants={item}>
+						<Card
+							title={project.name}
+							key={index}
+							tags={project.tags}
+							image={project.preview}
+							height={project.height}
+							width={project.width}
+							sizes='(max-width: 768px) 100vw, 33vw'
+							link={project.link}
+						/>
+					</motion.div>
+				))}
+			</motion.div>
 		</section>
 	)
 }

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const variants = {
 	hidden: { opacity: 0, x: 0, y: 0 },
-	enter: { opacity: 1, x: 0, y: 0 },
+	show: { opacity: 1, x: 0, y: 0 },
 	exit: { opacity: 0, x: 0, y: 0 },
 }
 
@@ -14,9 +14,9 @@ const Layout = ({ children }) => {
 		<>
 			<Header />
 			<motion.main
-				initial="hidden"
-				animate="enter"
-				exit="exit"
+				initial='hidden'
+				animate='show'
+				exit='exit'
 				transition={{ type: 'linear' }}
 			>
 				{children}
