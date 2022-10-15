@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const container = {
 	hidden: {
@@ -20,19 +20,17 @@ const container = {
 const Fade = ({ children }) => {
 	return (
 		<div>
-			<AnimatePresence mode={false}>
-				{children.map((child, index) => (
-					<motion.div
-						variants={container}
-						initial='hidden'
-						whileInView='show'
-						viewport={{ once: true }}
-						key={{index}}
-					>
-						{child}
-					</motion.div>
-				))}
-			</AnimatePresence>
+			{children.map((child, index) => (
+				<motion.div
+					variants={container}
+					initial='hidden'
+					whileInView='show'
+					viewport={{ once: true }}
+					key={index}
+				>
+					{child}
+				</motion.div>
+			))}
 		</div>
 	)
 }

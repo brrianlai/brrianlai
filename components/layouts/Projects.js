@@ -2,16 +2,6 @@ import React from 'react'
 import Card from '../Card'
 import { motion } from 'framer-motion'
 
-const container = {
-	hidden: {
-	},
-	show: {
-		transition: {
-			staggerChildren: 0.4
-		}
-	}
-}
-
 const item = {
 	hidden: {
 		opacity: 0,
@@ -70,28 +60,31 @@ const Projects = () => {
 	return (
 		<section>
 			<h4>Projects</h4>
-			<motion.div
+			
+			<div
 				className='grid'
 				data-columns='3'
-				variants={container}
-				initial='hidden'
-				animate='show'
 			>
 				{projects.map((project, index) => (
-					<motion.div variants={item}>
+					<motion.div
+						variants={item}
+						initial='hidden'
+						whileInView='show'
+						viewport={{ once: true }}
+					>
 						<Card
 							title={project.name}
-							key={index}
 							tags={project.tags}
 							image={project.preview}
 							height={project.height}
 							width={project.width}
+							key={index}
 							sizes='(max-width: 768px) 100vw, 33vw'
 							link={project.link}
 						/>
 					</motion.div>
 				))}
-			</motion.div>
+			</div>
 		</section>
 	)
 }
