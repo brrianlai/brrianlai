@@ -38,11 +38,6 @@ const bopList = [
 		link: 'https://www.youtube.com/watch?v=-Jhg8oPgcAM'
 	},
 	{
-		artist: 'Kehlani, Ty Dolla $ign',
-		title: 'Nights Like This',
-		link: 'https://www.youtube.com/watch?v=I99qCuWx1mI'
-	},
-	{
 		artist: 'Mac Miller',
 		title: 'Self Care',
 		link: 'https://www.youtube.com/watch?v=SsKT0s5J8ko'

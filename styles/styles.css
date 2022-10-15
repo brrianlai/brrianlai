@@ -85,7 +85,7 @@ a:hover, .icon:hover {
 	color: var(--dark-38);
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
 	color: var(--dark-100);
 	font-weight: 500;
 }
@@ -116,9 +116,9 @@ h5 {
 }
 
 h6 {
-	font-size: 1.4rem;
-	font-weight: 400;
-	line-height: 2.6rem;
+	color: var(--dark-60);
+	font-size: 1.2rem;
+	line-height: 2.4rem;
 }
 
 /* icons */
@@ -308,6 +308,38 @@ nav.active {
 	height: 0.1rem;
 	margin: var(--gap-width-smaller);
 	width: 100%;
+}
+
+/* cards */
+
+.card {
+	background: var(--background-color);
+	background-clip: padding-box;
+	border-radius: 2rem;
+	box-shadow: 0 0 0 0.1rem var(--dark-6) inset;
+	display: flex;
+	flex-direction: column;
+}
+
+.card img {
+	border-radius: 2rem 2rem 0 0;
+	height: auto;
+	width: 100%;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-width-smaller);
+	padding: 2rem;
+}
+
+/* tags */
+
+.tag {
+	border: 0.1rem solid var(--dark-6);
+	border-radius: 1rem;
+	padding: 0.4rem 1.6rem;
 }
 
 /* sections */
