@@ -6,7 +6,7 @@ import Icon from './Icon'
 const Card = ({ image, height, width, title, tags, sizes, link }) => {
 	return (
 		<div className='card'>
-			{image ? <Image src={image} height={height} width={width} alt={title} sizes={sizes} /> : null}
+			{image ? <Image src={image} height={height} width={width} alt={title} sizes={sizes} quality='90' /> : null}
 			<div className='card-content'>
 				<h5>{title}</h5>
 				{tags ?

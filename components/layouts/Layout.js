@@ -17,7 +17,6 @@ const Layout = ({ children }) => {
 				initial='hidden'
 				animate='show'
 				exit='exit'
-				transition={{ type: 'linear' }}
 			>
 				{children}
 			</motion.main>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const container = {
 	hidden: {
@@ -203,25 +203,23 @@ const Bops = () => {
 	return (
 		<section data-background='mint'>
 			<h4>Current Bops</h4>
-			<AnimatePresence mode={false}>
-				<motion.div
-					className='row'
-					variants={container}
-					initial='hidden'
-					whileInView='show'
-				>
-					{bopList.map((bop, index) => (
-						<motion.div variants={item}>
-							<a href={bop.link} key={index} target='_blank'>
-								<div className='row' data-gap='smaller' data-align='center'>
-									<h5>{bop.artist}</h5>
-									<p>{bop.title}</p>
-								</div>
-							</a>
-						</motion.div>
-					))}
-				</motion.div>
-			</AnimatePresence>
+			<motion.div
+				className='row'
+				variants={container}
+				initial='hidden'
+				whileInView='show'
+			>
+				{bopList.map((bop, index) => (
+					<motion.div variants={item}>
+						<a href={bop.link} key={index} target='_blank'>
+							<div className='row' data-gap='smaller' data-align='center'>
+								<h5>{bop.artist}</h5>
+								<p>{bop.title}</p>
+							</div>
+						</a>
+					</motion.div>
+				))}
+			</motion.div>
 		</section>
 	)
 }
