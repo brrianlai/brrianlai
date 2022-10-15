@@ -51,11 +51,11 @@ const projects = [
 	},
 	{
 		name: 'Personal website',
-		tags: ['React', 'Next.js', 'Responsive', 'Dark mode', 'Markdown'],
+		tags: ['React', 'Next.js', 'Responsive', 'Dark mode', 'HTML5', 'CSS3'],
 		preview: '/site.png',
 		height: '1800',
 		width: '2400',
-		link: 'https://brrian.vercel.app'
+		link: 'https://github.com/brrianlai/brrian.vercel.app'
 	}
 ]
 
