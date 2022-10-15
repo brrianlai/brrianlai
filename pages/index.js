@@ -29,15 +29,15 @@ function App() {
 				<Gallery>
 					<Image
 						src='/IMG_6077.jpeg'
-						width="4024"
-						height="3024"
-						sizes="50vw"
+						width='4024'
+						height='3024'
+						sizes='50vw'
 					/>
 					<Image
 						src='/IMG_20170628_200243.jpg'
-						width="4048"
-						height="3036"
-						sizes="50vw"
+						width='4048'
+						height='3036'
+						sizes='50vw'
 					/>
 				</Gallery>
 				<Projects />
@@ -50,21 +50,21 @@ function App() {
 				<Gallery>
 					<Image
 						src='/IMG_6432.jpg'
-						width="3798"
-						height="2844"
-						sizes="33vw"
+						width='3798'
+						height='2844'
+						sizes='33vw'
 					/>
 					<Image
 						src='/IMG_3060.jpg'
-						width="4024"
-						height="3024"
-						sizes="33vw"
+						width='4024'
+						height='3024'
+						sizes='33vw'
 					/>
 					<Image
 						src='/IMG_3994.jpeg'
-						width="4024"
-						height="3024"
-						sizes="33vw"
+						width='4024'
+						height='3024'
+						sizes='33vw'
 					/>
 				</Gallery>
 				<Bops />

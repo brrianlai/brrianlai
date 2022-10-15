@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/future/image'
 import Tag from './Tag'
 
-const Card = ({ image, height, width, title, tags }) => {
+const Card = ({ image, height, width, title, tags, sizes }) => {
 	return (
 		<div className='card'>
-			{image ? <Image src={image} height={height} width={width} alt={title} /> : null}
+			{image ? <Image src={image} height={height} width={width} alt={title} sizes={sizes} /> : null}
 			<div className='card-content'>
 				<h5>{title}</h5>
 				{tags ?

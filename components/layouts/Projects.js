@@ -7,30 +7,30 @@ const projects = [
 	{
 		name: 'Apollo app redesign',
 		tags: ['Figma', 'iOS'],
-		preview: '/placeholder.png',
-		height: '400',
-		width: '800'
+		preview: '/apollo.png',
+		height: '1800',
+		width: '2400'
 	},
 	{
 		name: 'Discord app redesign',
 		tags: ['Figma'],
 		preview: '/placeholder.png',
-		height: '400',
-		width: '800'
+		height: '900',
+		width: '1200'
 	},
 	{
 		name: 'Instagram app redesign',
 		tags: ['Figma', 'iOS'],
-		preview: '/placeholder.png',
-		height: '400',
-		width: '800'
+		preview: '/instagram.png',
+		height: '1800',
+		width: '2400'
 	},
 	{
 		name: 'Personal website',
 		tags: ['React', 'Next.js', 'Responsive', 'Dark mode', 'Markdown'],
-		preview: '/placeholder.png',
-		height: '400',
-		width: '800'
+		preview: '/site.png',
+		height: '1800',
+		width: '2400'
 	}
 ]
 
@@ -40,7 +40,7 @@ const Projects = () => {
 			<h4>Projects</h4>
 			<div className='grid' data-columns='3'>
 				{projects.map((project, index) => (
-					<Card title={project.name} key={index} tags={project.tags} image={project.preview} height={project.height} width={project.width} />
+					<Card title={project.name} key={index} tags={project.tags} image={project.preview} height={project.height} width={project.width} sizes='(max-width: 768px) 100vw, 33vw' />
 				))}
 			</div>
 		</section>
