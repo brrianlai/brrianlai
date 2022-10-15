@@ -2,21 +2,6 @@ import React from 'react'
 import Card from '../Card'
 import { motion } from 'framer-motion'
 
-const item = {
-	hidden: {
-		opacity: 0,
-		y: 15
-	},
-	show: {
-		opacity: 1,
-		y: 0,
-		transition: {
-			duration: 0.6,
-			ease: [0.25, 0.1, 0.25, 1]
-		}
-	}
-}
-
 const projects = [
 	{
 		name: 'Apollo app redesign',
@@ -56,15 +41,27 @@ const projects = [
 	},
 ]
 
-const Projects = () => {
+const item = {
+	hidden: {
+		opacity: 0,
+		y: 15
+	},
+	show: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.6,
+			ease: [0.25, 0.1, 0.25, 1]
+		}
+	}
+}
+
+const Projects = ({ posts }) => {
 	return (
 		<section>
 			<h4>Projects</h4>
 			
-			<div
-				className='grid'
-				data-columns='3'
-			>
+			<div className='grid' data-columns='3'>
 				{projects.map((project, index) => (
 					<motion.div
 						variants={item}

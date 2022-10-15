@@ -1,7 +1,7 @@
 import '../styles/styles.css'
 import Head from 'next/head'
 
-export default function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
 	return (
 		<div>
 			<Head>
