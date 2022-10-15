@@ -64,6 +64,7 @@ const Projects = ({ posts }) => {
 			<div className='grid' data-columns='3'>
 				{projects.map((project, index) => (
 					<motion.div
+						key={index}
 						variants={item}
 						initial='hidden'
 						whileInView='show'
@@ -75,7 +76,6 @@ const Projects = ({ posts }) => {
 							image={project.preview}
 							height={project.height}
 							width={project.width}
-							key={index}
 							sizes='(max-width: 768px) 100vw, 33vw'
 							link={project.link}
 						/>
