@@ -334,6 +334,17 @@ nav.active {
 	padding: 2rem;
 }
 
+.card-link .icon {
+	color: var(--dark-38);
+	font-size: 1.8rem;
+	height: 3.4rem;
+	width: 3.4rem;
+}
+
+.card-link .icon:hover {
+	color: var(--dark-87);
+}
+
 /* tags */
 
 .tag {
