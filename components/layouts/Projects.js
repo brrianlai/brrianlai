@@ -36,13 +36,6 @@ const projects = [
 		width: '2400'
 	},
 	{
-		name: 'Discord app redesign',
-		tags: ['Figma'],
-		preview: '/placeholder.png',
-		height: '900',
-		width: '1200'
-	},
-	{
 		name: 'Instagram app redesign',
 		tags: ['Figma', 'iOS'],
 		preview: '/instagram.png',
@@ -63,7 +56,14 @@ const projects = [
 		height: '1800',
 		width: '2400',
 		link: 'https://github.com/brrianlai/brrian.vercel.app'
-	}
+	},
+	{
+		name: 'Discord app redesign',
+		tags: ['Figma', 'Coming soon'],
+		preview: '/placeholder.png',
+		height: '900',
+		width: '1200'
+	},
 ]
 
 const Projects = () => {
