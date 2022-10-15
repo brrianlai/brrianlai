@@ -315,7 +315,12 @@ nav.active {
 .card img {
 	border-radius: 2rem 2rem 0 0;
 	height: auto;
+	transition: scale 0.2s ease;
 	width: 100%;
+}
+
+.card img:hover {
+	scale: 1.05;
 }
 
 .card-content {
