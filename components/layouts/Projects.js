@@ -26,7 +26,7 @@ const projects = [
 	},
 	{
 		name: 'Personal website',
-		tags: ['React', 'Next.js', 'Responsive', 'Dark mode'],
+		tags: ['React', 'Next.js', 'Vercel', 'Responsive', 'Dark mode'],
 		preview: '/site.png',
 		height: '1800',
 		width: '2400',
