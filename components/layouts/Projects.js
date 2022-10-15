@@ -50,8 +50,15 @@ const projects = [
 		width: '2400'
 	},
 	{
+		name: 'VSCO app redesign',
+		tags: ['Figma', 'iOS'],
+		preview: '/vsco.png',
+		height: '1800',
+		width: '2400'
+	},
+	{
 		name: 'Personal website',
-		tags: ['React', 'Next.js', 'Responsive', 'Dark mode', 'HTML5', 'CSS3'],
+		tags: ['React', 'Next.js', 'Responsive', 'Dark mode'],
 		preview: '/site.png',
 		height: '1800',
 		width: '2400',
