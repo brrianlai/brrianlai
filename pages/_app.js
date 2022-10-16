@@ -1,4 +1,6 @@
 import '../styles/styles.css'
+import 'remixicon/fonts/remixicon.css'
+
 import Head from 'next/head'
 
 export default function App({ Component, pageProps }) {
