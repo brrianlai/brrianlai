@@ -212,10 +212,6 @@ h6 {
 	gap: var(--gap-width-smaller);
 }
 
-[data-width='full'] {
-	width: 100%;
-}
-
 /* header, footer */
 
 header, footer, nav {

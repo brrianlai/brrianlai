@@ -23,7 +23,7 @@ const Header = () => {
 					<h4>brrian</h4>
 				</div>
 				<Social />
-				<div className='icon icon-menu' onClick={toggleActive} aria-label='Menu button'>
+				<div className='icon icon-menu' onClick={toggleActive}>
 					<Icon name='ri-menu-line' />
 				</div>
 			</header>
