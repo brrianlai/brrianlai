@@ -25,26 +25,30 @@ const volunteerList = [
 
 const VolunteerExperience = () => {
 	return (
-		<section data-offset>
+		<section>
 
 			<h4>Volunteer Experience</h4>
 
 				{volunteerList.map((volunteer, index) => (
 					<motion.div
-						className='column'
-						data-gap='smaller'
+						className='grid responsive-gap'
+						data-columns='3'
 						key={index}
 						variants={item}
 						initial='hidden'
 						whileInView='show'
 						viewport={{ once: true }}
 					>
-						<h5>{volunteer.name}</h5>
-						<div className='row' data-gap='smaller'>
-							<Tag>{volunteer.subheading}</Tag>
-							<Tag>{volunteer.date}</Tag>
+						<div className='column' data-gap='smaller'>
+							<h5>{volunteer.name}</h5>
+							<div className='row' data-gap='smaller'>
+								<Tag>{volunteer.subheading}</Tag>
+								<Tag>{volunteer.date}</Tag>
+							</div>
 						</div>
-						<p>{volunteer.description}</p>
+						<div className='column'>
+							<p>{volunteer.description}</p>
+						</div>
 					</motion.div>
 				))}
 

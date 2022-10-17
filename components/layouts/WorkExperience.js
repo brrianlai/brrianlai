@@ -25,26 +25,30 @@ const workList = [
 
 const WorkExperience = () => {
 	return (
-		<section data-offset='right'>
+		<section>
 
 			<h4>Work Experience</h4>
 
 			{workList.map((work, index) => (
 				<motion.div
-					className='column'
-					data-gap='smaller'
+					className='grid responsive-gap'
+					data-columns='3'
 					key={index}
 					variants={item}
 					initial='hidden'
 					whileInView='show'
 					viewport={{ once: true }}
 				>
-					<h5>{work.name}</h5>
+					<div className='column' data-gap='smaller'>
+						<h5>{work.name}</h5>
 						<div className='row' data-gap='smaller'>
 							<Tag>{work.subheading}</Tag>
 							<Tag>{work.date}</Tag>
 						</div>
-					<p>{work.description}</p>
+					</div>
+					<div className='column'>
+						<p>{work.description}</p>
+					</div>
 				</motion.div>
 			))}
 
