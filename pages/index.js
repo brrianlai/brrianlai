@@ -1,19 +1,18 @@
-/* import layouts */
+import Head from 'next/head'
+import Image from 'next/future/image'
+import dynamic from 'next/dynamic'
+
 import Layout from '../components/layouts/Layout'
 import Introduction from '../components/layouts/Introduction'
 import Background from '../components/layouts/Background'
-import Education from '../components/layouts/Education'
-import Projects from '../components/layouts/Projects'
-import WorkExperience from '../components/layouts/WorkExperience'
-import VolunteerExperience from '../components/layouts/VolunteerExperience'
-
-/* import components */
-import Gallery from '../components/Gallery'
 import Button from '../components/Button'
 import Fade from '../components/Fade'
 
-import Head from 'next/head'
-import Image from 'next/future/image'
+const Education = dynamic(() => import('../components/layouts/Education'))
+const Projects = dynamic(() => import('../components/layouts/Projects'))
+const WorkExperience = dynamic(() => import('../components/layouts/WorkExperience'))
+const VolunteerExperience = dynamic(() => import('../components/layouts/VolunteerExperience'))
+const Gallery = dynamic(() => import('../components//Gallery'))
 
 function App() {
 	return (
