@@ -44,7 +44,7 @@ function App() {
 				<WorkExperience />
 				<VolunteerExperience />
 				<section data-layout='center'>
-					<h2>More photos</h2>
+					<h2>See more photos</h2>
 					<Button link='https://vsco.co/brrian' size='large' shape='round' iconRight='ri-arrow-right-line'>VSCO</Button>
 				</section>
 				<Gallery>
