@@ -31,12 +31,14 @@ function App() {
 						width='4024'
 						height='3024'
 						sizes='50vw'
+						alt=''
 					/>
 					<Image
 						src='/IMG_20170628_200243.jpg'
 						width='4048'
 						height='3036'
 						sizes='50vw'
+						alt=''
 					/>
 				</Gallery>
 				<Projects />
@@ -52,18 +54,21 @@ function App() {
 						width='3798'
 						height='2844'
 						sizes='33vw'
+						alt=''
 					/>
 					<Image
 						src='/IMG_3060.jpg'
 						width='4024'
 						height='3024'
 						sizes='33vw'
+						alt=''
 					/>
 					<Image
 						src='/IMG_3994.jpeg'
 						width='4024'
 						height='3024'
 						sizes='33vw'
+						alt=''
 					/>
 				</Gallery>
 			</Fade>

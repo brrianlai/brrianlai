@@ -26,7 +26,7 @@ const Introduction = () => {
 			</motion.div>
 			<div className='column'>
 				<div className='profile'>
-					<Image src={profile} width='1125' height='1125' sizes='(max-width: 960px) 180w, 240w' priority alt='Profile photo'/>
+					<Image src={profile} width='1125' height='1125' sizes='(max-width: 960px) 1820px, 280px' priority alt='Profile photo'/>
 				</div>
 			</div>
 		</section>
