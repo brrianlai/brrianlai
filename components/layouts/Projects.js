@@ -71,15 +71,26 @@ const Projects = ({ posts }) => {
 						whileInView='show'
 						viewport={{ once: true }}
 					>
-						<Card
-							title={project.name}
-							tags={project.tags}
-							image={project.preview}
-							height={project.height}
-							width={project.width}
-							sizes='(max-width: 768px) 100vw, 33vw'
-							link={project.link}
-						/>
+						{(project.link) ?
+							<Card
+								title={project.name}
+								tags={project.tags}
+								image={project.preview}
+								height={project.height}
+								width={project.width}
+								sizes='(max-width: 768px) 100vw, 33vw'
+								link={project.link}
+							/>
+						: 
+							<Card
+								title={project.name}
+								tags={project.tags}
+								image={project.preview}
+								height={project.height}
+								width={project.width}
+								sizes='(max-width: 768px) 100vw, 33vw'
+							/>
+						}
 					</motion.div>
 				))}
 			</div>
