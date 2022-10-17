@@ -34,11 +34,11 @@ const Card = ({ image, height, width, title, tags, sizes, link }) => {
 						{tags.map((tag, index) => (
 							<Tag key={index}>{tag}</Tag>
 						))}
-						{link ?
+						{link &&
 							<a href={link} className='card-link' alt={title}>
 								<Icon name='ri-link' />
 							</a>
-						: null}
+						}
 					</div>
 				: null}
 			</div>
