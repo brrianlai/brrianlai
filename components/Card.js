@@ -7,7 +7,7 @@ const Card = ({ image, height, width, title, tags, sizes, link }) => {
 	return (
 		<div className='card'>
 			{image ?
-				<a href={link}>
+				<a href={link} alt={title}>
 					<Image
 						src={image}
 						height={height}
@@ -26,7 +26,7 @@ const Card = ({ image, height, width, title, tags, sizes, link }) => {
 							<Tag key={index}>{tag}</Tag>
 						))}
 						{link ?
-							<a href={link} className='card-link'>
+							<a href={link} className='card-link' alt={title}>
 								<Icon name='ri-link' />
 							</a>
 						: null}
