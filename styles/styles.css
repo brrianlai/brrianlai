@@ -67,7 +67,7 @@ body {
 	font-display: swap;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 	font-size: 1.6rem;
-	line-height: 2.8rem;
+	line-height: 3.2rem;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
@@ -112,7 +112,7 @@ h4 {
 
 h5 {
 	font-size: 1.6rem;
-	line-height: 2.8rem;
+	line-height: 3.2rem;
 }
 
 h6 {
