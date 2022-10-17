@@ -135,11 +135,6 @@ h6 {
 	width: 4.8rem;
 }
 
-.icon-menu {
-	display: none;
-	cursor: pointer;
-}
-
 .icon-vsco {
 	fill: var(--dark-100);
 	transition: var(--transition-fill);
@@ -178,6 +173,10 @@ h6 {
 
 [data-align='center'] {
 	align-items: center;
+}
+
+[data-align='center-vertical'] {
+	justify-content: center;
 }
 
 [data-columns='2'] {
@@ -227,18 +226,6 @@ header, footer, nav {
 
 header .icon-back {
 	margin-left: -1.2rem;
-}
-
-header .icon-menu {
-	z-index: 2;
-}
-
-footer h5, footer .icon {
-	color: var(--dark-38);
-}
-
-footer .icon:hover {
-	color: var(--dark-87);
 }
 
 /* menu */
@@ -350,7 +337,7 @@ nav.active {
 .tag {
 	border: 0.1rem solid var(--dark-6);
 	border-radius: 1rem;
-	padding: 0.4rem 1.6rem;
+	padding: 0.4rem 1.2rem;
 }
 
 /* sections */
@@ -393,7 +380,7 @@ section[data-size='large'] {
 /* section offset */
 
 [data-offset] {
-	width: 60vw;
+	width: 67vw;
 }
 
 [data-offset='right'] {
@@ -596,18 +583,18 @@ section[data-background='grey'] p {
 .introduction {
 	display: grid;
 	gap: 4rem;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr 1fr;
 }
 
 .profile {
 	align-self: flex-end;
-	height: 24rem;
+	height: 28rem;
 	position: relative;
-	width: 24rem;
+	width: 28rem;
 }
 
 .profile img {
-	border-radius: 12rem;
+	border-radius: 50%;
 	height: auto;
 	width: auto;
 }
@@ -718,25 +705,19 @@ section[data-background='grey'] p {
 
 /* responsive */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
 	:root {
-		--header-height: 8rem;
+		--header-height: 10rem;
 		--section-padding: 4.8rem 2.4rem;
 		--section-padding-large: 4.8rem 2.4rem;
 		--wrap-padding: 0 2.4rem;
 		--wrap-padding-large: 0 2.4rem;
 	}
 
-	header .social {
-		display: none;
-	}
-
-	header .icon-menu, nav {
+	.introduction {
+		align-items: flex-start;
 		display: flex;
-	}
-
-	.background {
-		height: 32rem;
+		flex-direction: column-reverse;
 	}
 
 	.gallery {
@@ -748,20 +729,12 @@ section[data-background='grey'] p {
 	}
 	
 	.profile {
-		height: 16rem;
-		width: 16rem;
+		height: 18rem;
+		width: 18rem;
 	}
 
 	[data-offset] {
 		width: 100%;
-	}
-}
-
-@media only screen and (max-width: 720px) {
-	.introduction {
-		align-items: flex-start;
-		display: flex;
-		flex-direction: column-reverse;
 	}
 }
 

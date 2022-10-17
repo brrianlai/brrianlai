@@ -1,4 +1,6 @@
 import React from 'react'
+import Tag from '../Tag'
+import { motion } from 'framer-motion'
 
 const volunteerList = [
 	{
@@ -23,31 +25,45 @@ const volunteerList = [
 
 const VolunteerExperience = () => {
 	return (
-		<section data-background='grey'>
+		<section data-offset>
 
-			<div className='grid' data-columns='1-2'>
+			<h4>Volunteer Experience</h4>
 
-				<div className='column'>
-					<h4>Volunteer Experience</h4>
-				</div>
-
-				<div className='column'>
-					{volunteerList.map((volunteer, index) => (
-						<div className='column' data-gap='smaller' key={index}>
-							<h5>{volunteer.name}</h5>
-							<div className='row' data-gap='smaller' data-layout='justified'>
-								<p>{volunteer.subheading}</p>
-								<p>{volunteer.date}</p>
-							</div>
-							<p>{volunteer.description}</p>
+				{volunteerList.map((volunteer, index) => (
+					<motion.div
+						className='column'
+						data-gap='smaller'
+						key={index}
+						variants={item}
+						initial='hidden'
+						whileInView='show'
+						viewport={{ once: true }}
+					>
+						<h5>{volunteer.name}</h5>
+						<div className='row' data-gap='smaller'>
+							<Tag>{volunteer.subheading}</Tag>
+							<Tag>{volunteer.date}</Tag>
 						</div>
-					))}
-				</div>
-
-			</div>
+						<p>{volunteer.description}</p>
+					</motion.div>
+				))}
 
 		</section>
 	)
+}
+
+const item = {
+	hidden: {
+		opacity: 0,
+	},
+	show: {
+		opacity: 1,
+		transition: {
+			duration: 0.5,
+			delay: 0.3,
+			ease: [0.25, 0.1, 0.25, 1]
+		}
+	}
 }
 
 export default VolunteerExperience

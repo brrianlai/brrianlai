@@ -4,6 +4,8 @@ import Introduction from '../components/layouts/Introduction'
 import Background from '../components/layouts/Background'
 import Education from '../components/layouts/Education'
 import Projects from '../components/layouts/Projects'
+import WorkExperience from '../components/layouts/WorkExperience'
+import VolunteerExperience from '../components/layouts/VolunteerExperience'
 
 /* import components */
 import Gallery from '../components/Gallery'
@@ -38,8 +40,10 @@ function App() {
 					/>
 				</Gallery>
 				<Projects />
+				<WorkExperience />
+				<VolunteerExperience />
 				<section data-layout='center'>
-					<h2>Check out my photos</h2>
+					<h2>More photos</h2>
 					<Button link='https://vsco.co/brrian' size='large' shape='round' iconRight='ri-arrow-right-line'>VSCO</Button>
 				</section>
 				<Gallery>

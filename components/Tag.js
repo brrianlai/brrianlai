@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Tag = ({ content, children }) => {
+const Tag = ({ children }) => {
     return (
         <div className='tag'>
-            <h6>
-                {content}
-            </h6>
+            <h6>{children}</h6>
         </div>
     )
 }

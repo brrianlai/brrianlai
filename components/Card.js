@@ -23,7 +23,7 @@ const Card = ({ image, height, width, title, tags, sizes, link }) => {
 				{tags ?
 					<div className='row' data-gap='smaller'>
 						{tags.map((tag, index) => (
-							<Tag content={tag} key={index} />
+							<Tag key={index}>{tag}</Tag>
 						))}
 						{link ?
 							<a href={link} className='card-link'>

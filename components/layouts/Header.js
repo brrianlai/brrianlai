@@ -20,17 +20,9 @@ const Header = () => {
 							<Icon name='ri-arrow-left-line' />
 						</a>
 					)}
-					<h4>brrian</h4>
-				</div>
-				<Social />
-				<div className='icon icon-menu' onClick={toggleActive}>
-					<Icon name='ri-menu-line' />
+					<h4>Brian Lai</h4>
 				</div>
 			</header>
-
-			<nav className={active ? 'active' : ''}>
-				<Social />
-			</nav>
 		</div>
 	)
 }

@@ -3,8 +3,8 @@ import ScrollToTop from '../ScrollToTop'
 
 const Footer = () => {
 	return (
-		<footer className='wrap'>
-			<h5>brrian</h5>
+		<footer>
+			<h5>Brian Lai</h5>
 			<ScrollToTop />
 		</footer>
 	)

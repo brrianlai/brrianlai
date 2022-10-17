@@ -2,8 +2,36 @@ import React from 'react'
 import Image from 'next/future/image'
 import Button from '../Button'
 import { motion } from 'framer-motion'
+import Social from '../Social'
 
 const profile = '/profile.jpg'
+
+const Introduction = () => {
+	return (
+		<section className='introduction' data-align='center'>
+			<motion.div
+				className='column'
+				initial='hidden'
+				animate='show'
+				variants={container}
+			>
+				<motion.h3 variants={item}>Hi! I'm a Biology undergraduate student from UBC with an interest in web and app design</motion.h3>
+				<motion.div className='row' variants={item} data-gap='small'>
+					<Button link='/resume-20221004.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>
+					<Button link='mailto:laibrian@alumni.ubc.ca' shape='round' size='large' iconLeft='ri-mail-line' background='light' outline='true'>Contact me</Button>
+				</motion.div>
+				<motion.div variants={item}>
+					<Social />
+				</motion.div>
+			</motion.div>
+			<div className='column'>
+				<div className='profile'>
+					<Image src={profile} width='1125' height='1125' sizes='(max-width: 960px) 180w, 240w' priority alt='Profile photo'/>
+				</div>
+			</div>
+		</section>
+	)
+}
 
 const container = {
 	hidden: {},
@@ -25,34 +53,6 @@ const item = {
 			ease: [0.25, 0.1, 0.25, 1]
 		}
 	}
-}
-
-const Introduction = () => {
-	return (
-		<section className='introduction'>
-			<motion.div
-				className='column'
-				initial='hidden'
-				animate='show'
-				variants={container}
-			>
-				<div className='column' data-gap='smaller'>
-					<motion.h4 variants={item}>Nice to meet you! I'm</motion.h4>
-					<motion.h1 variants={item}>Brian Lai</motion.h1>
-				</div>
-				<motion.h5 variants={item}>A Biology undergraduate student from UBC with an interest in web and app design</motion.h5>
-				<motion.div className='row' variants={item} data-gap='small'>
-					<Button link='/resume-20221004.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>
-					<Button link='mailto:laibrian@alumni.ubc.ca' shape='round' size='large' iconLeft='ri-mail-line' background='light' outline='true'>Contact me</Button>
-				</motion.div>
-			</motion.div>
-			<div className='column'>
-				<div className='profile'>
-					<Image src={profile} width='1125' height='1125' sizes='(max-width: 768px) 16rem, 24rem' priority alt='Profile photo'/>
-				</div>
-			</div>
-		</section>
-	)
 }
 
 export default Introduction

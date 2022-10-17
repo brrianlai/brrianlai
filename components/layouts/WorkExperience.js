@@ -1,4 +1,6 @@
 import React from 'react'
+import Tag from '../Tag'
+import { motion } from 'framer-motion'
 
 const workList = [
 	{
@@ -11,7 +13,7 @@ const workList = [
 		name: 'A1 Learning Centre',
 		date: 'May 2022 to present',
 		subheading: 'Tutor',
-		description: 'Work closely with 20+ elementary students in Math and English subjects.'
+		description: 'Work closely with 20+ elementary students in Math and English. Hold small group learning activities for 3-4 students at once.'
 	},
 	{
 		name: 'Adventure Zone',
@@ -23,31 +25,45 @@ const workList = [
 
 const WorkExperience = () => {
 	return (
-		<section>
+		<section data-offset='right'>
 
-			<div className='grid' data-columns='1-2'>
+			<h4>Work Experience</h4>
 
-				<div className='column'>
-					<h4>Work Experience</h4>
-				</div>
-
-				<div className='column'>
-					{workList.map((work, index) => (
-						<div className='column' data-gap='smaller' key={index}>
-							<h5>{work.name}</h5>
-							<div className='row' data-gap='smaller' data-layout='justified'>
-								<p>{work.subheading}</p>
-								<p>{work.date}</p>
-							</div>
-							<p>{work.description}</p>
+			{workList.map((work, index) => (
+				<motion.div
+					className='column'
+					data-gap='smaller'
+					key={index}
+					variants={item}
+					initial='hidden'
+					whileInView='show'
+					viewport={{ once: true }}
+				>
+					<h5>{work.name}</h5>
+						<div className='row' data-gap='smaller'>
+							<Tag>{work.subheading}</Tag>
+							<Tag>{work.date}</Tag>
 						</div>
-					))}
-				</div>
-
-			</div>
+					<p>{work.description}</p>
+				</motion.div>
+			))}
 
 		</section>
 	)
+}
+
+const item = {
+	hidden: {
+		opacity: 0,
+	},
+	show: {
+		opacity: 1,
+		transition: {
+			duration: 0.5,
+			delay: 0.3,
+			ease: [0.25, 0.1, 0.25, 1]
+		}
+	}
 }
 
 export default WorkExperience
