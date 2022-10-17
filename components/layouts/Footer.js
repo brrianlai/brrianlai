@@ -1,5 +1,6 @@
 import React from 'react'
-import ScrollToTop from '../ScrollToTop'
+import dynamic from 'next/dynamic'
+const ScrollToTop = dynamic(() => import('../ScrollToTop'))
 
 const Footer = () => {
 	return (

@@ -12,7 +12,7 @@ const Education = dynamic(() => import('../components/layouts/Education'))
 const Projects = dynamic(() => import('../components/layouts/Projects'))
 const WorkExperience = dynamic(() => import('../components/layouts/WorkExperience'))
 const VolunteerExperience = dynamic(() => import('../components/layouts/VolunteerExperience'))
-const Gallery = dynamic(() => import('../components//Gallery'))
+const Gallery = dynamic(() => import('../components/Gallery'))
 
 function App() {
 	return (

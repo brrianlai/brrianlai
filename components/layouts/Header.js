@@ -1,8 +1,6 @@
 import React from 'react'
-import Social from '../Social'
 import Icon from '../Icon'
 
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 const Header = () => {
