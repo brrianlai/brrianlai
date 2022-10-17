@@ -15,9 +15,9 @@ const ScrollToTop = () => {
 	)
 	
 	return (
-		<a className='scrolltotop' onClick={toTop} alt='Scroll to top'>
-			<Icon name='ri-arrow-up-line' onClick={toTop} />
-		</a>
+		<div className='scrolltotop' onClick={toTop}>
+			<Icon name='ri-arrow-up-line' />
+		</div>
 	)
 }
 
