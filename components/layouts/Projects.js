@@ -6,14 +6,14 @@ const projects = [
 	{
 		name: 'Apollo app redesign',
 		tags: ['Figma', 'iOS'],
-		preview: '/apollo.png',
+		preview: '/projects/apollo.png',
 		height: '1800',
 		width: '2400'
 	},
 	{
 		name: 'Instagram app redesign',
 		tags: ['Figma', 'iOS'],
-		preview: '/instagram.png',
+		preview: '/projects/instagram.png',
 		height: '1800',
 		width: '2400',
 		link: 'https://www.figma.com/file/2hqVyvyJ8fHN0GHyGtSmBl/Instagram?node-id=0%3A1'
@@ -21,7 +21,7 @@ const projects = [
 	{
 		name: 'VSCO app redesign',
 		tags: ['Figma', 'iOS'],
-		preview: '/vsco.png',
+		preview: '/projects/vsco.png',
 		height: '1800',
 		width: '2400',
 		link: 'https://www.figma.com/file/Vv281R8FFQ59r8wXaEzbOh/VSCO?node-id=0%3A1'
@@ -29,7 +29,7 @@ const projects = [
 	{
 		name: 'Personal website',
 		tags: ['React', 'Next.js', 'Vercel', 'Responsive', 'Dark mode'],
-		preview: '/site.png',
+		preview: '/projects/site.png',
 		height: '1800',
 		width: '2400',
 		link: 'https://github.com/brrianlai/brrian.vercel.app'
@@ -37,9 +37,10 @@ const projects = [
 	{
 		name: 'Discord logo redesign',
 		tags: ['Figma'],
-		preview: '/discord.png',
+		preview: '/projects/discord.png',
 		height: '1800',
-		width: '1080'
+		width: '1080',
+		link: 'https://www.figma.com/file/WkdeyVYbdMEslmjNQwNwjs/Discord-logo?node-id=1%3A3'
 	}
 ]
 
