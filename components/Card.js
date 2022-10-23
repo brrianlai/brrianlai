@@ -11,7 +11,7 @@ const Card = ({ image, height, width, title, tags, sizes, link }) => {
 		<div className='card'>
 			<ConditionalWrapper
 				condition={link}
-				wrapper={children => <a href={link} alt={title}>{children}</a>}
+				wrapper={children => <a href={link} alt={title} target='_blank'>{children}</a>}
 			>
 				<Fragment>
 					<Image
@@ -24,18 +24,18 @@ const Card = ({ image, height, width, title, tags, sizes, link }) => {
 					/>
 					<div className='card-content'>
 						<h5>{title}</h5>
-						{tags ?
+						{tags &&
 							<div className='row' data-gap='smaller'>
 								{tags.map((tag, index) => (
 									<Tag key={index}>{tag}</Tag>
 								))}
 								{link &&
-									<a href={link} className='card-link' alt={title}>
+									<div className='card-link'>
 										<Icon name='ri-link' />
-									</a>
+									</div>
 								}
 							</div>
-						: null}
+						}
 					</div>
 				</Fragment>
 			</ConditionalWrapper>

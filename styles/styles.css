@@ -305,6 +305,11 @@ nav.active {
 	box-shadow: 0 0 0 0.1rem var(--dark-6) inset;
 	display: flex;
 	flex-direction: column;
+	transition: transform 0.2s ease;
+}
+
+.card:hover {
+	transform: scale(1.01);
 }
 
 .card a {
@@ -314,12 +319,7 @@ nav.active {
 .card img {
 	border-radius: 2rem 2rem 0 0;
 	height: auto;
-	transition: transform 0.2s ease;
 	width: 100%;
-}
-
-.card img:hover {
-	transform: scale(1.01);
 }
 
 .card-content {
