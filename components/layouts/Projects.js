@@ -15,14 +15,16 @@ const projects = [
 		tags: ['Figma', 'iOS'],
 		preview: '/instagram.png',
 		height: '1800',
-		width: '2400'
+		width: '2400',
+		link: 'https://www.figma.com/file/2hqVyvyJ8fHN0GHyGtSmBl/Instagram?node-id=0%3A1'
 	},
 	{
 		name: 'VSCO app redesign',
 		tags: ['Figma', 'iOS'],
 		preview: '/vsco.png',
 		height: '1800',
-		width: '2400'
+		width: '2400',
+		link: 'https://www.figma.com/file/Vv281R8FFQ59r8wXaEzbOh/VSCO?node-id=0%3A1'
 	},
 	{
 		name: 'Personal website',
@@ -31,14 +33,7 @@ const projects = [
 		height: '1800',
 		width: '2400',
 		link: 'https://github.com/brrianlai/brrian.vercel.app'
-	},
-	{
-		name: 'Discord app redesign',
-		tags: ['Figma', 'Coming soon'],
-		preview: '/placeholder.png',
-		height: '900',
-		width: '1200'
-	},
+	}
 ]
 
 const item = {
