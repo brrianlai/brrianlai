@@ -6,7 +6,7 @@ import Layout from '../components/layouts/Layout'
 import Introduction from '../components/layouts/Introduction'
 import Background from '../components/layouts/Background'
 import Button from '../components/Button'
-import FadeIn from '../components/fadeIn'
+import FadeIn from '../components/FadeIn'
 
 const Education = dynamic(() => import('../components/layouts/Education'))
 const Projects = dynamic(() => import('../components/layouts/Projects'))
