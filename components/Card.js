@@ -1,47 +1,44 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Image from 'next/future/image'
 import Tag from './Tag'
 import Icon from './Icon'
 
+const ConditionalWrapper = ({ condition, wrapper, children }) =>
+    condition ? wrapper(children) : children
+
 const Card = ({ image, height, width, title, tags, sizes, link }) => {
 	return (
 		<div className='card'>
-			{(image && link) ?
-				<a href={link} alt={title}>
+			<ConditionalWrapper
+				condition={link}
+				wrapper={children => <a href={link} alt={title}>{children}</a>}
+			>
+				<Fragment>
 					<Image
-							src={image}
-							height={height}
-							width={width}
-							alt={title}
-							sizes={sizes}
-							quality='90'
-						/>
-				</a>
-			: image ?
-				<Image
-					src={image}
-					height={height}
-					width={width}
-					alt={title}
-					sizes={sizes}
-					quality='90'
-				/>
-			: null}
-			<div className='card-content'>
-				<h5>{title}</h5>
-				{tags ?
-					<div className='row' data-gap='smaller'>
-						{tags.map((tag, index) => (
-							<Tag key={index}>{tag}</Tag>
-						))}
-						{link &&
-							<a href={link} className='card-link' alt={title}>
-								<Icon name='ri-link' />
-							</a>
-						}
+						src={image}
+						height={height}
+						width={width}
+						alt={title}
+						sizes={sizes}
+						quality='90'
+					/>
+					<div className='card-content'>
+						<h5>{title}</h5>
+						{tags ?
+							<div className='row' data-gap='smaller'>
+								{tags.map((tag, index) => (
+									<Tag key={index}>{tag}</Tag>
+								))}
+								{link &&
+									<a href={link} className='card-link' alt={title}>
+										<Icon name='ri-link' />
+									</a>
+								}
+							</div>
+						: null}
 					</div>
-				: null}
-			</div>
+				</Fragment>
+			</ConditionalWrapper>
 		</div>
 	)
 }

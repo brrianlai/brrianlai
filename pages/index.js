@@ -6,7 +6,7 @@ import Layout from '../components/layouts/Layout'
 import Introduction from '../components/layouts/Introduction'
 import Background from '../components/layouts/Background'
 import Button from '../components/Button'
-import Fade from '../components/Fade'
+import FadeIn from '../components/fadeIn'
 
 const Education = dynamic(() => import('../components/layouts/Education'))
 const Projects = dynamic(() => import('../components/layouts/Projects'))
@@ -22,7 +22,7 @@ function App() {
 			</Head>
 			<Introduction />
 			<Background />
-			<Fade>
+			<FadeIn>
 				<Education />
 				<Gallery>
 					<Image
@@ -70,7 +70,7 @@ function App() {
 						alt=''
 					/>
 				</Gallery>
-			</Fade>
+			</FadeIn>
 		</Layout>
 	)
 }

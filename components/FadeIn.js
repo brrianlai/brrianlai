@@ -17,7 +17,7 @@ const container = {
 	}
 }
 
-const Fade = ({ children }) => {
+const FadeIn = ({ children }) => {
 	return (
 		<div>
 			{children.map((child, index) => (
@@ -35,4 +35,4 @@ const Fade = ({ children }) => {
 	)
 }
 
-export default Fade
+export default FadeIn
