@@ -41,13 +41,6 @@ const projects = [
 		height: '1800',
 		width: '1080',
 		link: 'https://www.figma.com/file/WkdeyVYbdMEslmjNQwNwjs/Discord-logo?node-id=1%3A3'
-	},
-	{
-		name: 'UBC Biology site redesign',
-		tags: ['Figma', 'Work in progress'],
-		preview: '/projects/biology.png',
-		height: '1800',
-		width: '2400',
 	}
 ]
 
