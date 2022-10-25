@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import Tag from './Tag'
 import Icon from './Icon'
 

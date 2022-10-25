@@ -3,8 +3,9 @@
 	"homepage": ".",
 	"dependencies": {
 		"-": "^0.0.1",
+		"@next/font": "^13.0.0",
 		"framer-motion": "^7.3.6",
-		"next": "^12.3.1",
+		"next": "^13.0.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"remixicon": "^2.5.0",
