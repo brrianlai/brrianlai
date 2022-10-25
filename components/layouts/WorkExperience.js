@@ -6,7 +6,7 @@ const workList = [
 	{
 		name: 'Canada Border Services Agency (CBSA)',
 		date: 'Oct 2022 to present',
-		subheading: 'Administrative assistant',
+		subheading: 'Administrative Assistant',
 		description: ''
 	},
 	{
