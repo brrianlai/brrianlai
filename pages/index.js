@@ -30,6 +30,7 @@ function App() {
 						width='4024'
 						height='3024'
 						sizes='50vw'
+						quality='90'
 						alt=''
 					/>
 					<Image
@@ -37,6 +38,7 @@ function App() {
 						width='4048'
 						height='3036'
 						sizes='50vw'
+						quality='90'
 						alt=''
 					/>
 				</Gallery>
@@ -53,6 +55,7 @@ function App() {
 						width='3798'
 						height='2844'
 						sizes='33vw'
+						quality='90'
 						alt=''
 					/>
 					<Image
@@ -60,6 +63,7 @@ function App() {
 						width='4024'
 						height='3024'
 						sizes='33vw'
+						quality='90'
 						alt=''
 					/>
 					<Image
@@ -67,6 +71,7 @@ function App() {
 						width='4024'
 						height='3024'
 						sizes='33vw'
+						quality='90'
 						alt=''
 					/>
 				</Gallery>
