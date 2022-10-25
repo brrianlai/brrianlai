@@ -29,28 +29,29 @@ const VolunteerExperience = () => {
 
 			<h4>Volunteer Experience</h4>
 
-				{volunteerList.map((volunteer, index) => (
-					<motion.div
-						className='grid responsive-gap'
-						data-columns='3'
-						key={index}
-						variants={item}
-						initial='hidden'
-						whileInView='show'
-						viewport={{ once: true }}
-					>
-						<div className='column' data-gap='smaller'>
-							<h5>{volunteer.name}</h5>
-							<div className='row' data-gap='smaller'>
-								<Tag>{volunteer.subheading}</Tag>
-								<Tag>{volunteer.date}</Tag>
-							</div>
+			{volunteerList.map((volunteer, index) => (
+				<motion.div
+					className='grid'
+					data-columns='3'
+					data-gap='responsive'
+					key={index}
+					variants={item}
+					initial='hidden'
+					whileInView='show'
+					viewport={{ once: true }}
+				>
+					<div className='column' data-gap='smaller'>
+						<h5>{volunteer.name}</h5>
+						<div className='row' data-gap='smaller'>
+							<Tag>{volunteer.subheading}</Tag>
+							<Tag>{volunteer.date}</Tag>
 						</div>
-						<div className='column'>
-							<p>{volunteer.description}</p>
-						</div>
-					</motion.div>
-				))}
+					</div>
+					<div className='column'>
+						<p>{volunteer.description}</p>
+					</div>
+				</motion.div>
+			))}
 
 		</section>
 	)

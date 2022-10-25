@@ -21,11 +21,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-html, body {
-	overflow-x: hidden;
-	position: relative;
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -171,10 +166,6 @@ h6 {
 	flex-direction: column;
 }
 
-.responsive-gap {
-	gap: var(--gap-responsive);
-}
-
 [data-align='center'] {
 	align-items: center;
 }
@@ -217,6 +208,10 @@ h6 {
 
 [data-gap='smaller'] {
 	gap: var(--gap-width-smaller);
+}
+
+[data-gap='responsive'] {
+	gap: var(--gap-responsive)
 }
 
 /* header, footer */
@@ -722,6 +717,10 @@ section[data-background='grey'] p {
 		--section-padding-large: 4.8rem 2.4rem;
 		--wrap-padding: 0 2.4rem;
 		--wrap-padding-large: 0 2.4rem;
+	}
+
+	.background {
+		height: 60rem;
 	}
 
 	.introduction {
