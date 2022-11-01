@@ -32,7 +32,7 @@ const WorkExperience = () => {
 			{workList.map((work, index) => (
 				<motion.div
 					className='grid'
-					data-columns='3'
+					data-columns='1-2'
 					data-gap='responsive'
 					key={index}
 					variants={item}

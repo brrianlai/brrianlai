@@ -610,10 +610,6 @@ section[data-background='grey'] p {
 	gap: var(--gap-width);
 }
 
-.gallery .column {
-	gap: var(--gap-width-small);
-}
-
 .gallery-photo {
 	flex: 1;
 	line-height: 0;
@@ -735,7 +731,7 @@ section[data-background='grey'] p {
 		flex-direction: column-reverse;
 	}
 
-	.gallery {
+	.gallery, .gallery .column {
 		gap: var(--gap-width-small);
 	}
 
