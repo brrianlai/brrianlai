@@ -5,3 +5,5 @@ build
 # misc
 .DS_Store
 .next
+
+package-lock.json

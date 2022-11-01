@@ -45,10 +45,6 @@ function App() {
 				<Projects />
 				<WorkExperience />
 				<VolunteerExperience />
-				<section data-layout='center'>
-					<h2>See more photos</h2>
-					<Button link='https://vsco.co/brrian' size='large' shape='round' iconRight='ri-arrow-right-line'>VSCO</Button>
-				</section>
 				<Gallery>
 					<Image
 						src='/IMG_6432.jpg'
@@ -75,6 +71,13 @@ function App() {
 						alt=''
 					/>
 				</Gallery>
+				<section data-align='center'>
+					<h2>Let's connect</h2>
+					<div className='row' data-gap='small' data-align='center'>
+						<Button link='/brian-lai-resume-221024.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>
+						<Button link='mailto:laibrian@alum.ubc.ca' shape='round' size='large' iconLeft='ri-mail-line' background='light' outline='true'>Contact me</Button>
+					</div>
+				</section>
 			</FadeIn>
 		</Layout>
 	)

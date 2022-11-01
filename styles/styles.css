@@ -80,6 +80,10 @@ a:hover, .icon:hover {
 	color: var(--dark-38);
 }
 
+a.underline {
+	text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: var(--dark-100);
 	font-weight: 500;
@@ -168,9 +172,6 @@ h6 {
 
 [data-align='center'] {
 	align-items: center;
-}
-
-[data-align='center-vertical'] {
 	justify-content: center;
 }
 
@@ -673,7 +674,7 @@ section[data-background='grey'] p {
 	--gap-width-smallest: 0.6rem;
 	--header-height: 12rem;
 	--section-padding: 8rem 4rem;
-	--section-padding-large: 12rem 8rem;
+	--section-padding-large: 16rem 8rem;
 	--wrap-padding: 0 4rem;
 	--wrap-padding-large: 0 8rem;
 }
