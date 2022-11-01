@@ -1,7 +1,5 @@
 import React from 'react'
 import Header from './Header'
-import dynamic from 'next/dynamic'
-const Footer = dynamic(() => import('./Footer'))
 
 const Layout = ({ children }) => {
 	return (
@@ -10,7 +8,6 @@ const Layout = ({ children }) => {
 			<main>
 				{children}
 			</main>
-			<Footer />
 		</>
 	)
 }
