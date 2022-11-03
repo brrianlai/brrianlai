@@ -1,4 +1,4 @@
-import '../styles/styles.css'
+import '../styles/styles.scss'
 import 'remixicon/fonts/remixicon.css'
 
 import Head from 'next/head'

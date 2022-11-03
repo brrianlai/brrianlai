@@ -47,9 +47,9 @@ function App() {
 				<Projects />
 				<WorkExperience />
 				<VolunteerExperience />
-				<section data-align='center' data-size='large'>
+				<section data-layout='center' data-size='large'>
 					<h2>Let's connect</h2>
-					<div className='row' data-gap='small' data-align='center'>
+					<div className='row' data-gap='small' data-layout='center'>
 						<Button link='/brian-lai-resume-221024.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>
 						<Button link='mailto:laibrian@alum.ubc.ca' shape='round' size='large' iconLeft='ri-mail-line' background='light' outline='true'>Contact me</Button>
 					</div>
