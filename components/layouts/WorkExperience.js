@@ -41,7 +41,7 @@ const WorkExperience = () => {
 				>
 					<div className='column' data-gap='smaller'>
 						<h5>{work.name}</h5>
-						<div className='row' data-gap='small'>
+						<div className='row' data-gap='smaller'>
 							<h6>{work.subheading}</h6>
 							<h6>{work.date}</h6>
 						</div>

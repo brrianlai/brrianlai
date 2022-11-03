@@ -41,7 +41,7 @@ const VolunteerExperience = () => {
 				>
 					<div className='column' data-gap='smaller'>
 						<h5>{volunteer.name}</h5>
-						<div className='row' data-gap='small'>
+						<div className='row' data-gap='smaller'>
 							<h6>{volunteer.subheading}</h6>
 							<h6>{volunteer.date}</h6>
 						</div>

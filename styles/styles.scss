@@ -38,6 +38,21 @@
 
 	--background-grey: rgba(0, 0, 0, 0.04);
 
+	// variables
+
+	--gap-responsive: 4rem;
+	--gap-width: 4rem;
+	--gap-width-small: 2.4rem;
+	--gap-width-smaller: 1rem;
+	--gap-width-smallest: 0.6rem;
+
+	--header-height: 12rem;
+
+	--section-padding: 8rem 4rem;
+	--section-padding-large: 16rem 8rem;
+	--wrap-padding: 0 4rem;
+	--wrap-padding-large: 0 8rem;
+
 }
 
 // dark mode
@@ -62,6 +77,19 @@
 	}
 }
 
+// responsive variables
+
+@media only screen and (max-width: 960px) {
+	:root {
+		--header-height: 10rem;
+		--gap-responsive: 1rem;
+		--section-padding: 4.8rem 2.4rem;
+		--section-padding-large: 4.8rem 2.4rem;
+		--wrap-padding: 0 2.4rem;
+		--wrap-padding-large: 0 2.4rem;
+	}
+}
+
 // transitions
 
 $transition-background: background-color 0.2s ease;
@@ -69,32 +97,6 @@ $transition-border: border 0.2s ease;
 $transition-color: color 0.2s ease;
 $transition-fill: fill 0.2s ease;
 $transition-transform: transform 0.6s ease;
-
-// variables
-
-$gap-responsive: 4rem;
-$gap-width: 4rem;
-$gap-width-small: 2.4rem;
-$gap-width-smaller: 1rem;
-$gap-width-smallest: 0.6rem;
-
-$header-height: 12rem;
-
-$section-padding: 8rem 4rem;
-$section-padding-large: 16rem 8rem;
-$wrap-padding: 0 4rem;
-$wrap-padding-large: 0 8rem;
-
-// responsive variables
-
-@media only screen and (max-width: 960px) {
-	$header-height: 10rem;
-	$gap-responsive: 1rem;
-	$section-padding: 4.8rem 2.4rem;
-	$section-padding-large: 4.8rem 2.4rem;
-	$wrap-padding: 0 2.4rem;
-	$wrap-padding-large: 0 2.4rem;
-}
 
 // typography
 
@@ -194,7 +196,7 @@ h6 {
 
 .grid {
 	display: grid;
-	gap: $gap-width;
+	gap: var(--gap-width);
 	width: 100%;
 }
 
@@ -206,7 +208,7 @@ h6 {
 	align-items: flex-start;
 	display: flex;
 	flex-wrap: wrap;
-	gap: $gap-width;
+	gap: var(--gap-width);
 }
 
 .column {
@@ -242,15 +244,15 @@ h6 {
 }
 
 [data-gap='small'] {
-	gap: $gap-width-small;
+	gap: var(--gap-width-small);
 }
 
 [data-gap='smaller'] {
-	gap: $gap-width-smaller;
+	gap: var(--gap-width-smaller);
 }
 
 [data-gap='responsive'] {
-	gap: $gap-responsive;
+	gap: var(--gap-responsive);
 }
 
 // header, footer, nav
@@ -260,9 +262,9 @@ header, footer, nav {
 	background: var(--light-100);
 	display: flex;
 	gap: 1.6rem;
-	height: $header-height;
+	height: var(--header-height);
 	justify-content: space-between;
-	padding: $wrap-padding;
+	padding: var(--wrap-padding);
 	width: 100%;
 }
 
@@ -295,7 +297,7 @@ header .icon-back {
 .card-content {
 	display: flex;
 	flex-direction: column;
-	gap: $gap-width-smaller;
+	gap: var(--gap-width-smaller);
 	padding: 2rem;
 }
 
@@ -333,12 +335,12 @@ section {
 	display: flex;
 	flex-direction: column;
 	gap: 4rem;
-	padding: $section-padding;
+	padding: var(--section-padding);
 	width: 100%;
 }
 
 section[data-size='large'] {
-	padding: $section-padding-large;
+	padding: var(--section-padding-large);
 }
 
 /* section layout */
@@ -523,7 +525,7 @@ section[data-size='large'] {
 
 .gallery {
 	flex-direction: row;
-	gap: $gap-width;
+	gap: var(--gap-width);
 }
 
 .gallery-photo {
@@ -552,7 +554,7 @@ section[data-size='large'] {
 	}
 
 	.gallery, .gallery .column {
-		gap: $gap-width-small;
+		gap: var(--gap-width-small);
 	}
 
 	.grid {
