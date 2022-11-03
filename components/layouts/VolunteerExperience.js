@@ -1,5 +1,4 @@
 import React from 'react'
-import Tag from '../Tag'
 import { motion } from 'framer-motion'
 
 const volunteerList = [
@@ -42,9 +41,9 @@ const VolunteerExperience = () => {
 				>
 					<div className='column' data-gap='smaller'>
 						<h5>{volunteer.name}</h5>
-						<div className='row' data-gap='smaller'>
-							<Tag>{volunteer.subheading}</Tag>
-							<Tag>{volunteer.date}</Tag>
+						<div className='row' data-gap='small'>
+							<h6>{volunteer.subheading}</h6>
+							<h6>{volunteer.date}</h6>
 						</div>
 					</div>
 					<div className='column'>
