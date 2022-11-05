@@ -13,6 +13,7 @@ const Projects = dynamic(() => import('../components/layouts/Projects'))
 const WorkExperience = dynamic(() => import('../components/layouts/WorkExperience'))
 const VolunteerExperience = dynamic(() => import('../components/layouts/VolunteerExperience'))
 const Gallery = dynamic(() => import('../components/Gallery'))
+const Footer = dynamic(() => import('../components/layouts/Footer'))
 
 function App() {
 	return (
@@ -129,6 +130,7 @@ function App() {
 					</div>
 				</section>
 			</FadeIn>
+			<Footer />
 		</Layout>
 	)
 }

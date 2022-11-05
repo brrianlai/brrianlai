@@ -8,7 +8,7 @@ const profile = '/profile.jpg'
 
 const Introduction = () => {
 	return (
-		<section className='introduction' data-align='center'>
+		<section className='introduction'>
 			<motion.div
 				className='column'
 				initial='hidden'
