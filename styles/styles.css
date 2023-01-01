@@ -244,6 +244,7 @@ nav {
 	flex-direction: column;
 	height: 100vh;
 	padding: var(--wrap-padding);
+	padding-bottom: env(safe-area-inset-bottom);
 	position: fixed;
 	top: 0;
 	width: 100%;

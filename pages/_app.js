@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
 				<meta charSet='UTF-8' />
 				<meta name='author' content='Brian Lai' />
 				<meta name='description' content='Biology undergraduate student from UBC with an interest in web and app design' />
-				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+				<meta name='viewport' content='width=device-width, initial-scale=1.0, viewport-fit=cover' />
 			</Head>
 			<Component {...pageProps } />
 		</div>
