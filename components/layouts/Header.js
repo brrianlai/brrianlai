@@ -44,8 +44,8 @@ const Header = () => {
 			<motion.nav
 				animate={isActive ? 'open' : 'closed'}
 				drag='y'
-				dragConstraints={{ top: 0, bottom: 0 }}
-				dragElastic = {{ top: 0, bottom: 0.5 }}
+				dragConstraints={{ top: 0, bottom: 100 }}
+				dragElastic = {{ top: 0, bottom: 0.3 }}
 				initial={false}
 				onDragEnd={handleDragEnd}
 				variants={variants}
