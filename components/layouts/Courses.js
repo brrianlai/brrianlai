@@ -1,5 +1,3 @@
-import React from 'react'
-
 const courseList = [
 	{
 		code: 'CHEM 233',
