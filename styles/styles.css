@@ -245,6 +245,7 @@ nav {
 	flex-wrap: nowrap;
 	gap: var(--gap-width);
 	height: 100vh;
+	height: -webkit-fill-available;
 	justify-content: space-between;
 	padding: var(--wrap-padding);
 	position: fixed;
