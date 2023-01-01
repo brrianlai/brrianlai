@@ -1,9 +1,36 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import Icon from '../Icon'
+
+const variants = {
+	open: {
+		opacity: 1,
+		transition: {
+			duration: 0.4,
+			ease: [0.25, 0.1, 0.25, 1]
+		},
+		y: 0
+	},
+	closed: {
+		opacity: 0,
+		transition: {
+			duration: 0.4,
+			ease: [0.75, 0.5, 0.25, 0.5]
+		},
+		y: '100%'
+	}
+}
 
 const Header = () => {
 	const [isActive, setActive] = useState(false)
 	const toggleActive = () => setActive(!isActive)
+
+	async function handleDragEnd(event, info) {
+		const offset = info.offset.y
+		const velocity = info.velocity.y
+
+		if (offset > 100 || velocity > 500) {setActive(!isActive)}
+	}
 
 	return (
 		<>
@@ -13,7 +40,15 @@ const Header = () => {
 					<Icon name='ri-menu-line' />
 				</div>
 			</header>
-			<nav className={isActive ? 'active' : null}>
+			<motion.nav
+				animate={isActive ? 'open' : 'closed'}
+				drag='y'
+				dragConstraints={{ top: 0, bottom: 0 }}
+				dragElastic = {{ top: 0, bottom: 0.5 }}
+				initial={false}
+				onDragEnd={handleDragEnd}
+				variants={variants}
+			>
 				<div className='row nav-heading'>
 					<div className='menu-icon' onClick={toggleActive}>
 						<Icon name='ri-close-line' />
@@ -26,7 +61,7 @@ const Header = () => {
 					<a href='#'><h4>Other</h4></a>
 					<a href='#'><h4>Side</h4></a>
 				</div>
-			</nav>
+			</motion.nav>
 		</>
 	)
 }

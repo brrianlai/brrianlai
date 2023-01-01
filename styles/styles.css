@@ -245,15 +245,9 @@ nav {
 	height: 100vh;
 	padding: var(--wrap-padding);
 	position: fixed;
-	transform: translate(0, 100%);
-	transition: var(--transition-transform);
 	top: 0;
 	width: 100%;
 	z-index: 1;
-}
-
-nav.active {
-	transform: translate(0);
 }
 
 nav h4 {
