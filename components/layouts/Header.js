@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import Social from '../Social'
 import Icon from '../Icon'
 
 const variants = {
@@ -12,9 +13,9 @@ const variants = {
 		y: 0
 	},
 	closed: {
-		opacity: 0,
+		opacity: 0.5,
 		transition: {
-			duration: 0.4,
+			duration: 0.3,
 			ease: 'easeIn'
 		},
 		y: '100%'
@@ -29,7 +30,7 @@ const Header = () => {
 		const offset = info.offset.y
 		const velocity = info.velocity.y
 
-		if (offset > 100 || velocity > 500) {setActive(!isActive)}
+		if (offset > 120 || velocity > 500) {setActive(!isActive)}
 	}
 
 	return (
@@ -60,6 +61,9 @@ const Header = () => {
 					<a href='#'><h4>The</h4></a>
 					<a href='#'><h4>Other</h4></a>
 					<a href='#'><h4>Side</h4></a>
+				</div>
+				<div className='row nav-footer'>
+					<Social />
 				</div>
 			</motion.nav>
 		</>
