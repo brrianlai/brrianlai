@@ -2,10 +2,13 @@ import '../styles/styles.css'
 import 'remixicon/fonts/remixicon.css'
 
 import Head from 'next/head'
+import { Inter } from '@next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }) {
 	return (
-		<div>
+		<div className={inter.className}>
 			<Head>
 				<meta charSet='UTF-8' />
 				<meta name='author' content='Brian Lai' />
