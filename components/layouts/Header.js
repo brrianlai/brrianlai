@@ -41,7 +41,7 @@ const Header = () => {
 
 	return (
 		<>
-			<header className={scrollDirection === 'down' ? 'hidden' : null}>
+			<header className={scrollDirection === 'up' ? null : 'hidden'}>
 				<h4>Brian Lai</h4>
 				<div className='menu-icon' onClick={toggleActive}>
 					<Icon name='ri-menu-line' />
