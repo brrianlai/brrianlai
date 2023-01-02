@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Social from '../Social'
 import Icon from '../Icon'
+import useScrollDirection from '../../utils/useScrollDirection'
 
 const variants = {
 	open: {
@@ -33,9 +34,11 @@ const Header = () => {
 		if (offset > 120 || velocity > 500) {setActive(!isActive)}
 	}
 
+	const scrollDirection = useScrollDirection()
+
 	return (
 		<>
-			<header>
+			<header className={scrollDirection === 'down' ? 'hidden' : null}>
 				<h4>Brian Lai</h4>
 				<div className='menu-icon' onClick={toggleActive}>
 					<Icon name='ri-menu-line' />

@@ -228,6 +228,17 @@ header, footer {
 	width: 100%;
 }
 
+header {
+	position: sticky;
+	top: 0;
+	transition: var(--transition-transform);
+	z-index: 2;
+}
+
+header.hidden {
+	transform: translate(0, -100%);
+}
+
 header .menu-icon {
 	display: none;
 }
@@ -251,7 +262,7 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 3;
 }
 
 nav h4 {
