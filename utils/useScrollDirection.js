@@ -17,9 +17,10 @@ export default function useScrollDirection() {
 			lastScrollY = scrollY > 0 ? scrollY : 0;
 		};
 
-		window.addEventListener('scroll', updateScrollDirection)
+		const timer = setTimeout(() => window.addEventListener('scroll', updateScrollDirection), 250)
 
 		return () => {
+			clearTimeout(timer)
 			window.removeEventListener('scroll', updateScrollDirection)
 		}
 

@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import Social from '../Social'
 import Icon from '../Icon'
+
 import useScrollDirection from '../../utils/useScrollDirection'
 
 const variants = {
@@ -31,7 +32,9 @@ const Header = () => {
 		const offset = info.offset.y
 		const velocity = info.velocity.y
 
-		if (offset > 120 || velocity > 500) {setActive(!isActive)}
+		if (offset > 120 || velocity > 500) {
+			toggleActive()
+		}
 	}
 
 	const scrollDirection = useScrollDirection()
