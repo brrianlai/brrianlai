@@ -13,7 +13,7 @@ const variants = {
 		y: 0
 	},
 	closed: {
-		opacity: 0.5,
+		opacity: 0,
 		transition: {
 			duration: 0.3,
 			ease: 'easeIn'
@@ -44,7 +44,7 @@ const Header = () => {
 			<motion.nav
 				animate={isActive ? 'open' : 'closed'}
 				drag='y'
-				dragConstraints={{ top: 0, bottom: 100 }}
+				dragConstraints={{ top: 0, bottom: 0 }}
 				dragElastic = {{ top: 0, bottom: 0.3 }}
 				initial={false}
 				onDragEnd={handleDragEnd}
