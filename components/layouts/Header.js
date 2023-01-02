@@ -4,6 +4,7 @@ import Social from '../Social'
 import Icon from '../Icon'
 
 import useScrollDirection from '../../utils/useScrollDirection'
+import useTimeout from '../../utils/useTimeout'
 
 const variants = {
 	open: {
@@ -41,7 +42,7 @@ const Header = () => {
 
 	return (
 		<>
-			<header className={scrollDirection === 'up' ? null : 'hidden'}>
+			<header className={scrollDirection === 'down' ? 'hidden' : null}>
 				<h4>Brian Lai</h4>
 				<div className='menu-icon' onClick={toggleActive}>
 					<Icon name='ri-menu-line' />

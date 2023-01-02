@@ -80,7 +80,7 @@ const Projects = ({ posts }) => {
 								image={project.preview}
 								height={project.height}
 								width={project.width}
-								sizes='(max-width: 768px) 100vw, 33vw'
+								sizes='(max-width: 960px) 100vw, 33vw'
 								link={project.link}
 							/>
 						: 
@@ -90,7 +90,7 @@ const Projects = ({ posts }) => {
 								image={project.preview}
 								height={project.height}
 								width={project.width}
-								sizes='(max-width: 768px) 100vw, 33vw'
+								sizes='(max-width: 960px) 100vw, 33vw'
 							/>
 						}
 					</motion.div>
