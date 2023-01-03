@@ -6,22 +6,58 @@ import Icon from '../Icon'
 
 import useScrollDirection from '../../utils/useScrollDirection'
 
+const navItems = [
+	{
+		name: 'Hello',
+		link: '#'
+	},
+	{
+		name: 'From',
+		link: '#'
+	},
+	{
+		name: 'The',
+		link: '#'
+	},
+	{
+		name: 'Other',
+		link: '#'
+	},
+	{
+		name: 'Side',
+		link: '#'
+	}
+]
+
 const variants = {
-	open: {
+	visible: {
 		opacity: 1,
 		transition: {
 			duration: 0.5,
-			ease: 'easeOut'
+			ease: 'easeOut',
+			staggerChildren: 0.05,
+			when: 'beforeChildren'
 		},
 		y: 0
 	},
-	closed: {
+	hidden: {
 		opacity: 0,
 		transition: {
 			duration: 0.25,
-			ease: 'easeIn'
+			ease: 'easeIn',
 		},
-		y: '100%'
+		y: '120%'
+	}
+}
+
+const item = {
+	visible: {
+		opacity: 1,
+		y: 0
+	},
+	hidden: {
+		opacity: 0,
+		y: 20
 	}
 }
 
@@ -49,11 +85,11 @@ const Header = () => {
 				</div>
 			</header>
 			<motion.nav
-				animate={isActive ? 'open' : 'closed'}
+				animate={isActive ? 'visible' : 'hidden'}
 				drag='y'
 				dragConstraints={{ top: 0, bottom: 0 }}
 				dragElastic = {{ top: 0, bottom: 0.3 }}
-				initial={false}
+				initial='hidden'
 				onDragEnd={handleDragEnd}
 				variants={variants}
 			>
@@ -62,16 +98,23 @@ const Header = () => {
 						<Icon name='ri-close-line' />
 					</div>
 				</div>
-				<div className='column nav-body'>
-					<a href='#'><h4>Hello</h4></a>
-					<a href='#'><h4>From</h4></a>
-					<a href='#'><h4>The</h4></a>
-					<a href='#'><h4>Other</h4></a>
-					<a href='#'><h4>Side</h4></a>
-				</div>
-				<div className='row nav-footer'>
+				<motion.div className='column nav-body'>
+					{navItems.map((navItem, index) => (
+						<motion.a
+							href={navItem.link}
+							key={index}
+							variants={item}
+						>
+							<h4>{navItem.name}</h4>
+						</motion.a>
+					))}
+				</motion.div>
+				<motion.div
+					className='row nav-footer'
+					variants={item}
+				>
 					<Social />
-				</div>
+				</motion.div>
 			</motion.nav>
 		</>
 	)
