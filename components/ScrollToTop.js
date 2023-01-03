@@ -15,7 +15,7 @@ const ScrollToTop = () => {
 	)
 	
 	return (
-		<div className='scrolltotop' onClick={toTop}>
+		<div className='icon-scrolltotop' onClick={toTop}>
 			<Icon name='ri-arrow-up-line' />
 		</div>
 	)

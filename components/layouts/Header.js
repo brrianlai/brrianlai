@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
+
 import Social from '../Social'
 import Icon from '../Icon'
 
 import useScrollDirection from '../../utils/useScrollDirection'
-import useTimeout from '../../utils/useTimeout'
 
 const variants = {
 	open: {
@@ -44,7 +44,7 @@ const Header = () => {
 		<>
 			<header className={scrollDirection === 'down' ? 'hidden' : null}>
 				<h4>Brian Lai</h4>
-				<div className='menu-icon' onClick={toggleActive}>
+				<div className='icon-menu' onClick={toggleActive}>
 					<Icon name='ri-menu-line' />
 				</div>
 			</header>
@@ -58,7 +58,7 @@ const Header = () => {
 				variants={variants}
 			>
 				<div className='row nav-heading'>
-					<div className='menu-icon' onClick={toggleActive}>
+					<div className='icon-menu' onClick={toggleActive}>
 						<Icon name='ri-close-line' />
 					</div>
 				</div>

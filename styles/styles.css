@@ -1,60 +1,11 @@
 /* css reset */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, button,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-img {
-    max-width: 100%;
-	object-fit: cover;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-* {
+*, *::before, *::after {
 	box-sizing: border-box;
 }
 
-/* typography */
-
-html {
-	background: var(--background-color);
-	cursor: default;
-	font-size: 62.5%;
+body, h1, h2, h3, h4, h5, h6, p, figure {
+	margin: 0;
 }
 
 body {
@@ -67,6 +18,28 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+	overflow-wrap: break-word;
+}
+
+html {
+	background: var(--background-color);
+	cursor: default;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+/* typography */
+
 a {
 	color: var(--dark-87);
 	text-decoration: none;
@@ -78,10 +51,6 @@ a, .icon {
 
 a:hover, .icon:hover {
 	color: var(--dark-38);
-}
-
-a.underline {
-	text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -134,6 +103,10 @@ h6 {
 	width: 4.8rem;
 }
 
+.icon-menu, .icon-scrolltotop {
+	cursor: pointer;
+}
+
 .icon-vsco {
 	fill: var(--dark-100);
 	transition: var(--transition-fill);
@@ -141,10 +114,6 @@ h6 {
 
 .icon-vsco:hover {
 	fill: var(--dark-38);
-}
-
-.scrolltotop {
-	cursor: pointer;
 }
 
 /* grid */
@@ -239,12 +208,8 @@ header.hidden {
 	transform: translate(0, -100%);
 }
 
-header .menu-icon {
+header .icon-menu {
 	display: none;
-}
-
-header .menu-icon, nav .menu-icon {
-	cursor: pointer;
 }
 
 /* menu */
@@ -282,15 +247,6 @@ nav .nav-heading {
 	align-items: center;
 	justify-content: flex-end;
 	height: var(--header-height);
-}
-
-/* divider */
-
-.divider {
-	background: var(--dark-6);
-	height: 0.1rem;
-	margin: var(--gap-width-smaller);
-	width: 100%;
 }
 
 /* cards */
@@ -598,7 +554,6 @@ section[data-background='grey'] p {
 
 .introduction {
 	display: grid;
-	gap: 4rem;
 	grid-template-columns: 1fr 1fr;
 }
 
@@ -739,7 +694,7 @@ section[data-background='grey'] p {
 		--wrap-padding-large: 0 2.4rem;
 	}
 
-	header .menu-icon {
+	header .icon-menu {
 		display: flex;
 	}
 
