@@ -721,6 +721,12 @@ section[data-background='grey'] p {
 	}
 }
 
+@media (prefers-color-scheme: light) and (max-width: 960px) {
+	.background-waves {
+		background: inherit;
+	}
+}
+
 /* responsive */
 
 @media only screen and (max-width: 960px) {
