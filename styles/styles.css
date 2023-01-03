@@ -586,6 +586,8 @@ section[data-background='grey'] p {
 /* introduction */
 
 .introduction {
+	background: url('/oooscillate.svg');
+	background-size: cover;
 	display: grid;
 	gap: 4rem;
 	grid-template-columns: 1fr 1fr;
