@@ -47,7 +47,7 @@ function App() {
 				<Projects />
 				<WorkExperience />
 				<VolunteerExperience />
-				<section data-align='center' data-size='large'>
+				<section className='background-dotted' data-align='center' data-size='large'>
 					<h2>Let's connect</h2>
 					<div className='row' data-gap='small' data-align='center'>
 						<Button link='/brian-lai-resume-221024.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>

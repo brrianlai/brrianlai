@@ -7,7 +7,7 @@ const profile = '/profile.jpg'
 
 const Introduction = () => {
 	return (
-		<section className='introduction' data-align='center'>
+		<section className='introduction background-waves' data-align='center'>
 			<motion.div
 				className='column'
 				initial='hidden'
