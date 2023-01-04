@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Social from '../Social'
 import Icon from '../Icon'
 
-import useScrollDirection from '../../utils/useScrollDirection'
+import useScrollDirection from '../../src/useScrollDirection'
 
 const navItems = [
 	{
@@ -84,6 +84,7 @@ const Header = () => {
 					<Icon name='ri-menu-line' />
 				</div>
 			</header>
+
 			<motion.nav
 				animate={isActive ? 'visible' : 'hidden'}
 				drag='y'
@@ -98,6 +99,7 @@ const Header = () => {
 						<Icon name='ri-close-line' />
 					</div>
 				</div>
+
 				<motion.div className='column nav-body'>
 					{navItems.map((navItem, index) => (
 						<motion.a
@@ -109,6 +111,7 @@ const Header = () => {
 						</motion.a>
 					))}
 				</motion.div>
+				
 				<motion.div
 					className='row nav-footer'
 					variants={item}

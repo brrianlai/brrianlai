@@ -28,29 +28,28 @@ const WorkExperience = () => {
 
 			<h4>Work Experience</h4>
 
-			{workList.map((work, index) => (
-				<motion.div
-					className='grid'
-					data-columns='1-2'
-					data-gap='responsive'
-					key={index}
-					variants={item}
-					initial='hidden'
-					whileInView='show'
-					viewport={{ once: true }}
-				>
-					<div className='column' data-gap='smaller'>
-						<h5>{work.name}</h5>
-						<div className='row' data-gap='smaller'>
-							<Tag>{work.subheading}</Tag>
-							<Tag>{work.date}</Tag>
+			<div className='grid' data-columns='4'>
+
+				{workList.map((work, index) => (
+					<motion.div
+						className='column'
+						data-gap='smaller'
+						initial='hidden'
+						key={index}
+						variants={item}
+						viewport={{ once: true }}
+						whileInView='show'
+					>
+						<div className='row' data-gap='small'>
+							<h6>{work.date}</h6>
+							<h6>{work.subheading}</h6>
 						</div>
-					</div>
-					<div className='column'>
+						<h5>{work.name}</h5>
 						<p>{work.description}</p>
-					</div>
-				</motion.div>
-			))}
+					</motion.div>
+				))}
+
+			</div>
 
 		</section>
 	)
