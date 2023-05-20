@@ -352,7 +352,12 @@ section[data-size='large'] {
 
 .background {
 	height: 60rem;
+	overflow: hidden;
 	position: relative;
+}
+
+.background img {
+	object-fit: cover;
 }
 
 /* buttons */

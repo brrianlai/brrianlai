@@ -3,7 +3,7 @@ import Button from '../Button'
 import { motion } from 'framer-motion'
 import Social from '../Social'
 
-const profile = '/profile.jpg'
+const profile = '/profile2.png'
 
 const Introduction = () => {
 	return (
