@@ -1,28 +1,34 @@
-import { motion } from 'framer-motion'
+import Marquee from 'react-fast-marquee'
 
-const container = {
-	hidden: {
-	},
-	show: {
-		transition: {
-			staggerChildren: 0.1
-		}
-	}
-}
-
-const item = {
-	hidden: {
-		opacity: 0,
-		y: 15
-	},
-	show: {
-		opacity: 1,
-		y: 0,
-		transition: {
-			duration: 0.35,
-			ease: [0.25, 0.1, 0.25, 1]
-		}
-	}
+const Bops = () => {
+	return (
+		<section data-background='mint'>
+			<h4>Bops</h4>
+			<Marquee
+				gradient='true'
+				gradientColor={[201, 223, 214]}
+				gradientWidth={100}
+				speed={30}
+			>
+				{bopList.map((bop, index) => (
+					<a
+						href={bop.link}
+						key={index}
+						target='_blank'
+					>
+						<div
+							className='row'
+							data-align='center'
+							data-gap='smaller'
+						>
+							<h5>{bop.artist}</h5>
+							<p>{bop.title}</p>
+						</div>
+					</a>
+				))}
+			</Marquee>
+		</section>
+	)
 }
 
 const bopList = [
@@ -197,30 +203,5 @@ const bopList = [
 		link: 'https://www.youtube.com/watch?v=hCrtcVDgCGw'
 	}
 ]
-
-const Bops = () => {
-	return (
-		<section data-background='mint'>
-			<h4>Current Bops</h4>
-			<motion.div
-				className='row'
-				variants={container}
-				initial='hidden'
-				whileInView='show'
-			>
-				{bopList.map((bop, index) => (
-					<motion.div variants={item}>
-						<a href={bop.link} key={index} target='_blank'>
-							<div className='row' data-gap='smaller' data-align='center'>
-								<h5>{bop.artist}</h5>
-								<p>{bop.title}</p>
-							</div>
-						</a>
-					</motion.div>
-				))}
-			</motion.div>
-		</section>
-	)
-}
 
 export default Bops

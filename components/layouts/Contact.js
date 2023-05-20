@@ -30,7 +30,7 @@ const container = {
 	show: {
 		transition: {
 			delayChildren: 0.3,
-			staggerChildren: 0.1,
+			staggerChildren: 0.15,
 		}
 	}
 }
@@ -38,12 +38,12 @@ const container = {
 const item = {
 	hidden: {
 		opacity: 0,
-		y: 20
+		y: 10
 	},
 	show: {
 		opacity: 1,
 		transition: {
-			duration: 0.4,
+			duration: 0.5,
 			ease: [0.465, 0.183, 0.153, 0.946]
 		},
 		y: 0

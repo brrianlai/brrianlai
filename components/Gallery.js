@@ -28,7 +28,7 @@ const container = {
 		transition: {
 			duration: 0.5,
 			delay: 0.3,
-			ease: [0.25, 0.1, 0.25, 1]
+			ease: [0.465, 0.183, 0.153, 0.946]
 		}
 	}
 }

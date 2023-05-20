@@ -44,7 +44,7 @@ const container = {
 const item = {
 	hidden: {
 		opacity: 0,
-		y: 20
+		y: 10
 	},
 	show: {
 		opacity: 1,
