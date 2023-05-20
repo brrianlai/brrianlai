@@ -34,7 +34,7 @@ const variants = {
 		opacity: 1,
 		transition: {
 			duration: 0.5,
-			ease: 'easeOut',
+			ease: [0.465, 0.183, 0.153, 0.946],
 			staggerChildren: 0.05,
 			when: 'beforeChildren'
 		},
@@ -43,8 +43,8 @@ const variants = {
 	hidden: {
 		opacity: 0,
 		transition: {
-			duration: 0.25,
-			ease: 'easeIn',
+			duration: 0.22,
+			ease: 'easeOut',
 		},
 		y: '120%'
 	}
@@ -65,15 +65,6 @@ const Header = () => {
 	const [isActive, setActive] = useState(false)
 	const toggleActive = () => setActive(!isActive)
 
-	async function handleDragEnd(event, info) {
-		const offset = info.offset.y
-		const velocity = info.velocity.y
-
-		if (offset > 120 || velocity > 500) {
-			toggleActive()
-		}
-	}
-
 	const scrollDirection = useScrollDirection()
 
 	return (
@@ -87,11 +78,7 @@ const Header = () => {
 
 			<motion.nav
 				animate={isActive ? 'visible' : 'hidden'}
-				drag='y'
-				dragConstraints={{ top: 0, bottom: 0 }}
-				dragElastic = {{ top: 0, bottom: 0.3 }}
 				initial='hidden'
-				onDragEnd={handleDragEnd}
 				variants={variants}
 			>
 				<div className='row nav-heading'>

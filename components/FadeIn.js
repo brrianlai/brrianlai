@@ -11,7 +11,7 @@ const container = {
 		transition: {
 			duration: 0.5,
 			delay: 0.3,
-			ease: [0.25, 0.1, 0.25, 1]
+			ease: [0.465, 0.183, 0.153, 0.946]
 		}
 	}
 }
@@ -21,11 +21,11 @@ const FadeIn = ({ children }) => {
 		<div>
 			{children.map((child, index) => (
 				<motion.div
-					variants={container}
 					initial='hidden'
-					whileInView='show'
-					viewport={{ once: true }}
 					key={index}
+					variants={container}
+					viewport={{ once: true }}
+					whileInView='show'
 				>
 					{child}
 				</motion.div>
