@@ -34,19 +34,19 @@ const variants = {
 		opacity: 1,
 		transition: {
 			delayChildren: 0.3,
-			duration: 0.5,
+			duration: 0.6,
 			ease: [0.465, 0.183, 0.153, 0.946],
-			staggerChildren: 0.05
+			staggerChildren: 0.08
 		},
 		y: 0
 	},
 	hidden: {
 		opacity: 0,
 		transition: {
-			duration: 0.22,
+			duration: 0.4,
 			ease: [0.465, 0.183, 0.153, 0.946]
 		},
-		y: '100%'
+		y: '120%'
 	}
 }
 
