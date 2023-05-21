@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Icon from './Icon'
+import { RiArrowUpLine } from 'react-icons/ri'
 import smoothscroll from 'smoothscroll-polyfill'
 
 const toTop = () => {
@@ -15,8 +15,8 @@ const ScrollToTop = () => {
 	)
 	
 	return (
-		<div className='icon-scrolltotop' onClick={toTop}>
-			<Icon name='ri-arrow-up-line' />
+		<div className='icon icon-scrolltotop' onClick={toTop}>
+			<RiArrowUpLine />
 		</div>
 	)
 }

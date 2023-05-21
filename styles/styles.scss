@@ -50,7 +50,7 @@ a, .icon {
 }
 
 a:hover, .icon:hover {
-	color: var(--dark-38);
+	color: var(--dark-60);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,25 +95,19 @@ h6 {
 	align-items: center;
 	color: var(--dark-100);
 	display: flex;
-	font-size: 2.4rem;
 	height: 4.8rem;
 	justify-content: center;
-	line-height: 4.8rem;
 	padding: 1.2rem;
 	width: 4.8rem;
 }
 
+.icon svg {
+	height: 100%;
+	width: 100%;
+}
+
 .icon-menu, .icon-scrolltotop {
 	cursor: pointer;
-}
-
-.icon-vsco {
-	fill: var(--dark-100);
-	transition: var(--transition-fill);
-}
-
-.icon-vsco:hover {
-	fill: var(--dark-38);
 }
 
 /* grid */
@@ -260,6 +254,11 @@ nav .nav-heading {
 	box-shadow: 0 0 0 0.1rem var(--dark-6) inset;
 	display: flex;
 	flex-direction: column;
+	transition: transform 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.card:hover {
+	transform: scale(1.01);
 }
 
 .card a {
@@ -269,12 +268,7 @@ nav .nav-heading {
 .card img {
 	border-radius: 2rem 2rem 0 0;
 	height: auto;
-	transition: transform 0.2s ease;
 	width: 100%;
-}
-
-.card img:hover {
-	transform: scale(1.02);
 }
 
 .card-content {
@@ -284,14 +278,14 @@ nav .nav-heading {
 	padding: 2rem;
 }
 
-.card-link .icon {
+.icon-card-link {
 	color: var(--dark-38);
-	font-size: 1.8rem;
 	height: 3.4rem;
+	padding: 0.7rem;
 	width: 3.4rem;
 }
 
-.card-link .icon:hover {
+.icon-card-link:hover {
 	color: var(--dark-87);
 }
 
@@ -371,7 +365,6 @@ section[data-size='large'] {
 	color: var(--light-100);
 	cursor: pointer;
 	display: flex;
-	flex-wrap: wrap;
 	font-size: 1.4rem;
 	font-weight: 500;
 	gap: 1.6rem;

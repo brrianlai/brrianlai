@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
+import { RiMenuLine, RiCloseLine } from 'react-icons/ri'
+
 import Social from '../Social'
-import Icon from '../Icon'
 
 import useScrollDirection from '../../src/useScrollDirection'
 
@@ -71,8 +72,8 @@ const Header = () => {
 		<>
 			<header className={scrollDirection === 'down' ? 'hidden' : null}>
 				<h4>Brian Lai</h4>
-				<div className='icon-menu' onClick={toggleActive}>
-					<Icon name='ri-menu-line' />
+				<div className='icon icon-menu' onClick={toggleActive}>
+					<RiMenuLine />
 				</div>
 			</header>
 
@@ -82,8 +83,8 @@ const Header = () => {
 				variants={variants}
 			>
 				<div className='row nav-heading'>
-					<div className='icon-menu' onClick={toggleActive}>
-						<Icon name='ri-close-line' />
+					<div className='icon icon-menu' onClick={toggleActive}>
+						<RiCloseLine />
 					</div>
 				</div>
 

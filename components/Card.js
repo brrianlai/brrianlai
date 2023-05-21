@@ -1,7 +1,8 @@
 import { Fragment } from 'react'
 import Image from 'next/image'
 import Tag from './Tag'
-import Icon from './Icon'
+
+import { RiLink } from 'react-icons/ri'
 
 const ConditionalWrapper = ({ condition, wrapper, children }) =>
     condition ? wrapper(children) : children
@@ -30,8 +31,8 @@ const Card = ({ image, height, width, title, tags, sizes, link }) => {
 									<Tag key={index}>{tag}</Tag>
 								))}
 								{link &&
-									<div className='card-link'>
-										<Icon name='ri-link' />
+									<div className='icon icon-card-link'>
+										<RiLink />
 									</div>
 								}
 							</div>

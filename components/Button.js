@@ -1,5 +1,3 @@
-import Icon from './Icon'
-
 const backgrounds = [
 	'dark',
 	'light',
@@ -39,11 +37,9 @@ const Button = ({ children, link, background, shape, size, outline, iconLeft, ic
 			data-size={checkSize}
 			data-outline={checkOutline}
 		>
-			{iconLeft && <Icon name={iconLeft} />}
 
-			{children}
+		{children}
 
-			{iconRight && <Icon name={iconRight} />}
 		</a>
 	);
 }

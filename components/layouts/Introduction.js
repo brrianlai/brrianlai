@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import Social from '../Social'
 import profilePhoto from '../../public/profile2.png'
 
+import { RiArrowRightUpLine, RiMailLine } from 'react-icons/ri'
+
 const Introduction = () => {
 	return (
 		<section className='introduction background-waves' data-align='center'>
@@ -16,8 +18,19 @@ const Introduction = () => {
 				<motion.h3 variants={item}>Hi! I'm a Biology undergraduate student from UBC with an interest in web and app design</motion.h3>
 
 				<motion.div className='row' variants={item} data-gap='small'>
-					<Button link='/brian-lai-resume-230520.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>Resume</Button>
-					<Button link='mailto:laibrian@student.ubc.ca' shape='round' size='large' iconLeft='ri-mail-line' background='light' outline='true'>laibrian@student.ubc.ca</Button>
+					<Button link='/brian-lai-resume-230520.pdf' shape='round' size='large'>
+						Resume
+						<div className='icon'>
+							<RiArrowRightUpLine />
+						</div>
+					</Button>
+					
+					<Button link='mailto:laibrian@student.ubc.ca' shape='round' size='large' background='light' outline='true'>
+						<div className='icon'>
+							<RiMailLine />
+						</div>
+						laibrian@student.ubc.ca
+					</Button>
 				</motion.div>
 
 				<motion.div variants={item}>

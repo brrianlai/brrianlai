@@ -1,20 +1,20 @@
-import Icon from './Icon'
+import { RiGithubFill, RiLinkedinFill, RiInstagramLine } from 'react-icons/ri'
 
 const icons = [
 	{
 		name: 'Github',
 		link: 'https://github.com/brrianlai',
-		icon: 'ri-github-fill'
+		icon: <RiGithubFill />
 	},
 	{
 		name: 'LinkedIn',
 		link: 'https://www.linkedin.com/in/brian-lai-8989b91aa/',
-		icon: 'ri-linkedin-fill'
+		icon: <RiLinkedinFill />
 	},
 	{
 		name: 'Instagram',
 		link: 'https://instagram.com/brrianlai',
-		icon: 'ri-instagram-line'
+		icon: <RiInstagramLine />
 	}
 ]
 
@@ -22,15 +22,18 @@ const Social = () => {
 	return (
 		<div className='social row' data-gap='smaller'>
 			{icons.map((icon, index) => (
-				<a href={icon.link} key={index} target='_blank' alt={icon.name}>
-					<Icon name={icon.icon} />
+				<a href={icon.link} key={index} className='icon' target='_blank' alt={icon.name}>
+					{icon.icon}
 				</a>
 			))}
-			<a href='https://vsco.co/brrian' className='icon icon-vsco' target='_blank' alt='VSCO'>
+			<a href='https://vsco.co/brrian' className='icon' target='_blank' alt='VSCO'>
 				<svg
-					width='22'
-					height='22'
+					stroke='currentColor'
+					fill='currentColor'
+					strokeWidth='0'
 					viewBox='0 0 24 24'
+					height='1em'
+					width='1em'
 					xmlns='http://www.w3.org/2000/svg'
 				>
 					<path

@@ -1,5 +1,4 @@
-import '../styles/styles.css'
-import 'remixicon/fonts/remixicon.css'
+import '../styles/styles.scss'
 
 import Head from 'next/head'
 import { Inter } from '@next/font/google'

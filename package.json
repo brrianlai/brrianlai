@@ -8,7 +8,7 @@
 		"next": "^13.4.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-fast-marquee": "^1.5.2",
+		"react-icons": "^4.8.0",
 		"remixicon": "^3.3.0",
 		"smoothscroll-polyfill": "^0.4.4"
 	},
@@ -17,5 +17,8 @@
 		"build": "next build",
 		"start": "next start",
 		"export": "next export -o build"
+	},
+	"devDependencies": {
+		"sass": "^1.62.1"
 	}
 }
