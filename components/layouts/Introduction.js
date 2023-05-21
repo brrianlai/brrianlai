@@ -15,7 +15,7 @@ const Introduction = () => {
 				animate='show'
 				variants={container}
 			>
-				<motion.h3 variants={item}>Hi! I'm a Biology undergraduate student from UBC with an interest in web and app design</motion.h3>
+				<h3>Hi! I'm a Biology undergraduate student from UBC with an interest in web and app design</h3>
 
 				<motion.div className='row' variants={item} data-gap='small'>
 					<Button link='/brian-lai-resume-230520.pdf' shape='round' size='large'>
@@ -39,14 +39,9 @@ const Introduction = () => {
 			</motion.div>
 
 			<div className='column'>
-				<motion.div
-					animate='show'
-					className='profile'
-					initial='hidden'
-					variants={item}
-				>
+				<div className='profile'>
 					<Image src={profilePhoto} sizes='(max-width: 960px) 180px, 280px' priority quality='100' alt='Profile photo'/>
-				</motion.div>
+				</div>
 			</div>
 		</section>
 	)
@@ -56,7 +51,7 @@ const container = {
 	hidden: {},
 	show: {
 		transition: {
-			delayChildren: 0.2,
+			delayChildren: 0.1,
 			staggerChildren: 0.1,
 		}
 	}
