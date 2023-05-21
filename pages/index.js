@@ -31,8 +31,8 @@ function App() {
 				<title>Brian Lai - UBC Biology undergraduate student</title>
 			</Head>
 			<Introduction />
-			<Background />
 			<FadeIn>
+				<Background />
 				<Education />
 				<Projects />
 				<WorkExperience />

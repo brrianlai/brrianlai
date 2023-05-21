@@ -13,19 +13,27 @@ const Introduction = () => {
 				animate='show'
 				variants={container}
 			>
-				<h3>Hi! I'm a Biology undergraduate student from UBC with an interest in web and app design</h3>
+				<motion.h3 variants={item}>Hi! I'm a Biology undergraduate student from UBC with an interest in web and app design</motion.h3>
+
 				<motion.div className='row' variants={item} data-gap='small'>
 					<Button link='/brian-lai-resume-230520.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>Resume</Button>
 					<Button link='mailto:laibrian@student.ubc.ca' shape='round' size='large' iconLeft='ri-mail-line' background='light' outline='true'>laibrian@student.ubc.ca</Button>
 				</motion.div>
+
 				<motion.div variants={item}>
 					<Social />
 				</motion.div>
 			</motion.div>
+
 			<div className='column'>
-				<div className='profile'>
+				<motion.div
+					animate='show'
+					className='profile'
+					initial='hidden'
+					variants={item}
+				>
 					<Image src={profilePhoto} sizes='(max-width: 960px) 180px, 280px' priority quality='100' alt='Profile photo'/>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	)
@@ -35,6 +43,7 @@ const container = {
 	hidden: {},
 	show: {
 		transition: {
+			delayChildren: 0.1,
 			staggerChildren: 0.1,
 		}
 	}
