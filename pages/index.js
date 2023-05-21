@@ -14,6 +14,16 @@ const WorkExperience = dynamic(() => import('../components/layouts/WorkExperienc
 const VolunteerExperience = dynamic(() => import('../components/layouts/VolunteerExperience'))
 const Gallery = dynamic(() => import('../components/Gallery'))
 
+import img3461 from '../public/gallery/IMG_3461.jpeg'
+import img6432 from '../public/gallery/IMG_6432.jpg'
+import img3060 from '../public/gallery/IMG_3060.jpg'
+import img2675 from '../public/gallery/IMG_2675.jpeg'
+
+import img0539 from '../public/gallery/IMG_0539.jpeg'
+import img2455 from '../public/gallery/IMG_2455.jpeg'
+import img2472 from '../public/gallery/IMG_2472.jpeg'
+import img3994 from '../public/gallery/IMG_3994.jpeg'
+
 function App() {
 	return (
 		<Layout>
@@ -32,33 +42,25 @@ function App() {
 					<div className='column'>
 						<Gallery>
 							<Image
-								src='/gallery/IMG_3461.jpeg'
-								width='3024'
-								height='4032'
+								src={img3461}
 								sizes='50vw'
 								quality='90'
 								alt=''
 							/>
 							<Image
-								src='/gallery/IMG_6432.jpg'
-								width='3798'
-								height='2844'
+								src={img6432}
 								sizes='50vw'
 								quality='90'
 								alt=''
 							/>
 							<Image
-								src='/gallery/IMG_3060.jpg'
-								width='4024'
-								height='3024'
+								src={img3060}
 								sizes='50vw'
 								quality='90'
 								alt=''
 							/>
 							<Image
-								src='/gallery/IMG_2675.jpeg'
-								width='3024'
-								height='4032'
+								src={img2675}
 								sizes='50vw'
 								quality='90'
 								alt=''
@@ -68,33 +70,25 @@ function App() {
 					<div className='column'>
 						<Gallery>
 							<Image
-								src='/gallery/IMG_0539.jpeg'
-								width='3798'
-								height='2844'
+								src={img0539}
 								sizes='50vw'
 								quality='90'
 								alt=''
 							/>
 							<Image
-								src='/gallery/IMG_2455.jpeg'
-								width='3024'
-								height='4032'
+								src={img2455}
 								sizes='50vw'
 								quality='90'
 								alt=''
 							/>
 							<Image
-								src='/gallery/IMG_2472.jpeg'
-								width='3024'
-								height='4032'
+								src={img2472}
 								sizes='50vw'
 								quality='90'
 								alt=''
 							/>		
 							<Image
-								src='/gallery/IMG_3994.jpeg'
-								width='4024'
-								height='3024'
+								src={img3994}
 								sizes='50vw'
 								quality='90'
 								alt=''

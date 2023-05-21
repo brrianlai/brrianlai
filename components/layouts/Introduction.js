@@ -2,8 +2,7 @@ import Image from 'next/image'
 import Button from '../Button'
 import { motion } from 'framer-motion'
 import Social from '../Social'
-
-const profile = '/profile2.png'
+import profilePhoto from '../../public/profile2.png'
 
 const Introduction = () => {
 	return (
@@ -25,7 +24,7 @@ const Introduction = () => {
 			</motion.div>
 			<div className='column'>
 				<div className='profile'>
-					<Image src={profile} width='1125' height='1125' sizes='(max-width: 960px) 180px, 280px' priority alt='Profile photo'/>
+					<Image src={profilePhoto} sizes='(max-width: 960px) 180px, 280px' priority quality='100' alt='Profile photo'/>
 				</div>
 			</div>
 		</section>

@@ -358,6 +358,7 @@ section[data-size='large'] {
 
 .background img {
 	object-fit: cover;
+	object-position: center;
 }
 
 /* buttons */
