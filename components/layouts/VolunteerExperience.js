@@ -14,7 +14,7 @@ const volunteerList = [
 	{
 		name: 'Thunderbird Elementary',
 		tags: ['Sep 2017 to Jun 2018', 'Tutor'],
-		description: 'Guided elementary students in academic and physical activities after school, including Math and English.'
+		description: 'Guided elementary students in academic activities and physical activities after school, including Math and English.'
 	}
 ]
 
@@ -29,7 +29,7 @@ const VolunteerExperience = () => {
 				{volunteerList.map((volunteer, index) => (
 					<motion.div
 						className='column'
-						data-gap='small'
+						data-gap='smaller'
 						initial='hidden'
 						key={index}
 						variants={item}
@@ -37,16 +37,12 @@ const VolunteerExperience = () => {
 						whileInView='show'
 					>
 						<h5>{volunteer.name}</h5>
-
-						<div className='column' data-gap='smaller'>
-							<div className='row' data-gap='small'>
-								{volunteer.tags.map((tag, index) => (
-									<h6 key={index}>{tag}</h6>
-								))}
-							</div>
-
-							<p>{volunteer.description}</p>
+						<div className='row' data-gap='small'>
+							{volunteer.tags.map((tag, index) => (
+								<h6 key={index}>{tag}</h6>
+							))}
 						</div>
+						<p>{volunteer.description}</p>
 					</motion.div>
 				))}
 
