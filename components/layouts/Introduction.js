@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Social from '../Social'
 import profilePhoto from '../../public/profile2.png'
 
-import { RiArrowRightUpLine, RiMailLine } from 'react-icons/ri'
+import { RiArrowRightLine, RiMailLine } from 'react-icons/ri'
 
 const Introduction = () => {
 	return (
@@ -21,7 +21,7 @@ const Introduction = () => {
 					<Button link='/brian-lai-resume-230520.pdf' shape='round' size='large'>
 						Resume
 						<div className='icon'>
-							<RiArrowRightUpLine />
+							<RiArrowRightLine />
 						</div>
 					</Button>
 					
@@ -56,7 +56,7 @@ const container = {
 	hidden: {},
 	show: {
 		transition: {
-			delayChildren: 0.1,
+			delayChildren: 0.2,
 			staggerChildren: 0.1,
 		}
 	}

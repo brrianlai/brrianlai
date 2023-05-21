@@ -7,6 +7,8 @@ import Introduction from '../components/layouts/Introduction'
 import Background from '../components/layouts/Background'
 import FadeIn from '../components/FadeIn'
 
+import { motion } from 'framer-motion'
+
 const Contact = dynamic(() => import('../components/layouts/Contact'))
 const Education = dynamic(() => import('../components/layouts/Education'))
 const Projects = dynamic(() => import('../components/layouts/Projects'))
@@ -28,11 +30,17 @@ function App() {
 	return (
 		<Layout>
 			<Head>
-				<title>Brian Lai - UBC Biology undergraduate student</title>
+				<title>Brian Lai</title>
 			</Head>
-			<Introduction />
-			<FadeIn>
+			<motion.div
+				animate='show'
+				initial='hidden'
+				variants={container}
+			>
+				<Introduction />
 				<Background />
+			</motion.div>
+			<FadeIn>
 				<Education />
 				<Projects />
 				<WorkExperience />
@@ -100,5 +108,21 @@ function App() {
 		</Layout>
 	)
 }
+
+const container = {
+	hidden: {
+		opacity: 0,
+		y: 20
+	},
+	show: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.5,
+			ease: [0.465, 0.183, 0.153, 0.946]
+		}
+	}
+}
+
 
 export default App
