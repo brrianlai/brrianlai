@@ -4,7 +4,7 @@ const volunteerList = [
 	{
 		name: 'Vancouver Coastal Health',
 		tags: ['Aug 2019 to Mar 2020', 'Social Recreation Volunteer'],
-		description: 'Engaged in social activities with residents to improve cognitive abilities. Developed interpersonal and communicational skills through connections with residents.'
+		description: 'Engaged in social activities with residents that have dementia to improve cognitive abilities. Developed interpersonal skills and formed insightful connections with residents.'
 	},
 	{
 		name: 'UBC Faculty of Education',
@@ -24,25 +24,29 @@ const VolunteerExperience = () => {
 
 			<h4>Volunteer Experience</h4>
 
-			<div className='grid' data-columns='4'>
+			<div className='grid' data-columns='3'>
 
 				{volunteerList.map((volunteer, index) => (
 					<motion.div
 						className='column'
-						data-gap='smaller'
+						data-gap='small'
 						initial='hidden'
 						key={index}
 						variants={item}
 						viewport={{ once: true }}
 						whileInView='show'
 					>
-						<div className='row' data-gap='small'>
-							{volunteer.tags.map((tag, index) => (
-								<h6 key={index}>{tag}</h6>
-							))}
-						</div>
 						<h5>{volunteer.name}</h5>
-						<p>{volunteer.description}</p>
+
+						<div className='column' data-gap='smaller'>
+							<div className='row' data-gap='small'>
+								{volunteer.tags.map((tag, index) => (
+									<h6 key={index}>{tag}</h6>
+								))}
+							</div>
+
+							<p>{volunteer.description}</p>
+						</div>
 					</motion.div>
 				))}
 
