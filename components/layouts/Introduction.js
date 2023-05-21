@@ -15,8 +15,8 @@ const Introduction = () => {
 			>
 				<h3>Hi! I'm a Biology undergraduate student from UBC with an interest in web and app design</h3>
 				<motion.div className='row' variants={item} data-gap='small'>
-					<Button link='/brian-lai-resume-221024.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>View resume</Button>
-					<Button link='mailto:laibrian@alum.ubc.ca' shape='round' size='large' iconLeft='ri-mail-line' background='light' outline='true'>Contact me</Button>
+					<Button link='/brian-lai-resume-230520.pdf' shape='round' size='large' iconRight='ri-arrow-right-line'>Resume</Button>
+					<Button link='mailto:laibrian@student.ubc.ca' shape='round' size='large' iconLeft='ri-mail-line' background='light' outline='true'>laibrian@student.ubc.ca</Button>
 				</motion.div>
 				<motion.div variants={item}>
 					<Social />

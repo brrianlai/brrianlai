@@ -3,20 +3,17 @@ import { motion } from 'framer-motion'
 const volunteerList = [
 	{
 		name: 'Vancouver Coastal Health',
-		date: 'Aug 2019 to Mar 2020',
-		subheading: 'Social Recreation Volunteer',
+		tags: ['Aug 2019 to Mar 2020', 'Social Recreation Volunteer'],
 		description: 'Engaged in social activities with residents to improve cognitive abilities. Developed interpersonal and communicational skills through connections with residents.'
 	},
 	{
 		name: 'UBC Faculty of Education',
-		date: 'May 2019 to Aug 2019',
-		subheading: 'Cultural Ambassador',
+		tags: ['May 2019 to Aug 2019', 'Cultural Ambassador'],
 		description: 'Led social and recreational activities for 250+ international undergraduate students. Assisted in organizing plans for upcoming activities with program coordinators.'
 	},
 	{
 		name: 'Thunderbird Elementary',
-		date: 'Sep 2017 to Jun 2018',
-		subheading: 'Tutor',
+		tags: ['Sep 2017 to Jun 2018', 'Tutor'],
 		description: 'Guided elementary students in academic and physical activities after school, including Math and English.'
 	}
 ]
@@ -40,8 +37,9 @@ const VolunteerExperience = () => {
 						whileInView='show'
 					>
 						<div className='row' data-gap='small'>
-							<h6>{volunteer.date}</h6>
-							<h6>{volunteer.subheading}</h6>
+							{volunteer.tags.map((tag, index) => (
+								<h6 key={index}>{tag}</h6>
+							))}
 						</div>
 						<h5>{volunteer.name}</h5>
 						<p>{volunteer.description}</p>

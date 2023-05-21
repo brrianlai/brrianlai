@@ -1,23 +1,24 @@
-import Tag from '../Tag'
 import { motion } from 'framer-motion'
 
 const workList = [
 	{
 		name: 'Canada Border Services Agency (CBSA)',
-		date: 'Oct 2022 to present',
-		subheading: 'Administrative Assistant',
-		description: ''
+		tags: ['May 2023 to present', 'a/Executive Assistant'],
+		description: 'Act as the Executive Assistant to the Director.'
+	},
+	{
+		name: 'Canada Border Services Agency (CBSA)',
+		tags: ['Oct 2022 to present', 'Administrative Assistant'],
+		description: 'Process accounts payables such as journal vouchers and invoices with purchase orders/funds reservations. Prepare staffing paperwork for HR. Provide onboarding and training for new employees.'
 	},
 	{
 		name: 'A1 Learning Centre',
-		date: 'May 2022 to present',
-		subheading: 'Tutor',
+		tags: ['May 2022 to present', 'Tutor'],
 		description: 'Work closely with 20+ elementary students in Math and English. Hold small group learning activities for 3-4 students at once.'
 	},
 	{
 		name: 'Adventure Zone',
-		date: 'Aug 2015 to Jan 2019',
-		subheading: 'Receptionist',
+		tags: ['Aug 2015 to Jan 2019', 'Receptionist'],
 		description: 'Managed admissions, cash deposits, bookings, new employee training, and store opening/closing as a keyholder. Maintained and repaired computers and arcade machines.'
 	}
 ]
@@ -41,8 +42,9 @@ const WorkExperience = () => {
 						whileInView='show'
 					>
 						<div className='row' data-gap='small'>
-							<h6>{work.date}</h6>
-							<h6>{work.subheading}</h6>
+							{work.tags.map((tag, index) => (
+								<h6 key={index}>{tag}</h6>
+							))}
 						</div>
 						<h5>{work.name}</h5>
 						<p>{work.description}</p>
