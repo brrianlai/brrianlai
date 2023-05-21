@@ -198,6 +198,8 @@ header, footer {
 }
 
 header {
+	background: var(--light-87);
+	backdrop-filter: blur(50px);
 	position: sticky;
 	top: 0;
 	transition: var(--transition-transform);
