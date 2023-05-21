@@ -41,7 +41,6 @@ input, button, textarea, select {
 /* typography */
 
 a {
-	color: var(--dark-87);
 	text-decoration: none;
 }
 
@@ -49,12 +48,7 @@ a, .icon {
 	transition: var(--transition-color);
 }
 
-a:hover, .icon:hover {
-	color: var(--dark-60);
-}
-
 h1, h2, h3, h4, h5, h6 {
-	color: var(--dark-100);
 	font-weight: 500;
 }
 
@@ -84,9 +78,39 @@ h5 {
 }
 
 h6 {
-	color: var(--dark-60);
+
 	font-size: 1.2rem;
 	line-height: 2.4rem;
+}
+
+@mixin typography {
+	a {
+		color: var(--dark-87);
+	}
+
+	a:hover, .icon:hover {
+		color: var(--dark-60);
+	}
+
+	h1, h2, h3, h4, h5 {
+		color: var(--dark-100);
+	}
+
+	h6 {
+		color: var(--dark-60);
+	}
+}
+
+@mixin typography-white {
+
+}
+
+@mixin typography-black {
+
+}
+
+body {
+	@include typography;
 }
 
 /* icons */
@@ -362,12 +386,13 @@ section[data-size='large'] {
 .button {
 	align-items: center;
 	background: var(--dark-100);
+	backdrop-filter: blur(20px);
 	color: var(--light-100);
 	cursor: pointer;
 	display: flex;
 	font-size: 1.4rem;
 	font-weight: 500;
-	gap: 1.6rem;
+	gap: 1.4rem;
 	height: 4rem;
 	justify-content: center;
 	padding: 0 2rem;
@@ -679,7 +704,7 @@ section[data-background='grey'] p {
 
 @media (prefers-color-scheme: light) and (max-width: 960px) {
 	.background-waves {
-		background: inherit;
+		background: none;
 	}
 }
 
