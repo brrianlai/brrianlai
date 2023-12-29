@@ -13,16 +13,6 @@ const workList = [
 	{
 		tags: ['April 2023 to May 2023', 'a/ATIP Officer'],
 		description: 'Act as the ATIP Liaison Officer for the Pacific Region to coordinate the retrieval, review, and submission of information to the requestor.'
-	},
-	{
-		name: 'A1 Learning Centre',
-		tags: ['May 2022 to present', 'Tutor'],
-		description: 'Work closely with 20+ elementary students in Math and English. Use a variety of teaching methods and materials to create engaging and effective learning experience. Hold small group learning activities for 3-4 students at once.'
-	},
-	{
-		name: 'Adventure Zone',
-		tags: ['Aug 2015 to Jan 2019', 'Receptionist'],
-		description: 'Managed admissions, cash deposits, bookings, new employee training, and store opening/closing as a keyholder. Provided customer service and trained new employees. Maintained and repaired computers and arcade machines.'
 	}
 ]
 

@@ -10,11 +10,6 @@ const volunteerList = [
 		name: 'UBC Faculty of Education',
 		tags: ['May 2019 to Aug 2019', 'Cultural Ambassador'],
 		description: 'Led social and recreational activities for 250+ international undergraduate students. Assisted in organizing plans for upcoming activities with program coordinators.'
-	},
-	{
-		name: 'Thunderbird Elementary',
-		tags: ['Sep 2017 to Jun 2018', 'Tutor'],
-		description: 'Guided elementary students in academic activities and physical activities after school, including Math and English.'
 	}
 ]
 
