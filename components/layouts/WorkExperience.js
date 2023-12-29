@@ -3,16 +3,16 @@ import { motion } from 'framer-motion'
 const workList = [
 	{
 		name: 'Canada Border Services Agency (CBSA)',
-		tags: ['Oct 2022 to present', 'Administrative Assistant'],
-		description: 'Process accounts payables such as journal vouchers and invoices with purchase orders/funds reservations. Prepare staffing paperwork for HR. Provide onboarding and training for new employees.'
-	},
-	{
 		tags: ['May 2023 to present', 'a/Executive Assistant'],
 		description: 'Act as the Executive Assistant to the Director.'
 	},
 	{
+		tags: ['Oct 2022 to May 2023', 'Administrative Assistant'],
+		description: 'Processed accounts payables such as journal vouchers and invoices with purchase orders/funds reservations. Prepared staffing paperwork for HR. Provided onboarding and training for new employees.'
+	},
+	{
 		tags: ['April 2023 to May 2023', 'a/ATIP Officer'],
-		description: 'Act as the ATIP Liaison Officer for the Pacific Region to coordinate the retrieval, review, and submission of information to the requestor.'
+		description: 'Acted as the ATIP Liaison Officer for the Pacific Region to coordinate the retrieval, review, and submission of information to the requestor.'
 	}
 ]
 
