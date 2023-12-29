@@ -15,7 +15,7 @@ const Introduction = () => {
 				animate='show'
 				variants={container}
 			>
-				<h3>Hi! I'm a Biology undergraduate student from UBC with an interest in web and app design</h3>
+				<h3>Biology undergraduate student from UBC with an interest in web and app design</h3>
 
 				<motion.div className='row' variants={item} data-gap='small'>
 					<Button link='/brian-lai-resume-230520.pdf' shape='round' size='large'>
