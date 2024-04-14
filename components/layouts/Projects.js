@@ -32,14 +32,6 @@ const projects = [
 		height: '1800',
 		width: '2400',
 		link: 'https://github.com/brrianlai/brrian.vercel.app'
-	},
-	{
-		name: 'Discord logo redesign',
-		tags: ['Figma'],
-		preview: '/projects/discord.png',
-		height: '1800',
-		width: '1080',
-		link: 'https://www.figma.com/file/WkdeyVYbdMEslmjNQwNwjs/Discord-logo?node-id=1%3A3'
 	}
 ]
 
