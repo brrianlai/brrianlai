@@ -1,0 +1,10 @@
+header {
+	align-items: center;
+	display: flex;
+	height: 12rem;
+	padding: 0 4rem;
+
+	h1 {
+		@include heading4;
+	}
+}

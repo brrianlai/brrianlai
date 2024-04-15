@@ -1,0 +1,88 @@
+@use 'sass:math';
+
+$a: -0.0223;
+$b: 0.185;
+$c: -0.1745;
+
+@mixin letter-spacing($size) {
+	letter-spacing: $a + $b * math.pow(math.$e, $c * $size) + rem;
+}
+
+@mixin heading {
+	color: var(--dark-100);
+	font-weight: 500;
+}
+
+@mixin heading1 {
+	font-size: 6.4rem;
+	line-height: 8rem;
+	@include heading;
+	@include letter-spacing(6.4);
+}
+
+@mixin heading2 {
+	font-size: 3.4rem;
+	line-height: 4.8rem;
+	@include heading;
+	@include letter-spacing(3.4);
+}
+
+@mixin heading3 {
+	font-size: 2.8rem;
+	line-height: 4.2rem;
+	@include heading;
+	@include letter-spacing(2.8);
+}
+
+@mixin heading4 {
+	font-size: 2.2rem;
+	line-height: 3.6rem;
+	@include heading;
+	@include letter-spacing(2.2);
+}
+
+@mixin heading5 {
+	font-size: 1.6rem;
+	line-height: 3.2rem;
+	@include heading;
+	@include letter-spacing(1.6);
+}
+
+@mixin heading6 {
+	font-size: 1.2rem;
+	line-height: 2.4rem;
+	@include heading;
+	@include letter-spacing(1.2);
+}
+
+@mixin paragraph {
+	color: var(--dark-87);
+	font-size: 1.6rem;
+	line-height: 3.2rem;
+	@include letter-spacing(1.6);
+}
+
+@mixin link {
+	@include underline;
+}
+
+@mixin underline {
+	position: relative;
+
+	::after {
+		background: var(--dark-100);
+		bottom: 0;
+		content: '';
+		height: 0.02rem;
+		left: 0;
+		position: absolute;
+		transform-origin: bottom left;
+		transition: transform 0.25s ease;
+		transform: scaleX(0);
+		width: 100%;
+	}
+
+	:hover::after {
+		transform: scaleX(1);
+	}
+}
